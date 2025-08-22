@@ -153,6 +153,19 @@ export const en = {
     }
   },
 
+  navbar: {
+  home: 'Home',
+  products: 'Products',
+  services: 'Services',
+  about: 'About Us',
+  contact: 'Contact Us',
+  company: {
+    name: 'Abdelshafi Group',
+    subtitle: 'For Agricultural Investment & Development'
+  }
+},
+
+
   // Common
   common: {
     loading: 'Loading...',

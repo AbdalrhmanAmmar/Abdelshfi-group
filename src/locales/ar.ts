@@ -1,12 +1,17 @@
 export const ar = {
   // Navigation
-  nav: {
-    home: 'الرئيسية',
-    products: 'المنتجات',
-    services: 'خدماتنا',
-    about: 'من نحن',
-    contact: 'اتصل بنا'
-  },
+navbar: {
+  home: 'الرئيسية',
+  products: 'المنتجات',
+  services: 'خدماتنا',
+  about: 'من نحن',
+  contact: 'اتصل بنا',
+  company: {
+    name: 'مجموعة عبد الشافي',
+    subtitle: 'للاستثمار والتنمية الزراعية'
+  }
+},
+
 
   // Company Info
   company: {

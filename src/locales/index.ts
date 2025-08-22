@@ -4,6 +4,11 @@ import { footerTranslations } from './footer';
 import { aboutTranslations } from './about';
 import { servicesTranslations } from './services';
 import { productsTranslations } from './products';
+import { en } from './en';
+import { fr } from './fr';
+import { es } from './es';
+import { de } from './de';
+import { it } from './it';
 
 export const translations = {
   ar: {
@@ -14,14 +19,11 @@ export const translations = {
     services: servicesTranslations.ar,
     products: productsTranslations.ar
   },
-  en: {
-    home: homeTranslations.en,
-    navbar: navbarTranslations.en,
-    footer: footerTranslations.en,
-    about: aboutTranslations.en,
-    services: servicesTranslations.en,
-    products: productsTranslations.en
-  }
+  en,
+  fr,
+  es,
+  de,
+  it
 };
 
 export type Language = keyof typeof translations;
