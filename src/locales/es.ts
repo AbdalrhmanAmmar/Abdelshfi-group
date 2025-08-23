@@ -1,12 +1,16 @@
 
 export const es = {
   // Navigation
-  nav: {
+  navbar: {
     home: 'Inicio',
     products: 'Productos',
     services: 'Servicios',
     about: 'Acerca de',
-    contact: 'Contacto'
+    contact: 'Contacto',
+    company: {
+      name: 'Grupo Abdelshafi',
+      subtitle: 'Para Inversión y Desarrollo Agrícola'
+    }
   },
 
   // Company Info
@@ -26,6 +30,7 @@ export const es = {
     aboutDescription1: 'El Grupo Abdelshafi es una empresa egipcia especializada en la exportación e importación de productos agrícolas de alta calidad.',
     aboutDescription2: 'Poseemos granjas privadas que garantizan la producción directa y el control completo de la calidad del producto, además de servir al mercado local egipcio con los mejores productos frescos.',
     aboutDescription3: 'Nos comprometemos a proporcionar productos seguros y frescos que cumplan con los estándares internacionales, sirviendo a múltiples mercados en Europa, el Golfo y Asia.',
+    aboutDescription4: 'Creemos que el verdadero éxito radica en lograr el equilibrio entre rentabilidad y responsabilidad social, por lo que trabajamos para apoyar a los agricultores locales y desarrollar las comunidades rurales.',
     viewProducts: 'Ver Productos',
     learnMore: 'Conocer Más',
     stats: {
@@ -98,9 +103,9 @@ export const es = {
     globalNetwork: 'Red Global',
     globalNetworkDesc: 'Alcance a más de 50 países en todo el mundo',
     fullInsurance: 'Seguro Completo',
-    fullInsuranceDesc: 'Protección completa para envíos contra todos los riesgos',
+    fullInsuranceDesc: 'Protección completa de los envíos contra todos los riesgos',
     needServices: '¿Necesitas Servicios de Empaque y Envío?',
-    needServicesDesc: 'Contáctanos hoy para una consulta gratuita',
+    needServicesDesc: 'Contáctanos hoy para una consulta gratuita y cotización personalizada para tus necesidades',
     requestQuote: 'Solicitar Cotización',
     contactUs: 'Contáctanos'
   },
@@ -108,27 +113,27 @@ export const es = {
   // About Page
   about: {
     title: 'Acerca de Nosotros',
-    subtitle: 'Un viaje de pasión y excelencia en agricultura y exportación por más de 25 años',
+    subtitle: 'Un viaje de pasión y excelencia en la agricultura y exportación durante más de 25 años',
     egyptianSuccess: 'Una Historia de Éxito Egipcia',
-    ourStory1: 'Nuestro viaje comenzó en 1999 con una visión clara: ser el puente que conecte la calidad agrícola egipcia con los mercados globales.',
-    ourStory2: 'Nos enorgullecemos de poseer nuestras granjas privadas que se extienden por las mejores tierras agrícolas de Egipto.',
-    ourStory3: 'Hoy, nos enorgullecemos de ser una de las empresas líderes en la exportación de productos agrícolas egipcios.',
-    ourStory4: 'Creemos que el verdadero éxito radica en lograr el equilibrio entre rentabilidad y responsabilidad social.',
+    ourStory1: 'Nuestro viaje comenzó en 1999 con una visión clara: ser el puente que conecta la calidad agrícola egipcia con los mercados globales. A través del compromiso con los más altos estándares de calidad y transparencia, hemos construido una extensa red de asociaciones internacionales.',
+    ourStory2: 'Nos enorgullece poseer nuestras granjas privadas que se extienden por las mejores tierras agrícolas de Egipto, asegurando control completo sobre el proceso de producción desde la semilla hasta el producto final. También servimos al mercado local egipcio con productos frescos de alta calidad.',
+    ourStory3: 'Hoy, nos enorgullece ser una de las empresas líderes en la exportación de productos agrícolas egipcios, sirviendo a más de 50 países en todo el mundo y manteniendo la confianza de más de 1000 clientes.',
+    ourStory4: 'Creemos que el verdadero éxito radica en lograr el equilibrio entre rentabilidad y responsabilidad social, por lo que trabajamos para apoyar a los agricultores locales y desarrollar las comunidades rurales.',
     valuesTitle: 'Nuestros Valores y Principios',
     passionForQuality: 'Pasión por la Calidad',
-    passionForQualityDesc: 'Creemos que la calidad no es solo un estándar, sino una forma de vida',
+    passionForQualityDesc: 'Creemos que la calidad no es solo un estándar, sino una forma de vida que vivimos en cada detalle de nuestro trabajo',
     trustAndSafety: 'Confianza y Seguridad',
-    trustAndSafetyDesc: 'Construimos relaciones a largo plazo a través de la transparencia',
+    trustAndSafetyDesc: 'Construimos relaciones a largo plazo con nuestros clientes a través de la transparencia y el compromiso con los más altos estándares de seguridad',
     sustainability: 'Sostenibilidad Ambiental',
-    sustainabilityDesc: 'Nos comprometemos a proteger el medio ambiente a través de prácticas sostenibles',
-    continuousImprovement: 'Mejora Continua',
-    continuousImprovementDesc: 'Invertimos en tecnología e innovación',
+    sustainabilityDesc: 'Nos comprometemos a proteger el medio ambiente a través de prácticas agrícolas sostenibles y ecológicas',
+    continuousImprovement: 'Desarrollo Continuo',
+    continuousImprovementDesc: 'Invertimos en tecnología e innovación para desarrollar continuamente nuestros servicios y productos',
     successJourney: 'Viaje de Éxito',
-    successJourneyDesc: 'Hitos importantes en la historia y crecimiento de nuestra empresa',
-    commitmentToExcellence: 'Nuestro Compromiso con la Calidad y Excelencia',
-    commitmentDesc: 'Creemos que obtener certificaciones internacionales es un compromiso continuo',
+    successJourneyDesc: 'Hitos importantes en la historia de nuestra empresa y su crecimiento a lo largo de los años',
+    commitmentToExcellence: 'Nuestro Compromiso con la Calidad y la Excelencia',
+    commitmentDesc: 'Creemos que obtener certificaciones internacionales no es solo un logro, sino un compromiso continuo de proporcionar los mejores productos y los más altos estándares de calidad y seguridad a nuestros clientes en todo el mundo',
     joinSuccess: 'Únete al Viaje de Éxito',
-    joinSuccessDesc: 'Creemos en el poder de las asociaciones estratégicas',
+    joinSuccessDesc: 'Creemos en el poder de las asociaciones estratégicas. Construyamos juntos un mejor futuro para la agricultura egipcia',
     becomePartner: 'Conviértete en Nuestro Socio',
     stats: {
       experience: 'Años de Experiencia',
@@ -138,121 +143,23 @@ export const es = {
       quality: 'Calidad Garantizada',
       certifications: 'Certificaciones Internacionales',
       localGlobal: 'Mercado Local y Global'
-    },
-    milestones: {
-      1999: {
-        title: 'Fundación de la Empresa',
-        description: 'Establecimiento del Grupo Abdelshafi con una visión de conectar la agricultura egipcia con los mercados globales'
-      },
-      2002: {
-        title: 'Primera Exportación',
-        description: 'Inicio de las operaciones de exportación a países del Golfo'
-      },
-      2005: {
-        title: 'Expansión Europea',
-        description: 'Entrada a los mercados europeos y establecimiento de asociaciones estratégicas'
-      },
-      2008: {
-        title: 'Certificaciones Internacionales',
-        description: 'Obtención de certificaciones ISO 22000 y HACCP'
-      },
-      2010: {
-        title: 'Granjas Privadas',
-        description: 'Adquisición de granjas privadas para garantizar el control de calidad'
-      },
-      2015: {
-        title: 'Expansión Asiática',
-        description: 'Entrada a los mercados asiáticos y diversificación de productos'
-      },
-      2020: {
-        title: 'Transformación Digital',
-        description: 'Implementación de tecnologías modernas en agricultura y logística'
-      },
-      2024: {
-        title: 'Liderazgo del Mercado',
-        description: 'Alcanzar más de 50 países y 1000 clientes satisfechos'
-      }
-    },
-    certifications: {
-      iso22000: {
-        name: 'ISO 22000',
-        description: 'Sistema de gestión de seguridad alimentaria',
-        year: '2008'
-      },
-      haccp: {
-        name: 'HACCP',
-        description: 'Análisis de peligros y puntos críticos de control',
-        year: '2008'
-      },
-      globalGap: {
-        name: 'Global GAP',
-        description: 'Buenas prácticas agrícolas globales',
-        year: '2010'
-      },
-      brcFood: {
-        name: 'BRC Food',
-        description: 'Estándar global de seguridad alimentaria',
-        year: '2012'
-      },
-      organic: {
-        name: 'Orgánico',
-        description: 'Certificación de productos orgánicos',
-        year: '2015'
-      },
-      halal: {
-        name: 'Halal',
-        description: 'Certificación Halal para mercados musulmanes',
-        year: '2018'
-      }
     }
   },
 
   // Footer
   footer: {
-    description: 'Lideramos el futuro de la agricultura a través de soluciones innovadoras y asociaciones globales.',
+    description: 'Lideramos el futuro de la agricultura a través de soluciones innovadoras, inversión sostenible y asociaciones globales que conectan a los agricultores con los mercados internacionales. Poseemos granjas privadas y servimos a mercados locales y globales con los más altos estándares de calidad.',
     quickLinks: 'Enlaces Rápidos',
     ourProducts: 'Nuestros Productos',
     ourServices: 'Nuestros Servicios',
     ourCertifications: 'Nuestras Certificaciones',
     followUs: 'Síguenos:',
     copyright: '© 2024 Grupo Abdelshafi para Inversión y Desarrollo Agrícola. Todos los derechos reservados.',
-    products: {
-      freshVegetables: 'Verduras Frescas',
-      freshFruits: 'Frutas Frescas',
-      legumes: 'Legumbres',
-      aromaticHerbs: 'Hierbas Aromáticas',
-      driedFruitsVegetables: 'Frutas y Verduras Secas'
-    },
-    services: {
-      meshPackaging: 'Empaque de Malla',
-      printedCarton: 'Cartón Impreso',
-      vacuumPackaging: 'Empaque al Vacío',
-      internationalShipping: 'Envío Internacional'
-    },
-    certifications: {
-      iso22000: 'ISO 22000',
-      haccp: 'HACCP',
-      globalGap: 'Global GAP',
-      organic: 'Orgánico'
-    },
     stats: {
       privateFarms: 'Granjas Privadas',
       countries: 'Países Socios',
       customers: 'Clientes Satisfechos',
       experience: 'Años de Experiencia'
-    }
-  },
-
-  // Navbar
-  navbar: {
-    home: 'Inicio',
-    products: 'Productos',
-    services: 'Servicios',
-    about: 'Acerca de',
-    contact: 'Contacto',
-    company: {
-      name: 'Grupo Abdelshafi',
-      subtitle: 'Inversión Agrícola'
     }
   },
 

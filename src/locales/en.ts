@@ -1,11 +1,15 @@
 export const en = {
   // Navigation
-  nav: {
+  navbar: {
     home: 'Home',
     products: 'Products',
     services: 'Services',
     about: 'About Us',
-    contact: 'Contact Us'
+    contact: 'Contact Us',
+    company: {
+      name: 'Abdelshafi Group',
+      subtitle: 'For Agricultural Investment & Development'
+    }
   },
 
   // Company Info
@@ -20,6 +24,7 @@ export const en = {
     heroTitle1: 'Empowering Agriculture',
     heroTitle2: 'Achieving Growth',
     heroSubtitle: 'We lead the future of agriculture through innovative solutions, sustainable investment, and global partnerships that connect farmers to international markets',
+    companyFullName: 'Abdelshafi Group for Agricultural Investment, Development, Import & Export',
     aboutTitle: 'About Us',
     aboutDescription1: 'Abdelshafi Group is an Egyptian company specialized in exporting and importing high-quality agricultural products.',
     aboutDescription2: 'We own private farms that ensure direct production and complete control over product quality, in addition to serving the Egyptian local market with the finest fresh products.',
@@ -78,12 +83,16 @@ export const en = {
     servicesDescription: 'We provide a comprehensive range of packaging and shipping services designed specifically to meet our customers\' needs',
     packaging5kg: '5/10 kg Mesh Bags',
     packaging5kgDesc: 'Packaging products in high-quality mesh bags of different sizes to ensure product quality preservation',
+    packaging5kgFeatures: ['Moisture Resistant', 'Optimal Ventilation', 'Various Sizes', 'Eco-friendly Materials'],
     printedCarton: 'Printed Cartons',
     printedCartonDesc: 'Printed cardboard boxes with the highest quality standards and professional designs that reflect brand identity',
+    printedCartonFeatures: ['High Quality Printing', 'Custom Design', 'Impact Resistant', 'Clear Product Information'],
     vacuumPacking: 'Vacuum Packaging',
     vacuumPackingDesc: 'Advanced vacuum packaging technology to maintain product freshness for longer periods',
+    vacuumPackingFeatures: ['Extended Shelf Life', 'Preserve Natural Flavor', 'Prevent Contamination', 'Advanced Technology'],
     shipping: 'Sea/Air Delivery',
     shippingDesc: 'Comprehensive sea and air shipping services to ensure products arrive in the best condition and fastest time',
+    shippingFeatures: ['Fast & Secure Shipping', 'Shipment Tracking', 'Complete Insurance', 'Global Network'],
     additionalFeatures: 'Additional Features',
     additionalFeaturesDesc: 'We guarantee you an exceptional shipping experience with premium services',
     qualityAssurance: 'Quality Assurance',
@@ -152,19 +161,6 @@ export const en = {
       experience: 'Years Experience'
     }
   },
-
-  navbar: {
-  home: 'Home',
-  products: 'Products',
-  services: 'Services',
-  about: 'About Us',
-  contact: 'Contact Us',
-  company: {
-    name: 'Abdelshafi Group',
-    subtitle: 'For Agricultural Investment & Development'
-  }
-},
-
 
   // Common
   common: {

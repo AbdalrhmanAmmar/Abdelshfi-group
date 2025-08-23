@@ -1,11 +1,15 @@
 export const it = {
   // Navigation
-  nav: {
+  navbar: {
     home: 'Home',
     products: 'Prodotti',
     services: 'Servizi',
     about: 'Chi Siamo',
-    contact: 'Contatti'
+    contact: 'Contattaci',
+    company: {
+      name: 'Gruppo Abdelshafi',
+      subtitle: 'Per Investimenti e Sviluppo Agricolo'
+    }
   },
 
   // Company Info
@@ -23,8 +27,9 @@ export const it = {
     companyFullName: 'Gruppo Abdelshafi per Investimenti Agricoli, Sviluppo, Import & Export',
     aboutTitle: 'Chi Siamo',
     aboutDescription1: 'Il Gruppo Abdelshafi è un\'azienda egiziana specializzata nell\'esportazione e importazione di prodotti agricoli di alta qualità.',
-    aboutDescription2: 'Possediamo fattorie private che garantiscono produzione diretta e controllo completo sulla qualità del prodotto, oltre a servire il mercato locale egiziano con i migliori prodotti freschi.',
-    aboutDescription3: 'Ci impegniamo a fornire prodotti sicuri e freschi che soddisfano gli standard internazionali, servendo molteplici mercati in Europa, Golfo e Asia.',
+    aboutDescription2: 'Possediamo fattorie private che garantiscono produzione diretta e controllo completo sulla qualità dei prodotti, oltre a servire il mercato locale egiziano con i migliori prodotti freschi.',
+    aboutDescription3: 'Ci impegniamo a fornire prodotti sicuri, freschi e conformi agli standard internazionali, servendo mercati multipli in Europa, Golfo e Asia.',
+    aboutDescription4: 'Crediamo che il vero successo risieda nel raggiungere l\'equilibrio tra redditività e responsabilità sociale, quindi lavoriamo per sostenere gli agricoltori locali e sviluppare le comunità rurali.',
     viewProducts: 'Visualizza Prodotti',
     learnMore: 'Scopri di Più',
     stats: {
@@ -37,7 +42,7 @@ export const it = {
       localMarket: 'Mercato Locale',
       globalQuality: 'Qualità Globale',
       multipleMarkets: 'Mercati Multipli',
-      egyptianExpertise: 'Esperienza Egiziana'
+      egyptianExpertise: 'Competenza Egiziana'
     }
   },
 
@@ -51,7 +56,7 @@ export const it = {
     sortByRating: 'Ordina per Valutazione',
     sortByFeatured: 'Prodotti in Evidenza Prima',
     featuredOnly: 'Solo in Evidenza',
-    categories: 'Categorie Prodotti',
+    categories: 'Categorie di Prodotti',
     allProducts: 'Tutti i Prodotti',
     vegetables: 'Verdure Fresche',
     fruits: 'Frutta Fresca',
@@ -61,45 +66,45 @@ export const it = {
     oils: 'Oli e Semi',
     featured: 'In Evidenza',
     inStock: 'Disponibile',
-    outOfStock: 'Esaurito',
+    outOfStock: 'Non Disponibile',
     requestQuote: 'Richiedi Preventivo',
     priceOnRequest: 'Prezzo su Richiesta',
     noProductsFound: 'Nessun prodotto trovato',
-    tryDifferentSearch: 'Prova a cambiare i criteri di ricerca',
+    tryDifferentSearch: 'Prova a modificare i tuoi criteri di ricerca',
     productCount: 'prodotti'
   },
 
   // Services Page
   services: {
     title1: 'Servizi di Imballaggio',
-    title2: 'ed Esportazione',
+    title2: '& Esportazione',
     subtitle: 'Forniamo soluzioni complete di imballaggio e spedizione che garantiscono che i vostri prodotti raggiungano la destinazione nella migliore qualità',
     specializedServices: 'I Nostri Servizi Specializzati',
     servicesDescription: 'Forniamo una gamma completa di servizi di imballaggio e spedizione progettati specificamente per soddisfare le esigenze dei nostri clienti',
-    packaging5kg: 'Sacchi a Rete 5/10 kg',
-    packaging5kgDesc: 'Imballaggio di prodotti in sacchi a rete di alta qualità di diverse dimensioni',
-    packaging5kgFeatures: ['Resistente all\'Umidità', 'Ventilazione Ottimale', 'Varie Dimensioni', 'Materiali Eco-Friendly'],
+    packaging5kg: 'Sacchetti Reticolati 5/10 kg',
+    packaging5kgDesc: 'Imballaggio di prodotti in sacchetti reticolati di alta qualità di diverse dimensioni',
+    packaging5kgFeatures: ['Resistente all\'Umidità', 'Ventilazione Ottimale', 'Dimensioni Varie', 'Materiali Ecologici'],
     printedCarton: 'Cartoni Stampati',
     printedCartonDesc: 'Scatole di cartone stampate con i più alti standard di qualità',
-    printedCartonFeatures: ['Stampa di Alta Qualità', 'Design Personalizzato', 'Resistente agli Urti', 'Informazioni Prodotto Chiare'],
+    printedCartonFeatures: ['Stampa di Alta Qualità', 'Design Personalizzato', 'Resistente agli Urti', 'Informazioni Chiare sui Prodotti'],
     vacuumPacking: 'Imballaggio Sottovuoto',
-    vacuumPackingDesc: 'Tecnologia avanzata di imballaggio sottovuoto per mantenere la freschezza del prodotto',
-    vacuumPackingFeatures: ['Durata Prolungata', 'Preservare Sapore Naturale', 'Prevenire Contaminazione', 'Tecnologia Avanzata'],
+    vacuumPackingDesc: 'Tecnologia avanzata di imballaggio sottovuoto per mantenere la freschezza dei prodotti',
+    vacuumPackingFeatures: ['Vita Utile Estesa', 'Preservare il Sapore Naturale', 'Prevenire la Contaminazione', 'Tecnologia Avanzata'],
     shipping: 'Consegna Marittima/Aerea',
     shippingDesc: 'Servizi completi di spedizione marittima e aerea',
-    shippingFeatures: ['Spedizione Veloce e Sicura', 'Tracciamento Spedizioni', 'Assicurazione Completa', 'Rete Globale'],
+    shippingFeatures: ['Spedizione Rapida e Sicura', 'Tracciamento delle Spedizioni', 'Assicurazione Completa', 'Rete Globale'],
     additionalFeatures: 'Caratteristiche Aggiuntive',
-    additionalFeaturesDesc: 'Ti garantiamo un\'esperienza di spedizione eccezionale',
+    additionalFeaturesDesc: 'Ti garantiamo un\'esperienza di spedizione eccezionale con servizi premium',
     qualityAssurance: 'Garanzia di Qualità',
-    qualityAssuranceDesc: 'Ispezione accurata di tutti i prodotti prima dell\'esportazione',
-    onTimeDelivery: 'Consegna Puntuale',
-    onTimeDeliveryDesc: 'Impegno totale per i tempi di consegna concordati',
+    qualityAssuranceDesc: 'Ispezione approfondita di tutti i prodotti prima dell\'esportazione',
+    onTimeDelivery: 'Consegna in Tempo',
+    onTimeDeliveryDesc: 'Impegno totale per i programmi di consegna concordati',
     globalNetwork: 'Rete Globale',
-    globalNetworkDesc: 'Copertura in più di 50 paesi nel mondo',
+    globalNetworkDesc: 'Raggiungere più di 50 paesi in tutto il mondo',
     fullInsurance: 'Assicurazione Completa',
-    fullInsuranceDesc: 'Protezione completa per le spedizioni contro tutti i rischi',
+    fullInsuranceDesc: 'Protezione completa delle spedizioni contro tutti i rischi',
     needServices: 'Hai Bisogno di Servizi di Imballaggio e Spedizione?',
-    needServicesDesc: 'Contattaci oggi per una consulenza gratuita',
+    needServicesDesc: 'Contattaci oggi per una consulenza gratuita e un preventivo personalizzato per le tue esigenze',
     requestQuote: 'Richiedi Preventivo',
     contactUs: 'Contattaci'
   },
@@ -107,27 +112,27 @@ export const it = {
   // About Page
   about: {
     title: 'Chi Siamo',
-    subtitle: 'Un viaggio di passione ed eccellenza nell\'agricoltura e nell\'export da oltre 25 anni',
+    subtitle: 'Un viaggio di passione ed eccellenza nell\'agricoltura e nell\'esportazione per oltre 25 anni',
     egyptianSuccess: 'Una Storia di Successo Egiziana',
-    ourStory1: 'Il nostro viaggio è iniziato nel 1999 con una visione chiara: essere il ponte che collega la qualità agricola egiziana ai mercati globali.',
-    ourStory2: 'Siamo orgogliosi di possedere le nostre fattorie private che si estendono sui migliori terreni agricoli dell\'Egitto.',
-    ourStory3: 'Oggi, siamo orgogliosi di essere una delle aziende leader nell\'esportazione di prodotti agricoli egiziani.',
-    ourStory4: 'Crediamo che il vero successo risieda nel raggiungere l\'equilibrio tra redditività e responsabilità sociale.',
+    ourStory1: 'Il nostro viaggio è iniziato nel 1999 con una visione chiara: essere il ponte che collega la qualità agricola egiziana ai mercati globali. Attraverso l\'impegno per i più alti standard di qualità e trasparenza, abbiamo costruito una vasta rete di partnership internazionali.',
+    ourStory2: 'Siamo orgogliosi di possedere le nostre fattorie private che si estendono attraverso le migliori terre agricole d\'Egitto, garantendo il controllo completo sul processo di produzione dal seme al prodotto finale. Serviamo anche il mercato locale egiziano con prodotti freschi di alta qualità.',
+    ourStory3: 'Oggi, siamo orgogliosi di essere una delle aziende leader nell\'esportazione di prodotti agricoli egiziani, servendo più di 50 paesi in tutto il mondo e mantenendo la fiducia di oltre 1000 clienti.',
+    ourStory4: 'Crediamo che il vero successo risieda nel raggiungere l\'equilibrio tra redditività e responsabilità sociale, quindi lavoriamo per sostenere gli agricoltori locali e sviluppare le comunità rurali.',
     valuesTitle: 'I Nostri Valori e Principi',
     passionForQuality: 'Passione per la Qualità',
-    passionForQualityDesc: 'Crediamo che la qualità non sia solo uno standard, ma uno stile di vita',
+    passionForQualityDesc: 'Crediamo che la qualità non sia solo uno standard, ma un modo di vivere che viviamo in ogni dettaglio del nostro lavoro',
     trustAndSafety: 'Fiducia e Sicurezza',
-    trustAndSafetyDesc: 'Costruiamo relazioni a lungo termine attraverso la trasparenza',
+    trustAndSafetyDesc: 'Costruiamo relazioni a lungo termine con i nostri clienti attraverso la trasparenza e l\'impegno per i più alti standard di sicurezza',
     sustainability: 'Sostenibilità Ambientale',
-    sustainabilityDesc: 'Ci impegniamo a proteggere l\'ambiente attraverso pratiche sostenibili',
-    continuousImprovement: 'Miglioramento Continuo',
-    continuousImprovementDesc: 'Investiamo in tecnologia e innovazione',
+    sustainabilityDesc: 'Ci impegniamo a proteggere l\'ambiente attraverso pratiche agricole sostenibili ed ecologiche',
+    continuousImprovement: 'Sviluppo Continuo',
+    continuousImprovementDesc: 'Investiamo in tecnologia e innovazione per sviluppare continuamente i nostri servizi e prodotti',
     successJourney: 'Viaggio di Successo',
-    successJourneyDesc: 'Tappe importanti nella storia e crescita della nostra azienda',
+    successJourneyDesc: 'Traguardi importanti nella storia della nostra azienda e nella sua crescita nel corso degli anni',
     commitmentToExcellence: 'Il Nostro Impegno per la Qualità e l\'Eccellenza',
-    commitmentDesc: 'Crediamo che ottenere certificazioni internazionali sia un impegno continuo',
+    commitmentDesc: 'Crediamo che ottenere certificazioni internazionali non sia solo un risultato, ma un impegno continuo a fornire i migliori prodotti e i più alti standard di qualità e sicurezza ai nostri clienti in tutto il mondo',
     joinSuccess: 'Unisciti al Viaggio di Successo',
-    joinSuccessDesc: 'Crediamo nel potere delle partnership strategiche',
+    joinSuccessDesc: 'Crediamo nel potere delle partnership strategiche. Costruiamo insieme un futuro migliore per l\'agricoltura egiziana',
     becomePartner: 'Diventa Nostro Partner',
     stats: {
       experience: 'Anni di Esperienza',
@@ -137,121 +142,23 @@ export const it = {
       quality: 'Qualità Garantita',
       certifications: 'Certificazioni Internazionali',
       localGlobal: 'Mercato Locale e Globale'
-    },
-    milestones: {
-      1999: {
-        title: 'Fondazione dell\'Azienda',
-        description: 'Costituzione del Gruppo Abdelshafi con la visione di collegare l\'agricoltura egiziana ai mercati globali'
-      },
-      2002: {
-        title: 'Prima Esportazione',
-        description: 'Inizio delle operazioni di esportazione verso i paesi del Golfo'
-      },
-      2005: {
-        title: 'Espansione Europea',
-        description: 'Ingresso nei mercati europei e creazione di partnership strategiche'
-      },
-      2008: {
-        title: 'Certificazioni Internazionali',
-        description: 'Ottenimento delle certificazioni ISO 22000 e HACCP'
-      },
-      2010: {
-        title: 'Fattorie Private',
-        description: 'Acquisizione di fattorie private per garantire il controllo qualità'
-      },
-      2015: {
-        title: 'Espansione Asiatica',
-        description: 'Ingresso nei mercati asiatici e diversificazione dei prodotti'
-      },
-      2020: {
-        title: 'Trasformazione Digitale',
-        description: 'Implementazione di tecnologie moderne in agricoltura e logistica'
-      },
-      2024: {
-        title: 'Leadership di Mercato',
-        description: 'Raggiungimento di oltre 50 paesi e 1000 clienti soddisfatti'
-      }
-    },
-    certifications: {
-      iso22000: {
-        name: 'ISO 22000',
-        description: 'Sistema di gestione della sicurezza alimentare',
-        year: '2008'
-      },
-      haccp: {
-        name: 'HACCP',
-        description: 'Analisi dei pericoli e punti critici di controllo',
-        year: '2008'
-      },
-      globalGap: {
-        name: 'Global GAP',
-        description: 'Buone pratiche agricole globali',
-        year: '2010'
-      },
-      brcFood: {
-        name: 'BRC Food',
-        description: 'Standard globale di sicurezza alimentare',
-        year: '2012'
-      },
-      organic: {
-        name: 'Biologico',
-        description: 'Certificazione prodotti biologici',
-        year: '2015'
-      },
-      halal: {
-        name: 'Halal',
-        description: 'Certificazione Halal per mercati musulmani',
-        year: '2018'
-      }
     }
   },
 
   // Footer
   footer: {
-    description: 'Guidiamo il futuro dell\'agricoltura attraverso soluzioni innovative e partnership globali.',
+    description: 'Guidiamo il futuro dell\'agricoltura attraverso soluzioni innovative, investimenti sostenibili e partnership globali che collegano gli agricoltori ai mercati internazionali. Possediamo fattorie private e serviamo mercati locali e globali con i più alti standard di qualità.',
     quickLinks: 'Link Rapidi',
     ourProducts: 'I Nostri Prodotti',
     ourServices: 'I Nostri Servizi',
     ourCertifications: 'Le Nostre Certificazioni',
     followUs: 'Seguici:',
     copyright: '© 2024 Gruppo Abdelshafi per Investimenti e Sviluppo Agricolo. Tutti i diritti riservati.',
-    products: {
-      freshVegetables: 'Verdure Fresche',
-      freshFruits: 'Frutta Fresca',
-      legumes: 'Legumi',
-      aromaticHerbs: 'Erbe Aromatiche',
-      driedFruitsVegetables: 'Frutta e Verdura Essiccata'
-    },
-    services: {
-      meshPackaging: 'Imballaggio a Rete',
-      printedCarton: 'Cartone Stampato',
-      vacuumPackaging: 'Imballaggio Sottovuoto',
-      internationalShipping: 'Spedizione Internazionale'
-    },
-    certifications: {
-      iso22000: 'ISO 22000',
-      haccp: 'HACCP',
-      globalGap: 'Global GAP',
-      organic: 'Biologico'
-    },
     stats: {
       privateFarms: 'Fattorie Private',
       countries: 'Paesi Partner',
       customers: 'Clienti Soddisfatti',
       experience: 'Anni di Esperienza'
-    }
-  },
-
-  // Navbar
-  navbar: {
-    home: 'Home',
-    products: 'Prodotti',
-    services: 'Servizi',
-    about: 'Chi Siamo',
-    contact: 'Contatti',
-    company: {
-      name: 'Gruppo Abdelshafi',
-      subtitle: 'Investimenti Agricoli'
     }
   },
 
@@ -267,8 +174,8 @@ export const it = {
     yes: 'Sì',
     no: 'No',
     next: 'Avanti',
-    previous: 'Indietro',
+    previous: 'Precedente',
     submit: 'Invia',
-    reset: 'Reimposta'
+    reset: 'Ripristina'
   }
 };
