@@ -20,7 +20,6 @@ export const productsTranslations = {
     herbs: 'الأعشاب العطرية',
     dried: 'المجففات',
     oils: 'الزيوت والبذور',
-    frozen: 'المنتجات المجمدة',
     
     // Product Status
     featured: 'مميز',
@@ -55,7 +54,6 @@ export const productsTranslations = {
     herbs: 'Aromatic Herbs',
     dried: 'Dried Products',
     oils: 'Oils & Seeds',
-    frozen: 'Frozen Products',
     
     // Product Status
     featured: 'Featured',
@@ -90,7 +88,6 @@ export const productsTranslations = {
     herbs: 'Herbes Aromatiques',
     dried: 'Produits Séchés',
     oils: 'Huiles & Graines',
-    frozen: 'Produits Surgelés',
     
     // Product Status
     featured: 'En Vedette',
@@ -125,7 +122,6 @@ export const productsTranslations = {
     herbs: 'Hierbas Aromáticas',
     dried: 'Productos Secos',
     oils: 'Aceites & Semillas',
-    frozen: 'Productos Congelados',
     
     // Product Status
     featured: 'Destacado',
@@ -160,7 +156,6 @@ export const productsTranslations = {
     herbs: 'Aromatische Kräuter',
     dried: 'Getrocknete Produkte',
     oils: 'Öle & Samen',
-    frozen: 'Tiefkühlprodukte',
     
     // Product Status
     featured: 'Hervorgehoben',
@@ -195,7 +190,6 @@ export const productsTranslations = {
     herbs: 'Erbe Aromatiche',
     dried: 'Prodotti Secchi',
     oils: 'Oli & Semi',
-    frozen: 'Prodotti Surgelati',
     
     // Product Status
     featured: 'In Evidenza',
