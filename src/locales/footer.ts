@@ -202,5 +202,39 @@ export const footerTranslations = {
       customers: 'Clienti Soddisfatti',
       experience: 'Anni di Esperienza'
     }
+  },
+   zh: {
+    description: '我们通过创新解决方案、可持续投资和连接农民与国际市场的全球合作伙伴关系引领农业未来。我们拥有私人农场，并以最高质量标准服务本地和全球市场。',
+    quickLinks: '快速链接',
+    ourProducts: '我们的产品',
+    ourServices: '我们的服务',
+    ourCertifications: '我们的认证',
+    followUs: '关注我们:',
+    copyright: '© 2024 阿卜杜勒沙菲农业投资与发展集团。保留所有权利。',
+    products: {
+      freshVegetables: '新鲜蔬菜',
+      freshFruits: '新鲜水果',
+      legumes: '豆类',
+      aromaticHerbs: '香草',
+      driedFruitsVegetables: '干果和蔬菜'
+    },
+    services: {
+      meshPackaging: '网袋包装',
+      printedCarton: '印刷纸箱',
+      vacuumPackaging: '真空包装',
+      internationalShipping: '国际运输'
+    },
+    certifications: {
+      iso22000: 'ISO 22000',
+      haccp: 'HACCP',
+      globalGap: 'Global GAP',
+      organic: '有机认证'
+    },
+    stats: {
+      privateFarms: '私人农场',
+      countries: '合作伙伴国家',
+      customers: '满意客户',
+      experience: '年经验'
+    }
   }
 };

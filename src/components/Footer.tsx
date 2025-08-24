@@ -16,6 +16,8 @@ import {
   Clock
 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { FaTiktok } from "react-icons/fa";
+
 
 const Footer: React.FC = () => {
   const { t, isRTL } = useLanguage();
@@ -240,14 +242,14 @@ const Footer: React.FC = () => {
                 <span className="text-gray-400 dark:text-gray-500 text-sm ml-4 transition-colors">{t.footer.followUs}</span>
                 <div className="flex gap-3">
                   {[
-                    { icon: Facebook, color: 'hover:text-blue-400' },
-                    { icon: Twitter, color: 'hover:text-sky-400' },
-                    { icon: Instagram, color: 'hover:text-pink-400' },
-                    { icon: Linkedin, color: 'hover:text-blue-600' }
+                    { icon: Twitter, color: 'hover:text-sky-400', href:"https://x.com/abdelshafigroup" },
+                    { icon: Instagram, color: 'hover:text-pink-400', href:"https://instagram.com/abdelshafigroup" },
+                    { icon: FaTiktok, color: 'hover:text-blue-600', href:"https://www.tiktok.com/@abdelshafigroup" }
                   ].map((social, index) => (
                     <a
                       key={index}
-                      href="#"
+                      href={social.href}
+                      target='_blank'
                       className={`bg-white/10 dark:bg-gray-800/30 backdrop-blur-sm p-2 rounded-full text-gray-400 dark:text-gray-500 ${social.color} transition-all duration-300 hover:scale-110 hover:bg-white/20 dark:hover:bg-gray-700/40`}
                     >
                       <social.icon className="w-4 h-4" />

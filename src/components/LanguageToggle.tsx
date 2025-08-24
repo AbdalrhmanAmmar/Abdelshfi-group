@@ -11,7 +11,8 @@ const LanguageToggle: React.FC = () => {
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
     { code: 'es', name: 'Español', flag: '🇪🇸' },
     { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-    { code: 'it', name: 'Italiano', flag: '🇮🇹' }
+    { code: 'it', name: 'Italiano', flag: '🇮🇹' },
+    { code: 'zh', name: '中文', flag: '🇨🇳' } // إضافة اللغة الصينية
   ];
 
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {

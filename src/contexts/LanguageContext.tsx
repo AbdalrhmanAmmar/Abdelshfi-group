@@ -13,7 +13,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
     const saved = localStorage.getItem('language');
-    const validLanguages: Language[] = ['ar', 'en', 'fr', 'es', 'de', 'it'];
+    const validLanguages: Language[] = ['ar', 'en', 'fr', 'es', 'de', 'it', 'zh'];
     return validLanguages.includes(saved as Language) ? (saved as Language) : 'ar';
   });
 
@@ -28,7 +28,8 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       fr: 'Groupe Abdelshafi - Investissement et Développement Agricole',
       es: 'Grupo Abdelshafi - Inversión y Desarrollo Agrícola',
       de: 'Abdelshafi Gruppe - Landwirtschaftliche Investitionen und Entwicklung',
-      it: 'Gruppo Abdelshafi - Investimenti e Sviluppo Agricolo'
+      it: 'Gruppo Abdelshafi - Investimenti e Sviluppo Agricolo',
+      zh: '阿卜杜勒沙菲集团 - 农业投资与发展' // الترجمة الصينية
     };
     document.title = titles[language];
   }, [language]);

@@ -208,5 +208,40 @@ export const homeTranslations = {
       multipleMarkets: 'Multipli Mercati',
       egyptianExpertise: 'Competenza Egiziana'
     }
+  },
+   zh: {
+    heroTitle1: '赋能农业',
+    heroTitle2: '实现增长',
+    heroSubtitle: '我们通过创新解决方案、可持续投资和连接农民与国际市场的全球合作伙伴关系引领农业未来',
+    
+    // Company Info
+    companyFullName: '阿卜杜勒沙菲农业投资、发展、进出口集团',
+    
+    // About Section
+    aboutTitle: '关于我们',
+    aboutDescription1: '阿卜杜勒沙菲集团是一家专门从事优质农产品进出口的埃及公司。',
+    aboutDescription2: '我们拥有私人农场，确保直接生产和对产品质量的完全控制，此外还为埃及本地市场提供最优质的新鲜产品。',
+    aboutDescription3: '我们致力于提供符合国际标准的安全、新鲜产品，服务于欧洲、海湾和亚洲的多个市场。',
+    aboutDescription4: '我们相信真正的成功在于实现盈利能力与社会责任之间的平衡，因此我们致力于支持当地农民和发展农村社区。',
+    
+    // CTA Buttons
+    viewProducts: '查看产品',
+    learnMore: '了解更多',
+    
+    // Stats
+    stats: {
+      experience: '年经验',
+      countries: '合作伙伴国家',
+      customers: '满意客户'
+    },
+    
+    // Features
+    features: {
+      privateFarms: '私人农场',
+      localMarket: '本地市场',
+      globalQuality: '全球品质',
+      multipleMarkets: '多元市场',
+      egyptianExpertise: '埃及专业'
+    }
   }
 };

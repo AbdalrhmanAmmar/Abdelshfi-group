@@ -202,5 +202,39 @@ export const productsTranslations = {
     noProductsFound: 'Nessun prodotto trovato',
     tryDifferentSearch: 'Prova a modificare i criteri di ricerca o i filtri',
     productCount: 'prodotti'
+  },
+   zh: {
+    title: '我们的农产品',
+    subtitle: '从我们的私人农场到本地和国际市场，探索我们出口到世界市场的高品质农产品',
+    
+    // Search and Filters
+    searchPlaceholder: '搜索产品...',
+    sortBy: '排序方式',
+    sortByName: '按名称排序',
+    sortByRating: '按评分排序',
+    sortByFeatured: '特色产品优先',
+    featuredOnly: '仅特色产品',
+    
+    // Categories
+    categories: '产品类别',
+    allProducts: '所有产品',
+    vegetables: '新鲜蔬菜',
+    fruits: '新鲜水果',
+    legumes: '豆类',
+    herbs: '香草',
+    dried: '干制品',
+    oils: '油和种子',
+    
+    // Product Status
+    featured: '特色',
+    inStock: '有库存',
+    outOfStock: '缺货',
+    requestQuote: '请求报价',
+    priceOnRequest: '价格面议',
+    
+    // No Results
+    noProductsFound: '未找到产品',
+    tryDifferentSearch: '尝试更改搜索条件或筛选器',
+    productCount: '产品'
   }
 };

@@ -718,5 +718,125 @@ export const aboutTranslations = {
       certifications: 'Certificazioni Internazionali',
       localGlobal: 'Mercato Locale & Globale'
     }
+  },
+   zh: {
+    title: '关于我们',
+    subtitle: '超过25年在农业和出口领域的激情与卓越之旅',
+    
+    // Egyptian Success Story
+    egyptianSuccess: '埃及成功故事',
+    ourStory1: '我们的旅程始于1999年，愿景明确：成为连接埃及农业质量与全球市场的桥梁。通过对最高质量和透明度的承诺，我们建立了广泛的国际合作伙伴网络。',
+    ourStory2: '我们自豪地拥有遍布埃及最佳农田的私人农场，确保从种子到最终产品的生产过程完全控制。我们还以高质量的新鲜产品服务埃及本地市场。',
+    ourStory3: '今天，我们自豪地成为埃及农产品出口的领先公司之一，服务全球50多个国家，并保持1000多名客户的信任。',
+    ourStory4: '我们相信真正的成功在于实现盈利能力与社会责任之间的平衡，因此我们致力于支持当地农民和发展农村社区。',
+    
+    // Values
+    valuesTitle: '我们的价值观和原则',
+    
+    passionForQuality: '对质量的热情',
+    passionForQualityDesc: '我们相信质量不仅仅是一个标准，而是我们在工作每个细节中践行的一种生活方式',
+    
+    trustAndSafety: '信任与安全',
+    trustAndSafetyDesc: '我们通过透明度和对最高安全标准的承诺与客户建立长期关系',
+    
+    sustainability: '环境可持续性',
+    sustainabilityDesc: '我们通过可持续和环保的农业实践致力于保护环境',
+    
+    continuousImprovement: '持续发展',
+    continuousImprovementDesc: '我们投资于技术和创新，不断开发我们的服务和产品',
+    
+    // Timeline
+    successJourney: '成功之旅',
+    successJourneyDesc: '多年来我们公司历史和发展中的重要里程碑',
+    
+    milestones: {
+      1999: {
+        title: '公司成立',
+        description: '开始我们的农业出口之旅'
+      },
+      2002: {
+        title: '建立私人农场',
+        description: '开始投资农田和直接生产'
+      },
+      2005: {
+        title: '区域扩张',
+        description: '进入海湾和北非市场'
+      },
+      2008: {
+        title: '本地市场服务',
+        description: '开始服务埃及本地市场'
+      },
+      2010: {
+        title: '国际认证',
+        description: '获得全球质量认证'
+      },
+      2015: {
+        title: '欧洲扩张',
+        description: '强势进入欧洲市场'
+      },
+      2020: {
+        title: '数字化转型',
+        description: '开发先进的数字服务平台'
+      },
+      2024: {
+        title: '全球领导地位',
+        description: '确立我们作为该地区主要出口商的地位'
+      }
+    },
+    
+    // Certifications
+    certificationsTitle: '我们的国际认证',
+    certifications: {
+      iso22000: {
+        name: 'ISO 22000',
+        description: '食品安全管理体系',
+        year: '2018'
+      },
+      haccp: {
+        name: 'HACCP',
+        description: '危害分析和关键控制点',
+        year: '2017'
+      },
+      globalGap: {
+        name: 'Global GAP',
+        description: '良好农业规范',
+        year: '2019'
+      },
+      brcFood: {
+        name: 'BRC Food Safety',
+        description: '英国零售联盟食品安全标准',
+        year: '2020'
+      },
+      organic: {
+        name: '有机认证',
+        description: '有机产品认证',
+        year: '2021'
+      },
+      halal: {
+        name: '清真认证',
+        description: '国际清真认证',
+        year: '2016'
+      }
+    },
+    
+    // Commitment Section
+    commitmentToExcellence: '我们对质量和卓越的承诺',
+    commitmentDesc: '我们相信获得国际认证不仅仅是一项成就，而是持续向全球客户提供最佳产品和最高质量安全标准的承诺',
+    
+    // CTA Section
+    joinSuccess: '加入成功之旅',
+    joinSuccessDesc: '我们相信战略合作伙伴关系的力量。让我们一起为埃及农业建设更美好的未来',
+    becomePartner: '成为我们的合作伙伴',
+    
+    // Stats
+    stats: {
+      experience: '年经验',
+      privateFarms: '私人农场',
+      countries: '合作伙伴国家',
+      customers: '满意客户',
+      quality: '质量保证',
+      certifications: '国际认证',
+      localGlobal: '本地和全球市场'
+    }
   }
 };

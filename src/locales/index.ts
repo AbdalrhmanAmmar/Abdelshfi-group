@@ -53,6 +53,15 @@ export const translations = {
     about: aboutTranslations.it,
     services: servicesTranslations.it,
     products: productsTranslations.it
+  },
+  // إضافة اللغة الصينية
+  zh: {
+    home: homeTranslations.zh,
+    navbar: navbarTranslations.zh,
+    footer: footerTranslations.zh,
+    about: aboutTranslations.zh,
+    services: servicesTranslations.zh,
+    products: productsTranslations.zh
   }
 };
 

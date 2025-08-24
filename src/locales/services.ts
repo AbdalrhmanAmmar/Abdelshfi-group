@@ -274,5 +274,51 @@ export const servicesTranslations = {
     needServicesDesc: 'Contattaci oggi per una consulenza gratuita e un preventivo personalizzato per le tue esigenze',
     requestQuote: 'Richiedi Preventivo',
     contactUs: 'Contattaci'
+  },
+  zh: {
+    title1: '包装服务',
+    title2: '与出口',
+    subtitle: '我们提供全面的包装和运输解决方案，确保您的产品以最佳质量和最快时间从我们的私人农场到达世界各地，满足本地和全球市场的需求',
+    specializedServices: '我们的专业服务',
+    servicesDescription: '我们提供全面的包装和运输服务，专门设计以满足客户的需求',
+    
+    // Main Services
+    packaging5kg: '5/10公斤网袋',
+    packaging5kgDesc: '使用不同尺寸的高质量网袋包装产品，确保产品质量保存',
+    packaging5kgFeatures: ['防潮', '最佳通风', '多种尺寸', '环保材料'],
+    
+    printedCarton: '印刷纸箱',
+    printedCartonDesc: '采用最高质量标准和专业设计的印刷纸箱，反映品牌形象',
+    printedCartonFeatures: ['高质量印刷', '定制设计', '抗冲击', '清晰的产品信息'],
+    
+    vacuumPacking: '真空包装',
+    vacuumPackingDesc: '先进的真空包装技术，可长时间保持产品新鲜度',
+    vacuumPackingFeatures: ['延长保质期', '保持自然风味', '防止污染', '先进技术'],
+    
+    shipping: '海运/空运',
+    shippingDesc: '全面的海运和空运服务，确保产品以最佳状态和最快时间到达',
+    shippingFeatures: ['快速安全运输', '货物跟踪', '全面保险', '全球网络'],
+    
+    // Additional Features
+    additionalFeatures: '附加功能',
+    additionalFeaturesDesc: '我们为您提供优质服务，保证卓越的运输体验',
+    
+    qualityAssurance: '质量保证',
+    qualityAssuranceDesc: '出口前对所有产品进行彻底检查',
+    
+    onTimeDelivery: '准时交付',
+    onTimeDeliveryDesc: '完全遵守约定的交货时间表',
+    
+    globalNetwork: '全球网络',
+    globalNetworkDesc: '覆盖全球50多个国家',
+    
+    fullInsurance: '全面保险',
+    fullInsuranceDesc: '为货物提供全面保护，防范所有风险',
+    
+    // CTA Section
+    needServices: '需要包装和运输服务吗？',
+    needServicesDesc: '立即联系我们，获取免费咨询和根据您需求定制的报价',
+    requestQuote: '请求报价',
+    contactUs: '联系我们'
   }
 };

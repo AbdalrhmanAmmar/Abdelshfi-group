@@ -64,5 +64,16 @@ export const navbarTranslations = {
       name: 'Gruppo Abdelshafi',
       subtitle: 'Per investimenti e sviluppo agricolo'
     }
+  },
+   zh: {
+    home: '首页',
+    products: '产品',
+    services: '服务',
+    about: '关于我们',
+    contact: '联系我们',
+    company: {
+      name: '阿卜杜勒沙菲集团',
+      subtitle: '农业投资与发展'
+    }
   }
 };
