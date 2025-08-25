@@ -4,6 +4,7 @@ import { footerTranslations } from './footer';
 import { aboutTranslations } from './about';
 import { servicesTranslations } from './services';
 import { productsTranslations } from './products';
+import { dataproductTranslations } from './dataproduct';
 
 export const translations = {
   ar: {
@@ -12,7 +13,8 @@ export const translations = {
     footer: footerTranslations.ar,
     about: aboutTranslations.ar,
     services: servicesTranslations.ar,
-    products: productsTranslations.ar
+    products: productsTranslations.ar,
+    dataproduct: dataproductTranslations.ar
   },
   en: {
     home: homeTranslations.en,
@@ -20,7 +22,8 @@ export const translations = {
     footer: footerTranslations.en,
     about: aboutTranslations.en,
     services: servicesTranslations.en,
-    products: productsTranslations.en
+    products: productsTranslations.en,
+    dataproduct: dataproductTranslations.en
   },
   fr: {
     home: homeTranslations.fr,
@@ -28,7 +31,8 @@ export const translations = {
     footer: footerTranslations.fr,
     about: aboutTranslations.fr,
     services: servicesTranslations.fr,
-    products: productsTranslations.fr
+    products: productsTranslations.fr,
+    dataproduct: dataproductTranslations.fr
   },
   es: {
     home: homeTranslations.es,
