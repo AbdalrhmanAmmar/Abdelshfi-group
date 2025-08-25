@@ -20,7 +20,8 @@ export const productsTranslations = {
     herbs: 'الأعشاب العطرية',
     dried: 'المجففات',
     oils: 'الزيوت والبذور',
-    
+    frozen: 'المجمدات',
+
     // Product Status
     featured: 'مميز',
     inStock: 'متوفر',
@@ -54,7 +55,8 @@ export const productsTranslations = {
     herbs: 'Aromatic Herbs',
     dried: 'Dried Products',
     oils: 'Oils & Seeds',
-    
+    frozen: 'Frozen Products',
+
     // Product Status
     featured: 'Featured',
     inStock: 'In Stock',
@@ -88,6 +90,7 @@ export const productsTranslations = {
     herbs: 'Herbes Aromatiques',
     dried: 'Produits Séchés',
     oils: 'Huiles & Graines',
+    
     
     // Product Status
     featured: 'En Vedette',

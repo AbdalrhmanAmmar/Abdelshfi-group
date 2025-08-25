@@ -15,18 +15,6 @@ interface Product {
   featured: boolean;
 }
 
-
-
-const categories = [
-  { id: 'all', name: 'جميع المنتجات', icon: '🌾', count: products.length },
-  { id: 'vegetables', name: 'الخضروات الطازجة', icon: '🥬', count: products.filter(p => p.category === 'vegetables').length },
-  { id: 'fruits', name: 'الفواكه الطازجة', icon: '🍊', count: products.filter(p => p.category === 'fruits').length },
-  { id: 'legumes', name: 'البقوليات', icon: '🫘', count: products.filter(p => p.category === 'legumes').length },
-  { id: 'herbs', name: 'الأعشاب العطرية', icon: '🌿', count: products.filter(p => p.category === 'herbs').length },
-  { id: 'dried', name: 'المجففات', icon: '🌞', count: products.filter(p => p.category === 'dried').length },
-  { id: 'oils', name: 'الزيوت والبذور', icon: '🧴', count: products.filter(p => p.category === 'oils').length },
-];
-
 const ProductsPage: React.FC = () => {
   const { t, isRTL } = useLanguage();
 
@@ -36,6 +24,7 @@ const ProductsPage: React.FC = () => {
   const [sortBy, setSortBy] = useState('name');
   const [showFeaturedOnly, setShowFeaturedOnly] = useState(false);
 
+  // تعريف الفئات مع إضافة قسم المجمدات
   const categories = [
     { id: 'all', name: t.products.allProducts, icon: '🌾', count: products.length },
     { id: 'vegetables', name: t.products.vegetables, icon: '🥬', count: products.filter(p => p.category === 'vegetables').length },
@@ -44,6 +33,7 @@ const ProductsPage: React.FC = () => {
     { id: 'herbs', name: t.products.herbs, icon: '🌿', count: products.filter(p => p.category === 'herbs').length },
     { id: 'dried', name: t.products.dried, icon: '🌞', count: products.filter(p => p.category === 'dried').length },
     { id: 'oils', name: t.products.oils, icon: '🧴', count: products.filter(p => p.category === 'oils').length },
+    { id: 'frozen', name: t.products.frozen, icon: '🧊', count: products.filter(p => p.category === 'frozen').length },
   ];
 
   const filteredProducts = useMemo(() => {
@@ -107,7 +97,15 @@ const ProductsPage: React.FC = () => {
         </div>
         
         <div className="absolute bottom-3 left-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-     
+          <div className="flex gap-2">
+            <button className="flex-1 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm py-2 rounded-lg text-sm font-medium hover:bg-white dark:hover:bg-gray-700 transition-colors flex items-center justify-center gap-1">
+              <Eye className="w-4 h-4" />
+              {t.products.viewDetails}
+            </button>
+            <button className="bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg transition-colors">
+              <ShoppingCart className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </div>
       
@@ -259,7 +257,7 @@ const ProductsPage: React.FC = () => {
           <div className="flex-1">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white transition-colors">
-                {categories.find(c => c.id === selectedCategory)?.name || 'جميع المنتجات'}
+                {categories.find(c => c.id === selectedCategory)?.name || t.products.allProducts}
               </h2>
               <span className="text-gray-600 dark:text-gray-400 transition-colors">
                 {filteredProducts.length} {t.products.productCount}
