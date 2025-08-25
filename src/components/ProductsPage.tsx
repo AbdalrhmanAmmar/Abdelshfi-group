@@ -114,7 +114,7 @@ const ProductsPage: React.FC = () => {
       <div className="p-6">
         <div className="flex items-center justify-between mb-2">
           <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">
-              {t(product.name)}
+            {product.name}
           </h3>
           <div className="flex items-center gap-1">
             <Star className="w-4 h-4 text-yellow-400 fill-current" />
