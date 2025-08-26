@@ -108,7 +108,7 @@ const ProductsPage: React.FC = () => {
           )}
           
           <div className="absolute top-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-       
+        
           </div>
           
           <div className="absolute bottom-3 left-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

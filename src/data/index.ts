@@ -54,7 +54,7 @@ const products: Product[] = [
   { id: 'raisins', name: 'عنب مجفف (زبيب)', category: 'dried', image: '/Images/Dried/Raisins.webp', description: 'زبيب طبيعي حلو المذاق', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
   { id: 'dried-bananas', name: 'موز مجفف', category: 'dried', image: '/Images/Dried/Dried-Banana.jpg', description: 'موز مجفف مقرمش ولذيذ', rating: 4.5, price: 'حسب الطلب', inStock: true, featured: false },
   { id: 'dried-pineapple', name: 'أناناس مجفف', category: 'dried', image: '/Images/Dried/Dried-Pineapple.jpg', description: 'أناناس مجفف استوائي الطعم', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: true },
-  { id: 'dried-kiwi', name: 'كيوي مجفف', category: 'dried', image: '/Images/Dried/Dried-kiwi.jpg', description: 'كيوي مجفف غني بفيتامين سي', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'dried-kiwi', name: 'كيوي مجفف', category: 'dried', image: '/Images/Dried/Dried-Kiwi.jpg', description: 'كيوي مجفف غني بفيتامين سي', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
   { id: 'dried-coconut', name: 'جوز الهند مجفف', category: 'dried', image: '/Images/Dried/Dried-Coconut.jpg', description: 'جوز الهند المجفف الطبيعي', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
   { id: 'dried-peaches', name: 'خوخ مجفف', category: 'dried', image: '/Images/Dried/Dried-Peaches.jpeg', description: 'خوخ مجفف طري ولذيذ', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
   { id: 'dried-pears', name: 'كمثرى مجففة', category: 'dried', image: '/Images/Dried/Dried-Pears.jpg', description: 'كمثرى مجففة حلوة المذاق', rating: 4.5, price: 'حسب الطلب', inStock: true, featured: false },
