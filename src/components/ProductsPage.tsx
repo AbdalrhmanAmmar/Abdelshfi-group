@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Search, Filter, Grid, List, Star, ShoppingCart, Eye, Heart } from 'lucide-react';
+import { Search, Filter, Grid, List, Star,  Heart } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import products from '../data';
 import { dataproductTranslations } from '../locales/dataproduct'; 
@@ -108,20 +108,13 @@ const ProductsPage: React.FC = () => {
           )}
           
           <div className="absolute top-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <button className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-2 rounded-full hover:bg-white dark:hover:bg-gray-700 transition-colors">
-              <Heart className="w-4 h-4 text-gray-600 hover:text-red-500" />
-            </button>
+       
           </div>
           
           <div className="absolute bottom-3 left-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div className="flex gap-2">
-              <button className="flex-1 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm py-2 rounded-lg text-sm font-medium hover:bg-white dark:hover:bg-gray-700 transition-colors flex items-center justify-center gap-1">
-                <Eye className="w-4 h-4" />
-                {productsTranslations.viewDetails || 'View Details'}
-              </button>
-              <button className="bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg transition-colors">
-                <ShoppingCart className="w-4 h-4" />
-              </button>
+         
+           
             </div>
           </div>
         </div>
@@ -143,7 +136,7 @@ const ProductsPage: React.FC = () => {
           
           <div className="flex items-center justify-between">
             <span className="text-lg font-bold text-green-600 dark:text-green-400 transition-colors">
-              {product.price}
+              {productsTranslations.onDemand}
             </span>
             <span className={`px-3 py-1 rounded-full text-xs font-medium ${
               product.inStock 

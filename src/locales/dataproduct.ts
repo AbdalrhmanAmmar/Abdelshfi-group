@@ -1,3 +1,89 @@
+const products: Product[] = [
+  // الخضروات الطازجة
+  { id: 'fresh-onions', name: 'بصل أحمر', category: 'vegetables', image: '/Images/vegetables/basal-ahmar.png', description: 'بصل أحمر طازج عالي الجودة', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-onions-white', name: 'بصل أبيض', category: 'vegetables', image: '/Images/vegetables/bsl-abyd.jpg', description: 'بصل أبيض طازج للتصدير', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-onions-golden', name: 'بصل ذهبي', category: 'vegetables', image: '/Images/vegetables/bsl-gold.jpg', description: 'بصل ذهبي مميز', rating: 4.9, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-potatoes', name: 'بطاطس', category: 'vegetables', image: '/Images/vegetables/potato.jpg', description: 'بطاطس طازجة عالية الجودة', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-tomatoes', name: 'طماطم', category: 'vegetables', image: '/Images/vegetables/tomato.jpg', description: 'طماطم طازجة حمراء', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-garlic', name: 'ثوم', category: 'vegetables', image: '/Images/vegetables/Garlic.jpg', description: 'ثوم طازج عالي الجودة', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-cucumbers', name: 'خيار', category: 'vegetables', image: '/Images/vegetables/fresh-cucumbers.jpeg', description: 'خيار طازج أخضر', rating: 4.5, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-courgette', name: 'كوسة', category: 'vegetables', image: '/Images/vegetables/Courgette.jpg', description: 'كوسة طازجة خضراء', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-peppers', name: 'فلفل ألوان', category: 'vegetables', image: '/Images/vegetables/fresh-peppers.jpg', description: 'فلفل ملون طازج', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-eggplant', name: 'باذنجان رومي', category: 'vegetables', image: '/Images/vegetables/Eggplant.jpg', description: 'باذنجان رومي طازج', rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
+
+  // الفواكه الطازجة
+  { id: 'fresh-mangoes-butter', name: 'مانجو زبدية', category: 'fruits', image: '/Images/fruits/mango.jpg', description: 'مانجو زبدية مصرية أصلية', rating: 4.9, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-mangoes-kit', name: 'مانجو كيت', category: 'fruits', image: '/Images/fruits/mango-kit.jpg', description: 'مانجو كيت عالية الجودة', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-oranges-navel', name: 'برتقال بسرة', category: 'fruits', image: '/Images/fruits/Navel-Orange.jpg', description: 'برتقال بسرة مصري طازج', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-lemons', name: 'ليمون', category: 'fruits', image: '/Images/fruits/limon.jpg', description: 'ليمون طازج حامض', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-pomegranate', name: 'رمان', category: 'fruits', image: '/Images/fruits/Pomegranate.jpg', description: 'رمان أحمر طازج', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-grapes', name: 'عنب', category: 'fruits', image: '/Images/fruits/Grapes.jpg', description: 'عنب طازج حلو', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-strawberries', name: 'فراولة', category: 'fruits', image: '/Images/fruits/Strawberry.jpeg', description: 'فراولة طازجة حمراء', rating: 4.9, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-watermelon', name: 'بطيخ', category: 'fruits', image: '/Images/fruits/watermelon.jpeg', description: 'بطيخ أحمر حلو', rating: 4.5, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-oranges-valencia', name: 'برتقال فالنسيا', category: 'fruits', image: '/Images/fruits/Valencia-Orange.jpg', description: 'برتقال فالنسيا مصري عالي الجودة', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-oranges-sweet', name: 'برتقال سكري', category: 'fruits', image: '/Images/fruits/Sweet-Orange.webp', description: 'برتقال سكري حلو المذاق', rating: 4.9, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-oranges-baladi', name: 'برتقال بلدي', category: 'fruits', image: '/Images/fruits/Baladi-Orange.webp', description: 'برتقال بلدي مصري أصيل', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-bananas-local', name: 'موز بلدي', category: 'fruits', image: '/Images/fruits/banana.webp', description: 'موز بلدي مصري طازج وحلو', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-bananas-tropical', name: 'موز استوائي', category: 'fruits', image: '/Images/fruits/Tropical-Banana.jpg', description: 'موز استوائي كبير الحجم', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-melon-yellow', name: 'شمام أصفر', category: 'fruits', image: '/Images/fruits/Canary-Melon.jpg', description: 'شمام أصفر حلو ومنعش', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-melon-green', name: 'شمام أخضر', category: 'fruits', image: '/Images/fruits/Honeydew-Melon.jpg', description: 'شمام أخضر طازج ولذيذ', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-cherries-red', name: 'كرز أحمر', category: 'fruits', image: '/Images/fruits/Red-Cherry.jpg', description: 'كرز أحمر طازج حلو المذاق', rating: 4.9, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-cherries-black', name: 'كرز أسود', category: 'fruits', image: '/Images/fruits/Black-Cherry.jpg', description: 'كرز أسود غني بمضادات الأكسدة', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+
+  // البقوليات
+  { id: 'white-beans', name: 'فاصوليا بيضاء', category: 'legumes', image: '/Images/Legumes/White-Beans.jpg', description: 'فاصوليا بيضاء عالية الجودة', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'red-lentils', name: 'عدس', category: 'legumes', image: '/Images/Legumes/Lentils.jpg', description: 'عدس أحمر وأصفر', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'chickpeas', name: 'حمص', category: 'legumes', image: '/Images/Legumes/Chickpeas.jpg', description: 'حمص جاف عالي الجودة', rating: 4.5, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'rice', name: 'أرز', category: 'legumes', image: '/Images/Legumes/Rice.jpg', description: 'أرز مصري أبيض', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'wheat', name: 'قمح', category: 'legumes', image: '/Images/Legumes/Wheat.jpg', description: 'قمح مصري عالي الجودة', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: true },
+
+  // الأعشاب العطرية
+  { id: 'fresh-mint', name: 'نعناع', category: 'herbs', image: '/Images/Aromatic-Herbs/Mint.jpg', description: 'نعناع طازج عطري', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'hibiscus', name: 'كركديه', category: 'herbs', image: '/Images/Aromatic-Herbs/Hibiscus.jpg', description: 'كركديه أحمر طبيعي', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'chamomile', name: 'بابونج', category: 'herbs', image: '/Images/Aromatic-Herbs/Chamomile.webp', description: 'بابونج طبيعي مجفف', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-thyme', name: 'زعتر', category: 'herbs', image: '/Images/Aromatic-Herbs/Thyme.jpg', description: 'زعتر طبيعي عطري', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+
+  // المجففات
+  { id: 'sun-dried-tomatoes', name: 'طماطم مجففة', category: 'dried', image: '/Images/Dried/dried-Tomatoes.webp', description: 'طماطم مجففة طبيعياً', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'dried-mangoes', name: 'مانجو مجففة', category: 'dried', image: '/Images/Dried/dried-mango.webp', description: 'مانجو مجففة حلوة', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'dried-onions', name: 'بصل مجفف', category: 'dried', image: '/Images/Dried/Dried-Onion.jpeg', description: 'بصل مجفف مطحون', rating: 4.5, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'dried-figs', name: 'تين مجفف', category: 'dried', image: '/Images/Dried/Dried-Figs.jpg', description: 'تين مجفف طبيعي حلو المذاق', rating: 4.9, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'dried-strawberries', name: 'فراولة مجففة', category: 'dried', image: '/Images/Dried/Dried-Strawberries.jpg', description: 'فراولة مجففة محتفظة بالطعم الطبيعي', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'dried-apricots', name: 'مشمش مجفف', category: 'dried', image: '/Images/Dried/Dried-Apricots.jpg', description: 'مشمش مجفف غني بالفيتامينات', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'dried-dates', name: 'تمر مجفف', category: 'dried', image: '/Images/Dried/Dried-Dates.jpg', description: 'تمر مجفف عالي الجودة', rating: 4.9, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'raisins', name: 'عنب مجفف (زبيب)', category: 'dried', image: '/Images/Dried/Raisins.webp', description: 'زبيب طبيعي حلو المذاق', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'dried-bananas', name: 'موز مجفف', category: 'dried', image: '/Images/Dried/Dried-Banana.jpg', description: 'موز مجفف مقرمش ولذيذ', rating: 4.5, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'dried-pineapple', name: 'أناناس مجفف', category: 'dried', image: '/Images/Dried/Dried-Pineapple.jpg', description: 'أناناس مجفف استوائي الطعم', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'dried-kiwi', name: 'كيوي مجفف', category: 'dried', image: '/Images/Dried/Dried-kiwi.jpg', description: 'كيوي مجفف غني بفيتامين سي', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'dried-coconut', name: 'جوز الهند مجفف', category: 'dried', image: '/Images/Dried/Dried-Coconut.jpg', description: 'جوز الهند المجفف الطبيعي', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'dried-peaches', name: 'خوخ مجفف', category: 'dried', image: '/Images/Dried/Dried-Peaches.jpeg', description: 'خوخ مجفف طري ولذيذ', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'dried-pears', name: 'كمثرى مجففة', category: 'dried', image: '/Images/Dried/Dried-Pears.jpg', description: 'كمثرى مجففة حلوة المذاق', rating: 4.5, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'dried-apples', name: 'تفاح مجفف', category: 'dried', image: '/Images/Dried/dried-apple.jpg', description: 'تفاح مجفف مقرمش وصحي', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+
+  // الزيوت والبذور
+  { id: 'olive-oil', name: 'زيت زيتون', category: 'oils', image: '/Images/Oils/Olive-Oil.webp', description: 'زيت زيتون بكر ممتاز', rating: 4.9, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'peppermint-oil', name: 'زيت نعناع', category: 'oils', image: '/Images/Oils/Peppermint-Oil.webp', description: 'زит نعناع طبيعي', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'flax-seeds', name: 'بذور الكتان', category: 'oils', image: '/Images/Oils/Flaxseed-Oil.jpg', description: 'بذور كتان طبيعية', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'black-cumin', name: 'حبة البركة', category: 'oils', image: '/Images/Oils/Black-Cumin.webp', description: 'حبة البركة الطبيعية', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+
+  // المجمدات
+  { id: 'frozen-peas', name: 'البازلاء الخضراء', category: 'frozen', image: '/Images/Frozen/green-peans-frozen.jpg', description: 'بازلاء خضراء مجمدة طازجة', rating: 4.5, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'frozen-corn', name: 'الذرة', category: 'frozen', image: '/Images/Frozen/sweet-corn.jpg', description: 'ذرة حلوة مجمدة', rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'frozen-spinach', name: 'السبانخ', category: 'frozen', image: '/Images/Frozen/frozen-spinach.jpg', description: 'سبانخ مجمدة طازجة', rating: 4.3, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'frozen-broccoli', name: 'البروكلي', category: 'frozen', image: '/Images/Frozen/frozen-broccoli.jpg', description: 'بروكلي مجمد طازج', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'frozen-mixed-vegetables', name: 'خلطات الخضروات', category: 'frozen', image: '/Images/Frozen/Frozen-mixed-veggies.jpg', description: 'خلطات خضروات مجمدة للمقلاة أو الحساء', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'frozen-carrots', name: 'الجزر', category: 'frozen', image: '/Images/Frozen/frozen-carrots.jpeg', description: 'جزر مجمد طازج', rating: 4.2, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'frozen-cauliflower', name: 'القرنبيط', category: 'frozen', image: '/Images/Frozen/frozen-Cauliflower.jpg', description: 'قرنبيط مجمد طازج', rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'frozen-berries', name: 'التوت', category: 'frozen', image: '/Images/Frozen/frozen-barries.jpg', description: 'توت مجمد طازج', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'frozen-mango', name: 'المانجو', category: 'frozen', image: '/Images/Frozen/frozen-mango.webp', description: 'مانجو مجمدة طازجة', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'frozen-banana', name: 'الموز', category: 'frozen', image: '/Images/Frozen/frozen-banana.jpg', description: 'موز مجمد طازج', rating: 4.5, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'frozen-pineapple', name: 'الأناناس', category: 'frozen', image: '/Images/Frozen/frozen-pineapple.webp', description: 'أناناس مجمد طازج', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'frozen-fruit-mix', name: 'خلطات الفواكه', category: 'frozen', image: '/Images/Frozen/Fruit-Mix.jpg', description: 'خلطات فواكه مجمدة (مثل التوت الأزرق والفراولة)', rating: 4.9, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'frozen-peaches', name: 'الخوخ', category: 'frozen', image: '/Images/Frozen/frozen-Peaches.webp', description: 'خوخ مجمد طازج', rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false }
+];
+
+export default products;
+
 export const dataproductTranslations = {
   ar: {
     products: {
@@ -27,39 +113,68 @@ export const dataproductTranslations = {
       tryDifferentSearch: "حاول استخدام مصطلحات بحث مختلفة",
 
       // Vegetables
-      "fresh-tomatoes": {
-        name: "طماطم طازجة",
-        description: "طماطم طازجة عالية الجودة من مزارعنا الخاصة، غنية بالفيتامينات والمعادن الأساسية"
-      },
       "fresh-onions": {
-        name: "بصل طازج",
-        description: "بصل طازج من أجود الأنواع، مزروع في أفضل الأراضي الزراعية المصرية"
+        name: "بصل أحمر",
+        description: "بصل أحمر طازج عالي الجودة من مزارعنا الخاصة، غني بالفيتامينات والمعادن الأساسية"
+      },
+      "fresh-onions-white": {
+        name: "بصل أبيض",
+        description: "بصل أبيض طازج للتصدير من أجود الأنواع، مزروع في أفضل الأراضي الزراعية المصرية"
+      },
+      "fresh-onions-golden": {
+        name: "بصل ذهبي",
+        description: "بصل ذهبي مميز طازج، مثالي للاستخدام في الطبخ والأطباق المختلفة"
       },
       "fresh-potatoes": {
         name: "بطاطس طازجة",
         description: "بطاطس طازجة عالية الجودة، مثالية للطبخ والقلي، من مزارعنا المتخصصة"
       },
-      "fresh-carrots": {
-        name: "جزر طازج",
-        description: "جزر طازج غني بالبيتا كاروتين والفيتامينات، مزروع بأحدث التقنيات الزراعية"
+      "fresh-tomatoes": {
+        name: "طماطم طازجة",
+        description: "طماطم طازجة عالية الجودة من مزارعنا الخاصة، غنية بالفيتامينات والمعادن الأساسية"
       },
-      "fresh-peppers": {
-        name: "فلفل طازج",
-        description: "فلفل ملون طازج بأنواعه المختلفة، غني بفيتامين سي والمواد المضادة للأكسدة"
+      "fresh-garlic": {
+        name: "ثوم طازج",
+        description: "ثوم طازج عالي الجودة، غني بمضادات الأكسدة والمركبات المفيدة للصحة"
       },
       "fresh-cucumbers": {
         name: "خيار طازج",
         description: "خيار طازج ومقرمش، مثالي للسلطات والعصائر الطبيعية"
       },
+      "fresh-courgette": {
+        name: "كوسة طازجة",
+        description: "كوسة طازجة خضراء، غنية بالألياف والفيتامينات، مثالية للشوي والطبخ"
+      },
+      "fresh-peppers": {
+        name: "فلفل ألوان",
+        description: "فلفل ملون طازج بأنواعه المختلفة، غني بفيتامين سي والمواد المضادة للأكسدة"
+      },
+      "fresh-eggplant": {
+        name: "باذنجان رومي",
+        description: "باذنجان رومي طازج، مثالي للتحضير في الأطباق المختلفة والشوي"
+
+      },
 
       // Fruits
-      "fresh-oranges": {
-        name: "برتقال طازج",
-        description: "برتقال مصري طازج عالي الجودة، غني بفيتامين سي والألياف الطبيعية"
+      "fresh-mangoes-butter": {
+        name: "مانجو زبدية",
+        description: "مانجو زبدية مصرية أصلية طازجة، غنية بالفيتامينات والطعم الاستوائي الرائع"
       },
-      "fresh-apples": {
-        name: "تفاح طازج",
-        description: "تفاح طازج ومقرمش من أفضل الأصناف، غني بالفيتامينات والمعادن"
+      "fresh-mangoes-kit": {
+        name: "مانجو كيت",
+        description: "مانجو كيت عالية الجودة، حلوة المذاق وغنية بالعصارة"
+      },
+      "fresh-oranges-navel": {
+        name: "برتقال بسرة",
+        description: "برتقال بسرة مصري طازج، غني بفيتامين سي والألياف الطبيعية"
+      },
+      "fresh-lemons": {
+        name: "ليمون طازج",
+        description: "ليمون طازج حامض، مثالي للعصائر وتتبيل الأطباق"
+      },
+      "fresh-pomegranate": {
+        name: "رمان طازج",
+        description: "رمان أحمر طازج، غني بمضادات الأكسدة والعناصر الغذائية المفيدة"
       },
       "fresh-grapes": {
         name: "عنب طازج",
@@ -69,61 +184,81 @@ export const dataproductTranslations = {
         name: "فراولة طازجة",
         description: "فراولة طازجة حلوة المذاق، غنية بفيتامين سي والمواد المضادة للأكسدة"
       },
-      "fresh-mangoes": {
-        name: "مانجو طازجة",
-        description: "مانجو مصرية طازجة من أجود الأنواع، غنية بالفيتامينات والطعم الاستوائي الرائع"
+      "fresh-watermelon": {
+        name: "بطيخ طازج",
+        description: "بطيخ أحمر حلو ومنعش، مثالي للصيف والحلويات الطبيعية"
       },
-      "fresh-bananas": {
-        name: "موز طازج",
-        description: "موز طازج غني بالبوتاسيوم والفيتامينات، مثالي للرياضيين والأطفال"
+      "fresh-oranges-valencia": {
+        name: "برتقال فالنسيا",
+        description: "برتقال فالنسيا مصري عالي الجودة، غني بالعصارة والفيتامينات"
+      },
+      "fresh-oranges-sweet": {
+        name: "برتقال سكري",
+        description: "برتقال سكري حلو المذاق، مثالي للعصائر والاستهلاك المباشر"
+      },
+      "fresh-oranges-baladi": {
+        name: "برتقال بلدي",
+        description: "برتقال بلدي مصري أصيل، معروف بمذاقه المميز وفائدته الصحية"
+      },
+      "fresh-bananas-local": {
+        name: "موز بلدي",
+        description: "موز بلدي مصري طازج وحلو، غني بالبوتاسيوم والفيتامينات"
+      },
+      "fresh-bananas-tropical": {
+        name: "موز استوائي",
+        description: "موز استوائي كبير الحجم، حلو المذاق وغني بالعناصر الغذائية"
+      },
+      "fresh-melon-yellow": {
+        name: "شمام أصفر",
+        description: "شمام أصفر حلو ومنعش، غني بالماء والفيتامينات"
+      },
+      "fresh-melon-green": {
+        name: "شمام أخضر",
+        description: "شمام أخضر طازج ولذيذ، معروف بطعمه الحلو والمنعش"
+      },
+      "fresh-cherries-red": {
+        name: "كرز أحمر",
+        description: "كرز أحمر طازج حلو المذاق، غني بمضادات الأكسدة"
+      },
+      "fresh-cherries-black": {
+        name: "كرز أسود",
+        description: "كرز أسود غني بمضادات الأكسدة، مثالي للاستهلاك الطازج والحلويات"
       },
 
       // Legumes
       "white-beans": {
-        name: "فول أبيض",
-        description: "فول أبيض عالي الجودة، غني بالبروتين والألياف، مثالي للوجبات الصحية"
+        name: "فاصوليا بيضاء",
+        description: "فاصوليا بيضاء عالية الجودة، غنية بالبروتين والألياف، مثالية للوجبات الصحية"
       },
       "red-lentils": {
-        name: "عدس أحمر",
-        description: "عدس أحمر مقشر عالي الجودة، سريع الطبخ وغني بالبروتين النباتي"
+        name: "عدس",
+        description: "عدس أحمر وأصفر عالي الجودة، سريع الطبخ وغني بالبروتين النباتي"
       },
       "chickpeas": {
         name: "حمص",
-        description: "حمص طبيعي عالي الجودة، غني بالبروتين والألياف، مثالي للحمص والفلافل"
+        description: "حمص جاف عالي الجودة، غني بالبروتين والألياف، مثالي للحمص والفلافل"
       },
-      "black-beans": {
-        name: "فول أسود",
-        description: "فول أسود غني بالبروتين والحديد، مثالي للأطباق النباتية والسلطات"
+      "rice": {
+        name: "أرز مصري",
+        description: "أرز مصري أبيض عالي الجودة، مثالي للطهي اليومي والأطباق المختلفة"
       },
-      "green-peas": {
-        name: "بازلاء خضراء",
-        description: "بازلاء خضراء طازجة ومجمدة، غنية بالفيتامينات والبروتين النباتي"
-      },
-      "kidney-beans": {
-        name: "فاصولياء حمراء",
-        description: "فاصولياء حمراء عالية الجودة، غنية بالبروتين والألياف الغذائية"
+      "wheat": {
+        name: "قمح مصري",
+        description: "قمح مصري عالي الجودة، غني بالألياف والعناصر الغذائية الأساسية"
       },
 
       // Herbs
-      "fresh-parsley": {
-        name: "بقدونس طازج",
-        description: "بقدونس طازج عطري، غني بالفيتامينات والمعادن، مثالي للسلطات والطبخ"
-      },
       "fresh-mint": {
         name: "نعناع طازج",
-        description: "نعناع طازج عطري الرائحة، مثالي للشاي والمشروبات والأطباق العربية"
+        description: "نعناع طازج عطري، غني بالفيتامينات والمعادن، مثالي للشاي والمشروبات والأطباق العربية"
       },
-      "fresh-cilantro": {
-        name: "كزبرة طازجة",
-        description: "كزبرة طازجة عطرية، تضيف نكهة مميزة للأطباق الشرقية والآسيوية"
+      "hibiscus": {
+        name: "كركديه",
+        description: "كركديه أحمر طبيعي، مثالي لتحضير المشروبات الصحية والمنعشة"
       },
-      "fresh-dill": {
-        name: "شبت طازج",
-        description: "شبت طازج عطري، مثالي للسلطات والأسماك والأطباق المتوسطية"
-      },
-      "fresh-basil": {
-        name: "ريحان طازج",
-        description: "ريحان طازج عطري، مثالي للأطباق الإيطالية والمتوسطية والصلصات"
+      "chamomile": {
+        name: "بابونج",
+        description: "بابونج طبيعي مجفف، معروف بفوائده المهدئة والعلاجية"
       },
       "fresh-thyme": {
         name: "زعتر طازج",
@@ -131,29 +266,65 @@ export const dataproductTranslations = {
       },
 
       // Dried Products
-      "dried-dates": {
-        name: "تمر مجفف",
-        description: "تمر مصري مجفف عالي الجودة، غني بالسكريات الطبيعية والمعادن"
-      },
-      "dried-figs": {
-        name: "تين مجفف",
-        description: "تين مجفف طبيعي، غني بالألياف والمعادن، مثالي كوجبة خفيفة صحية"
-      },
-      "dried-apricots": {
-        name: "مشمش مجفف",
-        description: "مشمش مجفف طبيعي، غني بالبيتا كاروتين والفيتامينات، حلو المذاق"
-      },
       "sun-dried-tomatoes": {
-        name: "طماطم مجففة بالشمس",
-        description: "طماطم مجففة بالشمس بطريقة طبيعية، مركزة النكهة ومثالية للطبخ"
+        name: "طماطم مجففة",
+        description: "طماطم مجففة طبيعياً، مركزة النكهة ومثالية للطبخ والصلصات"
       },
-      "dried-herbs-mix": {
-        name: "خليط أعشاب مجففة",
-        description: "خليط متنوع من الأعشاب المجففة، مثالي لتتبيل الأطباق وإضافة النكهة"
+      "dried-mangoes": {
+        name: "مانجو مجففة",
+        description: "مانجو مجففة حلوة، محتفظة بالطعم الطبيعي والفيتامينات"
       },
       "dried-onions": {
         name: "بصل مجفف",
-        description: "بصل مجفف عالي الجودة، مثالي للطبخ السريع وحفظ النكهة لفترة طويلة"
+        description: "بصل مجفف مطحون، مثالي للطبخ السريع وحفظ النكهة لفترة طويلة"
+      },
+      "dried-figs": {
+        name: "تين مجفف",
+        description: "تين مجفف طبيعي حلو المذاق، غني بالألياف والمعادن، مثالي كوجبة خفيفة صحية"
+      },
+      "dried-strawberries": {
+        name: "فراولة مجففة",
+        description: "فراولة مجففة محتفظة بالطعم الطبيعي، مثالية للوجبات الخفيفة والحلويات"
+      },
+      "dried-apricots": {
+        name: "مشمش مجفف",
+        description: "مشمش مجفف غني بالفيتامينات، حلو المذاق ومفيد للصحة"
+      },
+      "dried-dates": {
+        name: "تمر مجفف",
+        description: "تمر مجفف عالي الجودة، غني بالسكريات الطبيعية والمعادن"
+      },
+      "raisins": {
+        name: "زبيب",
+        description: "زبيب طبيعي حلو المذاق، غني بالطاقة والعناصر الغذائية"
+      },
+      "dried-bananas": {
+        name: "موز مجفف",
+        description: "موز مجفف مقرمش ولذيذ، مثالي للوجبات الخفيفة"
+      },
+      "dried-pineapple": {
+        name: "أناناس مجفف",
+        description: "أناناس مجفف استوائي الطعم، حلو ومنعش"
+      },
+      "dried-kiwi": {
+        name: "كيوي مجفف",
+        description: "كيوي مجفف غني بفيتامين سي، مثالي للوجبات الخفيفة الصحية"
+      },
+      "dried-coconut": {
+        name: "جوز الهند مجفف",
+        description: "جوز الهند المجفف الطبيعي، غني بالنكهة والفوائد الصحية"
+      },
+      "dried-peaches": {
+        name: "خوخ مجفف",
+        description: "خوخ مجفف طري ولذيذ، غني بالفيتامينات والألياف"
+      },
+      "dried-pears": {
+        name: "كمثرى مجففة",
+        description: "كمثرى مجففة حلوة المذاق، مثالية للوجبات الخفيفة"
+      },
+      "dried-apples": {
+        name: "تفاح مجفف",
+        description: "تفاح مجفف مقرمش وصحي، غني بالألياف والفيتامينات"
       },
 
       // Oils & Seeds
@@ -161,25 +332,17 @@ export const dataproductTranslations = {
         name: "زيت زيتون",
         description: "زيت زيتون بكر ممتاز، مستخرج من أجود أنواع الزيتون، غني بمضادات الأكسدة"
       },
-      "sunflower-oil": {
-        name: "زيت عباد الشمس",
-        description: "زيت عباد الشمس المكرر عالي الجودة، مثالي للطبخ والقلي"
-      },
-      "sesame-seeds": {
-        name: "بذور السمسم",
-        description: "بذور السمسم الطبيعية، غنية بالكالسيوم والبروتين، مثالية للطحينة والحلويات"
-      },
-      "pumpkin-seeds": {
-        name: "بذور اليقطين",
-        description: "بذور اليقطين المحمصة، غنية بالزنك والمغنيسيوم، وجبة خفيفة صحية"
-      },
-      "sunflower-seeds": {
-        name: "بذور عباد الشمس",
-        description: "بذور عباد الشمس المحمصة، غنية بفيتامين E والدهون الصحية"
+      "peppermint-oil": {
+        name: "زيت نعناع",
+        description: "زيت نعناع طبيعي، معروف بفوائده العلاجية والعطرية"
       },
       "flax-seeds": {
         name: "بذور الكتان",
-        description: "بذور الكتان الطبيعية، غنية بأوميجا 3 والألياف، مفيدة للصحة العامة"
+        description: "بذور كتان طبيعية، غنية بأوميجا 3 والألياف، مفيدة للصحة العامة"
+      },
+      "black-cumin": {
+        name: "حبة البركة",
+        description: "حبة البركة الطبيعية، معروفة بفوائدها الصحية والعلاجية"
       },
 
       // Frozen Products
@@ -201,7 +364,7 @@ export const dataproductTranslations = {
       },
       "frozen-mixed-vegetables": {
         name: "خضروات مجمدة متنوعة",
-        description: "مزيج من الخضروات المجمدة عالية الجودة، مثالية للشوربات والأطباق الجانبية"
+        description: "خلطات خضروات مجمدة للمقلاة أو الحساء، غنية بالعناصر الغذائية"
       },
       "frozen-carrots": {
         name: "جزر مجمد",
@@ -229,7 +392,7 @@ export const dataproductTranslations = {
       },
       "frozen-fruit-mix": {
         name: "مزيج فواكه مجمدة",
-        description: "مزيج متنوع من الفواكه المجمدة، مثالي للعصائر والسلطات والحلويات"
+        description: "خلطات فواكه مجمدة (مثل التوت الأزرق والفراولة)، مثالية للعصائر والسلطات والحلويات"
       },
       "frozen-peaches": {
         name: "خوخ مجمد",
@@ -265,39 +428,67 @@ export const dataproductTranslations = {
       tryDifferentSearch: "Try using different search terms",
 
       // Vegetables
-      "fresh-tomatoes": {
-        name: "Fresh Tomatoes",
-        description: "High-quality fresh tomatoes from our private farms, rich in vitamins and essential minerals"
-      },
       "fresh-onions": {
-        name: "Fresh Onions",
-        description: "Fresh onions of the finest varieties, grown in the best Egyptian agricultural lands"
+        name: "Red Onions",
+        description: "High-quality fresh red onions from our private farms, rich in vitamins and essential minerals"
+      },
+      "fresh-onions-white": {
+        name: "White Onions",
+        description: "Fresh white onions for export of the finest varieties, grown in the best Egyptian agricultural lands"
+      },
+      "fresh-onions-golden": {
+        name: "Golden Onions",
+        description: "Distinctive fresh golden onions, perfect for use in cooking and various dishes"
       },
       "fresh-potatoes": {
         name: "Fresh Potatoes",
         description: "High-quality fresh potatoes, perfect for cooking and frying, from our specialized farms"
       },
-      "fresh-carrots": {
-        name: "Fresh Carrots",
-        description: "Fresh carrots rich in beta-carotene and vitamins, grown with the latest agricultural techniques"
+      "fresh-tomatoes": {
+        name: "Fresh Tomatoes",
+        description: "High-quality fresh tomatoes from our private farms, rich in vitamins and essential minerals"
       },
-      "fresh-peppers": {
-        name: "Fresh Peppers",
-        description: "Fresh colorful peppers of different varieties, rich in vitamin C and antioxidants"
+      "fresh-garlic": {
+        name: "Fresh Garlic",
+        description: "High-quality fresh garlic, rich in antioxidants and health-beneficial compounds"
       },
       "fresh-cucumbers": {
         name: "Fresh Cucumbers",
         description: "Fresh and crispy cucumbers, perfect for salads and natural juices"
       },
+      "fresh-courgette": {
+        name: "Fresh Zucchini",
+        description: "Fresh green zucchini, rich in fiber and vitamins, ideal for grilling and cooking"
+      },
+      "fresh-peppers": {
+        name: "Colorful Peppers",
+        description: "Fresh colorful peppers of different varieties, rich in vitamin C and antioxidants"
+      },
+      "fresh-eggplant": {
+        name: "Roman Eggplant",
+        description: "Fresh Roman eggplant, ideal for preparation in various dishes and grilling"
+      },
 
       // Fruits
-      "fresh-oranges": {
-        name: "Fresh Oranges",
-        description: "High-quality fresh Egyptian oranges, rich in vitamin C and natural fiber"
+      "fresh-mangoes-butter": {
+        name: "Buttery Mango",
+        description: "Fresh original Egyptian buttery mango, rich in vitamins and wonderful tropical taste"
       },
-      "fresh-apples": {
-        name: "Fresh Apples",
-        description: "Fresh and crispy apples from the best varieties, rich in vitamins and minerals"
+      "fresh-mangoes-kit": {
+        name: "Kit Mango",
+        description: "High-quality Kit mango, sweet tasting and rich in juice"
+      },
+      "fresh-oranges-navel": {
+        name: "Navel Orange",
+        description: "Fresh Egyptian navel orange, rich in vitamin C and natural fiber"
+      },
+      "fresh-lemons": {
+        name: "Fresh Lemons",
+        description: "Fresh sour lemons, ideal for juices and seasoning dishes"
+      },
+      "fresh-pomegranate": {
+        name: "Fresh Pomegranate",
+        description: "Fresh red pomegranate, rich in antioxidants and beneficial nutrients"
       },
       "fresh-grapes": {
         name: "Fresh Grapes",
@@ -307,13 +498,45 @@ export const dataproductTranslations = {
         name: "Fresh Strawberries",
         description: "Fresh sweet strawberries, rich in vitamin C and antioxidants"
       },
-      "fresh-mangoes": {
-        name: "Fresh Mangoes",
-        description: "Fresh Egyptian mangoes of the finest varieties, rich in vitamins and wonderful tropical taste"
+      "fresh-watermelon": {
+        name: "Fresh Watermelon",
+        description: "Sweet and refreshing red watermelon, ideal for summer and natural desserts"
       },
-      "fresh-bananas": {
-        name: "Fresh Bananas",
-        description: "Fresh bananas rich in potassium and vitamins, perfect for athletes and children"
+      "fresh-oranges-valencia": {
+        name: "Valencia Orange",
+        description: "High-quality Egyptian Valencia orange, rich in juice and vitamins"
+      },
+      "fresh-oranges-sweet": {
+        name: "Sweet Orange",
+        description: "Sweet tasting sugar orange, ideal for juices and direct consumption"
+      },
+      "fresh-oranges-baladi": {
+        name: "Baladi Orange",
+        description: "Authentic Egyptian Baladi orange, known for its distinctive taste and health benefits"
+      },
+      "fresh-bananas-local": {
+        name: "Local Bananas",
+        description: "Fresh and sweet Egyptian local bananas, rich in potassium and vitamins"
+      },
+      "fresh-bananas-tropical": {
+        name: "Tropical Bananas",
+        description: "Large tropical bananas, sweet tasting and rich in nutrients"
+      },
+      "fresh-melon-yellow": {
+        name: "Yellow Melon",
+        description: "Sweet and refreshing yellow melon, rich in water and vitamins"
+      },
+      "fresh-melon-green": {
+        name: "Green Melon",
+        description: "Fresh and delicious green melon, known for its sweet and refreshing taste"
+      },
+      "fresh-cherries-red": {
+        name: "Red Cherries",
+        description: "Fresh sweet red cherries, rich in antioxidants"
+      },
+      "fresh-cherries-black": {
+        name: "Black Cherries",
+        description: "Black cherries rich in antioxidants, ideal for fresh consumption and desserts"
       },
 
       // Legumes
@@ -322,46 +545,34 @@ export const dataproductTranslations = {
         description: "High-quality white beans, rich in protein and fiber, perfect for healthy meals"
       },
       "red-lentils": {
-        name: "Red Lentils",
-        description: "High-quality peeled red lentils, quick-cooking and rich in plant protein"
+        name: "Lentils",
+        description: "High-quality red and yellow lentils, quick-cooking and rich in plant protein"
       },
       "chickpeas": {
         name: "Chickpeas",
-        description: "Natural high-quality chickpeas, rich in protein and fiber, perfect for hummus and falafel"
+        description: "High-quality dry chickpeas, rich in protein and fiber, perfect for hummus and falafel"
       },
-      "black-beans": {
-        name: "Black Beans",
-        description: "Black beans rich in protein and iron, perfect for vegetarian dishes and salads"
+      "rice": {
+        name: "Egyptian Rice",
+        description: "High-quality white Egyptian rice, ideal for daily cooking and various dishes"
       },
-      "green-peas": {
-        name: "Green Peas",
-        description: "Fresh and frozen green peas, rich in vitamins and plant protein"
-      },
-      "kidney-beans": {
-        name: "Kidney Beans",
-        description: "High-quality kidney beans, rich in protein and dietary fiber"
+      "wheat": {
+        name: "Egyptian Wheat",
+        description: "High-quality Egyptian wheat, rich in fiber and essential nutrients"
       },
 
       // Herbs
-      "fresh-parsley": {
-        name: "Fresh Parsley",
-        description: "Fresh aromatic parsley, rich in vitamins and minerals, perfect for salads and cooking"
-      },
       "fresh-mint": {
         name: "Fresh Mint",
-        description: "Fresh aromatic mint, perfect for tea, drinks and Arabic dishes"
+        description: "Fresh aromatic mint, rich in vitamins and minerals, perfect for tea, drinks and Arabic dishes"
       },
-      "fresh-cilantro": {
-        name: "Fresh Cilantro",
-        description: "Fresh aromatic cilantro, adds distinctive flavor to Middle Eastern and Asian dishes"
+      "hibiscus": {
+        name: "Hibiscus",
+        description: "Natural red hibiscus, ideal for preparing healthy and refreshing drinks"
       },
-      "fresh-dill": {
-        name: "Fresh Dill",
-        description: "Fresh aromatic dill, perfect for salads, fish and Mediterranean dishes"
-      },
-      "fresh-basil": {
-        name: "Fresh Basil",
-        description: "Fresh aromatic basil, perfect for Italian and Mediterranean dishes and sauces"
+      "chamomile": {
+        name: "Chamomile",
+        description: "Natural dried chamomile, known for its calming and therapeutic benefits"
       },
       "fresh-thyme": {
         name: "Fresh Thyme",
@@ -369,29 +580,65 @@ export const dataproductTranslations = {
       },
 
       // Dried Products
-      "dried-dates": {
-        name: "Dried Dates",
-        description: "High-quality dried Egyptian dates, rich in natural sugars and minerals"
-      },
-      "dried-figs": {
-        name: "Dried Figs",
-        description: "Natural dried figs, rich in fiber and minerals, perfect as a healthy snack"
-      },
-      "dried-apricots": {
-        name: "Dried Apricots",
-        description: "Natural dried apricots, rich in beta-carotene and vitamins, sweet taste"
-      },
       "sun-dried-tomatoes": {
         name: "Sun-Dried Tomatoes",
-        description: "Naturally sun-dried tomatoes, concentrated flavor and perfect for cooking"
+        description: "Naturally sun-dried tomatoes, concentrated flavor and perfect for cooking and sauces"
       },
-      "dried-herbs-mix": {
-        name: "Dried Herbs Mix",
-        description: "Diverse mix of dried herbs, perfect for seasoning dishes and adding flavor"
+      "dried-mangoes": {
+        name: "Dried Mangoes",
+        description: "Sweet dried mangoes, preserving natural taste and vitamins"
       },
       "dried-onions": {
         name: "Dried Onions",
-        description: "High-quality dried onions, perfect for quick cooking and preserving flavor for long periods"
+        description: "Dried ground onions, perfect for quick cooking and preserving flavor for long periods"
+      },
+      "dried-figs": {
+        name: "Dried Figs",
+        description: "Natural dried figs with sweet taste, rich in fiber and minerals, perfect as a healthy snack"
+      },
+      "dried-strawberries": {
+        name: "Dried Strawberries",
+        description: "Dried strawberries preserving natural taste, ideal for snacks and desserts"
+      },
+      "dried-apricots": {
+        name: "Dried Apricots",
+        description: "Dried apricots rich in vitamins, sweet tasting and beneficial for health"
+      },
+      "dried-dates": {
+        name: "Dried Dates",
+        description: "High-quality dried dates, rich in natural sugars and minerals"
+      },
+      "raisins": {
+        name: "Raisins",
+        description: "Natural sweet raisins, rich in energy and nutrients"
+      },
+      "dried-bananas": {
+        name: "Dried Bananas",
+        description: "Crispy and delicious dried bananas, ideal for snacks"
+      },
+      "dried-pineapple": {
+        name: "Dried Pineapple",
+        description: "Tropical tasting dried pineapple, sweet and refreshing"
+      },
+      "dried-kiwi": {
+        name: "Dried Kiwi",
+        description: "Dried kiwi rich in vitamin C, ideal for healthy snacks"
+      },
+      "dried-coconut": {
+        name: "Dried Coconut",
+        description: "Natural dried coconut, rich in flavor and health benefits"
+      },
+      "dried-peaches": {
+        name: "Dried Peaches",
+        description: "Soft and delicious dried peaches, rich in vitamins and fiber"
+      },
+      "dried-pears": {
+        name: "Dried Pears",
+        description: "Sweet tasting dried pears, ideal for snacks"
+      },
+      "dried-apples": {
+        name: "Dried Apples",
+        description: "Crispy and healthy dried apples, rich in fiber and vitamins"
       },
 
       // Oils & Seeds
@@ -399,25 +646,17 @@ export const dataproductTranslations = {
         name: "Olive Oil",
         description: "Extra virgin olive oil, extracted from the finest olive varieties, rich in antioxidants"
       },
-      "sunflower-oil": {
-        name: "Sunflower Oil",
-        description: "High-quality refined sunflower oil, perfect for cooking and frying"
-      },
-      "sesame-seeds": {
-        name: "Sesame Seeds",
-        description: "Natural sesame seeds, rich in calcium and protein, perfect for tahini and sweets"
-      },
-      "pumpkin-seeds": {
-        name: "Pumpkin Seeds",
-        description: "Roasted pumpkin seeds, rich in zinc and magnesium, healthy snack"
-      },
-      "sunflower-seeds": {
-        name: "Sunflower Seeds",
-        description: "Roasted sunflower seeds, rich in vitamin E and healthy fats"
+      "peppermint-oil": {
+        name: "Peppermint Oil",
+        description: "Natural peppermint oil, known for its therapeutic and aromatic benefits"
       },
       "flax-seeds": {
         name: "Flax Seeds",
         description: "Natural flax seeds, rich in omega-3 and fiber, beneficial for overall health"
+      },
+      "black-cumin": {
+        name: "Black Cumin",
+        description: "Natural black cumin, known for its health and therapeutic benefits"
       },
 
       // Frozen Products
@@ -439,7 +678,7 @@ export const dataproductTranslations = {
       },
       "frozen-mixed-vegetables": {
         name: "Frozen Mixed Vegetables",
-        description: "Mix of high-quality frozen vegetables, perfect for soups and side dishes"
+        description: "Frozen vegetable mixes for stir-fry or soup, rich in nutrients"
       },
       "frozen-carrots": {
         name: "Frozen Carrots",
@@ -451,7 +690,7 @@ export const dataproductTranslations = {
       },
       "frozen-berries": {
         name: "Frozen Berries",
-        description: "Fresh frozen berries, ideal for smoothies, desserts, and direct consumption after freezing"
+        description: "Fresh frozen berries, ideal for smoothies, desserts and direct consumption after freezing"
       },
       "frozen-mango": {
         name: "Frozen Mango",
@@ -467,7 +706,7 @@ export const dataproductTranslations = {
       },
       "frozen-fruit-mix": {
         name: "Frozen Fruit Mix",
-        description: "Diverse mix of frozen fruits, ideal for smoothies, salads and desserts"
+        description: "Frozen fruit mixes (like blueberries and strawberries), ideal for smoothies, salads and desserts"
       },
       "frozen-peaches": {
         name: "Frozen Peaches",
@@ -503,39 +742,67 @@ export const dataproductTranslations = {
       tryDifferentSearch: "Essayez d'autres termes de recherche",
 
       // Vegetables
-      "fresh-tomatoes": {
-        name: "Tomates Fraîches",
-        description: "Tomates fraîches de haute qualité de nos fermes privées, riches en vitamines et minéraux essentiels"
-      },
       "fresh-onions": {
-        name: "Oignons Frais",
-        description: "Oignons frais des variétés les plus fines, cultivés dans les meilleures terres agricoles égyptiennes"
+        name: "Oignons Rouges",
+        description: "Oignons rouges frais de haute qualité de nos fermes privées, riches en vitamines et minéraux essentiels"
+      },
+      "fresh-onions-white": {
+        name: "Oignons Blancs",
+        description: "Oignons blancs frais pour l'exportation des variétés les plus fines, cultivés dans les meilleures terres agricoles égyptiennes"
+      },
+      "fresh-onions-golden": {
+        name: "Oignons Dorés",
+        description: "Oignons dorés frais distinctifs, parfaits pour une utilisation en cuisine et dans divers plats"
       },
       "fresh-potatoes": {
         name: "Pommes de Terre Fraîches",
         description: "Pommes de terre fraîches de haute qualité, parfaites pour la cuisine et la friture, de nos fermes spécialisées"
       },
-      "fresh-carrots": {
-        name: "Carottes Fraîches",
-        description: "Carottes fraîches riches en bêta-carotène et vitamines, cultivées avec les dernières techniques agricoles"
+      "fresh-tomatoes": {
+        name: "Tomates Fraîches",
+        description: "Tomates fraîches de haute qualité de nos fermes privées, riches en vitamines et minéraux essentiels"
       },
-      "fresh-peppers": {
-        name: "Poivrons Frais",
-        description: "Poivrons frais colorés de différentes variétés, riches en vitamine C et antioxydants"
+      "fresh-garlic": {
+        name: "Ail Frais",
+        description: "Ail frais de haute qualité, riche en antioxydants et composés bénéfiques pour la santé"
       },
       "fresh-cucumbers": {
         name: "Concombres Frais",
         description: "Concombres frais et croquants, parfaits pour les salades et les jus naturels"
       },
+      "fresh-courgette": {
+        name: "Courgette Fraîche",
+        description: "Courgette verte fraîche, riche en fibres et vitamines, idéale pour le grill et la cuisine"
+      },
+      "fresh-peppers": {
+        name: "Poivrons Colorés",
+        description: "Poivrons frais colorés de différentes variétés, riches en vitamine C et antioxydants"
+      },
+      "fresh-eggplant": {
+        name: "Aubergine Romaine",
+        description: "Aubergine romaine fraîche, idéale pour la préparation de divers plats et le grill"
+      },
 
       // Fruits
-      "fresh-oranges": {
-        name: "Oranges Fraîches",
-        description: "Oranges égyptiennes fraîches de haute qualité, riches en vitamine C et fibres naturelles"
+      "fresh-mangoes-butter": {
+        name: "Mangue Beurrée",
+        description: "Mangue beurrée égyptienne originale fraîche, riche en vitamines et au goût tropical merveilleux"
       },
-      "fresh-apples": {
-        name: "Pommes Fraîches",
-        description: "Pommes fraîches et croquantes des meilleures variétés, riches en vitamines et minéraux"
+      "fresh-mangoes-kit": {
+        name: "Mangue Kit",
+        description: "Mangue Kit de haute qualité, au goût sucré et riche en jus"
+      },
+      "fresh-oranges-navel": {
+        name: "Orange Navel",
+        description: "Orange navel égyptienne fraîche, riche en vitamine C et fibres naturelles"
+      },
+      "fresh-lemons": {
+        name: "Citrons Frais",
+        description: "Citrons frais acides, idéaux pour les jus et l'assaisonnement des plats"
+      },
+      "fresh-pomegranate": {
+        name: "Grenade Fraîche",
+        description: "Grenade rouge fraîche, riche en antioxydants et nutriments bénéfiques"
       },
       "fresh-grapes": {
         name: "Raisins Frais",
@@ -545,13 +812,45 @@ export const dataproductTranslations = {
         name: "Fraises Fraîches",
         description: "Fraises fraîches et sucrées, riches en vitamine C et antioxydants"
       },
-      "fresh-mangoes": {
-        name: "Mangues Fraîches",
-        description: "Mangues égyptiennes fraîches des variétés les plus fines, riches en vitamines et au goût tropical merveilleux"
+      "fresh-watermelon": {
+        name: "Pastèque Fraîche",
+        description: "Pastèque rouge sucrée et rafraîchissante, idéale pour l'été et les desserts naturels"
       },
-      "fresh-bananas": {
-        name: "Bananes Fraîches",
-        description: "Bananes fraîches riches en potassium et vitamines, parfaites pour les sportifs et les enfants"
+      "fresh-oranges-valencia": {
+        name: "Orange Valencia",
+        description: "Orange Valencia égyptienne de haute qualité, riche en jus et vitamines"
+      },
+      "fresh-oranges-sweet": {
+        name: "Orange Sucrée",
+        description: "Orange sucrée au goût sucré, idéale pour les jus et la consommation directe"
+      },
+      "fresh-oranges-baladi": {
+        name: "Orange Baladi",
+        description: "Orange Baladi égyptienne authentique, connue pour son goût distinctif et ses bienfaits pour la santé"
+      },
+      "fresh-bananas-local": {
+        name: "Bananes Locales",
+        description: "Bananes locales égyptiennes fraîches et sucrées, riches en potassium et vitamines"
+      },
+      "fresh-bananas-tropical": {
+        name: "Bananes Tropicales",
+        description: "Grosses bananes tropicales, au goût sucré et riches en nutriments"
+      },
+      "fresh-melon-yellow": {
+        name: "Melon Jaune",
+        description: "Melon jaune sucré et rafraîchissant, riche en eau et vitamines"
+      },
+      "fresh-melon-green": {
+        name: "Melon Vert",
+        description: "Melon vert frais et délicieux, connu pour son goût sucré et rafraîchissant"
+      },
+      "fresh-cherries-red": {
+        name: "Cerises Rouges",
+        description: "Cerises rouges fraîches et sucrées, riches en antioxydants"
+      },
+      "fresh-cherries-black": {
+        name: "Cerises Noires",
+        description: "Cerises noires riches en antioxydants, idéales pour la consommation fraîche et les desserts"
       },
 
       // Legumes
@@ -560,46 +859,34 @@ export const dataproductTranslations = {
         description: "Haricots blancs de haute qualité, riches en protéines et fibres, parfaits pour les repas sains"
       },
       "red-lentils": {
-        name: "Lentilles Rouges",
-        description: "Lentilles rouges pelées de haute qualité, à cuisson rapide et riches en protéines végétales"
+        name: "Lentilles",
+        description: "Lentilles rouges et jaunes de haute qualité, à cuisson rapide et riches en protéines végétales"
       },
       "chickpeas": {
         name: "Pois Chiches",
-        description: "Pois chiches naturels de haute qualité, riches en protéines et fibres, parfaits pour le houmous et les falafels"
+        description: "Pois chiches secs de haute qualité, riches en protéines et fibres, parfaits pour le houmous et les falafels"
       },
-      "black-beans": {
-        name: "Haricots Noirs",
-        description: "Haricots noirs riches en protéines et fer, parfaits pour les plats végétariens et les salades"
+      "rice": {
+        name: "Riz Égyptien",
+        description: "Riz blanc égyptien de haute qualité, idéal pour la cuisine quotidienne et divers plats"
       },
-      "green-peas": {
-        name: "Pois Verts",
-        description: "Pois verts frais et surgelés, riches en vitamines et protéines végétales"
-      },
-      "kidney-beans": {
-        name: "Haricots Rouges",
-        description: "Haricots rouges de haute qualité, riches en protéines et fibres alimentaires"
+      "wheat": {
+        name: "Blé Égyptien",
+        description: "Blé égyptien de haute qualité, riche en fibres et nutriments essentiels"
       },
 
       // Herbs
-      "fresh-parsley": {
-        name: "Persil Frais",
-        description: "Persil frais aromatique, riche en vitamines et minéraux, parfait pour les salades et la cuisine"
-      },
       "fresh-mint": {
         name: "Menthe Fraîche",
-        description: "Menthe fraîche aromatique, parfaite pour le thé, les boissons et les plats arabes"
+        description: "Menthe fraîche aromatique, riche en vitamines et minéraux, parfaite pour le thé, les boissons et les plats arabes"
       },
-      "fresh-cilantro": {
-        name: "Coriandre Fraîche",
-        description: "Coriandre fraîche aromatique, ajoute une saveur distinctive aux plats du Moyen-Orient et d'Asie"
+      "hibiscus": {
+        name: "Hibiscus",
+        description: "Hibiscus rouge naturel, idéal pour préparer des boissons saines et rafraîchissantes"
       },
-      "fresh-dill": {
-        name: "Aneth Frais",
-        description: "Aneth frais aromatique, parfait pour les salades, le poisson et les plats méditerranéens"
-      },
-      "fresh-basil": {
-        name: "Basilic Frais",
-        description: "Basilic frais aromatique, parfait pour les plats italiens et méditerranéens et les sauces"
+      "chamomile": {
+        name: "Camomille",
+        description: "Camomille séchée naturelle, connue pour ses bienfaits calmants et thérapeutiques"
       },
       "fresh-thyme": {
         name: "Thym Frais",
@@ -607,29 +894,65 @@ export const dataproductTranslations = {
       },
 
       // Dried Products
-      "dried-dates": {
-        name: "Dattes Séchées",
-        description: "Dattes égyptiennes séchées de haute qualité, riches en sucres naturels et minéraux"
-      },
-      "dried-figs": {
-        name: "Figues Séchées",
-        description: "Figues séchées naturelles, riches en fibres et minéraux, parfaites comme collation saine"
-      },
-      "dried-apricots": {
-        name: "Abricots Séchés",
-        description: "Abricots séchés naturels, riches en bêta-carotène et vitamines, au goût sucré"
-      },
       "sun-dried-tomatoes": {
         name: "Tomates Séchées au Soleil",
-        description: "Tomates séchées naturellement au soleil, saveur concentrée et parfaites pour la cuisine"
+        description: "Tomates séchées naturellement au soleil, saveur concentrée et parfaites pour la cuisine et les sauces"
       },
-      "dried-herbs-mix": {
-        name: "Mélange d'Herbes Séchées",
-        description: "Mélange diversifié d'herbes séchées, parfait pour assaisonner les plats et ajouter de la saveur"
+      "dried-mangoes": {
+        name: "Mangues Séchées",
+        description: "Mangues séchées sucrées, conservant le goût naturel et les vitamines"
       },
       "dried-onions": {
         name: "Oignons Séchés",
-        description: "Oignons séchés de haute qualité, parfaits pour la cuisine rapide et la conservation de la saveur longtemps"
+        description: "Oignons séchés moulus, parfaits pour la cuisine rapide et la conservation de la saveur longtemps"
+      },
+      "dried-figs": {
+        name: "Figues Séchées",
+        description: "Figues séchées naturelles au goût sucré, riches en fibres et minéraux, parfaites comme collation saine"
+      },
+      "dried-strawberries": {
+        name: "Fraises Séchées",
+        description: "Fraises séchées conservant le goût naturel, idéales pour les collations et les desserts"
+      },
+      "dried-apricots": {
+        name: "Abricots Séchés",
+        description: "Abricots séchés riches en vitamines, au goût sucré et bénéfiques pour la santé"
+      },
+      "dried-dates": {
+        name: "Dattes Séchées",
+        description: "Dattes séchées de haute qualité, riches en sucres naturels et minéraux"
+      },
+      "raisins": {
+        name: "Raisins Secs",
+        description: "Raisins secs naturels sucrés, riches en énergie et nutriments"
+      },
+      "dried-bananas": {
+        name: "Bananes Séchées",
+        description: "Bananes séchées croustillantes et délicieuses, idéales pour les collations"
+      },
+      "dried-pineapple": {
+        name: "Ananas Séché",
+        description: "Ananas séché au goût tropical, sucré et rafraîchissant"
+      },
+      "dried-kiwi": {
+        name: "Kiwi Séché",
+        description: "Kiwi séché riche en vitamine C, idéal pour les collations saines"
+      },
+      "dried-coconut": {
+        name: "Noix de Coco Séchée",
+        description: "Noix de coco séchée naturelle, riche en saveur et bienfaits pour la santé"
+      },
+      "dried-peaches": {
+        name: "Pêches Séchées",
+        description: "Pêches séchées tendres et délicieuses, riches en vitamines et fibres"
+      },
+      "dried-pears": {
+        name: "Poires Séchées",
+        description: "Poires séchées au goût sucré, idéales pour les collations"
+      },
+      "dried-apples": {
+        name: "Pommes Séchées",
+        description: "Pommes séchées croustillantes et saines, riches en fibres et vitamines"
       },
 
       // Oils & Seeds
@@ -637,25 +960,17 @@ export const dataproductTranslations = {
         name: "Huile d'Olive",
         description: "Huile d'olive extra vierge, extraite des meilleures variétés d'olives, riche en antioxydants"
       },
-      "sunflower-oil": {
-        name: "Huile de Tournesol",
-        description: "Huile de tournesol raffinée de haute qualité, parfaite pour la cuisine et la friture"
-      },
-      "sesame-seeds": {
-        name: "Graines de Sésame",
-        description: "Graines de sésame naturelles, riches en calcium et protéines, parfaites pour le tahini et les sucreries"
-      },
-      "pumpkin-seeds": {
-        name: "Graines de Citrouille",
-        description: "Graines de citrouille grillées, riches en zinc et magnésium, collation saine"
-      },
-      "sunflower-seeds": {
-        name: "Graines de Tournesol",
-        description: "Graines de tournesol grillées, riches en vitamine E et graisses saines"
+      "peppermint-oil": {
+        name: "Huile de Menthe Poivrée",
+        description: "Huile de menthe poivrée naturelle, connue pour ses bienfaits thérapeutiques et aromatiques"
       },
       "flax-seeds": {
         name: "Graines de Lin",
         description: "Graines de lin naturelles, riches en oméga-3 et fibres, bénéfiques pour la santé générale"
+      },
+      "black-cumin": {
+        name: "Cumin Noir",
+        description: "Cumin noir naturel, connu pour ses bienfaits pour la santé et thérapeutiques"
       },
 
       // Frozen Products
@@ -677,7 +992,7 @@ export const dataproductTranslations = {
       },
       "frozen-mixed-vegetables": {
         name: "Légumes Surgelés Mélangés",
-        description: "Mélange de légumes surgelés de haute qualité, parfaits pour les soupes et plats d'accompagnement"
+        description: "Mélanges de légumes surgelés pour sautés ou soupes, riches en nutriments"
       },
       "frozen-carrots": {
         name: "Carottes Surgelées",
@@ -705,7 +1020,7 @@ export const dataproductTranslations = {
       },
       "frozen-fruit-mix": {
         name: "Mélange de Fruits Surgelés",
-        description: "Mélange diversifié de fruits surgelés, idéal pour smoothies, salades et desserts"
+        description: "Mélanges de fruits surgelés (comme myrtilles et fraises), idéaux pour smoothies, salades et desserts"
       },
       "frozen-peaches": {
         name: "Pêches Surgelées",
@@ -741,39 +1056,67 @@ export const dataproductTranslations = {
       tryDifferentSearch: "Prova a utilizzare termini di ricerca diversi",
 
       // Vegetables
-      "fresh-tomatoes": {
-        name: "Pomodori Freschi",
-        description: "Pomodori freschi di alta qualità dalle nostre fattorie private, ricchi di vitamine e minerali essenziali"
-      },
       "fresh-onions": {
-        name: "Cipolle Fresche",
-        description: "Cipolle fresche delle varietà più fini, coltivate nelle migliori terre agricole egiziane"
+        name: "Cipolle Rosse",
+        description: "Cipolle rosse fresche di alta qualità dalle nostre fattorie private, ricche di vitamine e minerali essenziali"
+      },
+      "fresh-onions-white": {
+        name: "Cipolle Bianche",
+        description: "Cipolle bianche fresche per l'esportazione delle varietà più fini, coltivate nelle migliori terre agricole egiziane"
+      },
+      "fresh-onions-golden": {
+        name: "Cipolle Dorate",
+        description: "Cipolle dorate fresche distintive, perfette per l'uso in cucina e vari piatti"
       },
       "fresh-potatoes": {
         name: "Patate Fresche",
         description: "Patate fresche di alta qualità, perfette per cucinare e friggere, dalle nostre fattorie specializzate"
       },
-      "fresh-carrots": {
-        name: "Carote Fresche",
-        description: "Carote fresche ricche di beta-carotene e vitamine, coltivate con le ultime tecniche agricole"
+      "fresh-tomatoes": {
+        name: "Pomodori Freschi",
+        description: "Pomodori freschi di alta qualità dalle nostre fattorie private, ricchi di vitamine e minerali essenziali"
       },
-      "fresh-peppers": {
-        name: "Peperoni Freschi",
-        description: "Peperoni freschi colorati di diverse varietà, ricchi di vitamina C e antiossidanti"
+      "fresh-garlic": {
+        name: "Aglio Fresco",
+        description: "Aglio fresco di alta qualità, ricco di antiossidanti e composti benefici per la salute"
       },
       "fresh-cucumbers": {
         name: "Cetrioli Freschi",
         description: "Cetrioli freschi e croccanti, perfetti per insalate e succhi naturali"
       },
+      "fresh-courgette": {
+        name: "Zucchina Fresca",
+        description: "Zucchina verde fresca, ricca di fibre e vitamine, ideale per grigliate e cucina"
+      },
+      "fresh-peppers": {
+        name: "Peperoni Colorati",
+        description: "Peperoni freschi colorati di diverse varietà, ricchi di vitamina C e antiossidanti"
+      },
+      "fresh-eggplant": {
+        name: "Melanzana Romana",
+        description: "Melanzana romana fresca, ideale per la preparazione di vari piatti e grigliate"
+      },
 
       // Fruits
-      "fresh-oranges": {
-        name: "Arance Fresche",
-        description: "Arance egiziane fresche di alta qualità, ricche di vitamina C e fibre naturali"
+      "fresh-mangoes-butter": {
+        name: "Mango Burroso",
+        description: "Mango burroso egiziano originale fresco, ricco di vitamine e dal meraviglioso sapore tropicale"
       },
-      "fresh-apples": {
-        name: "Mele Fresche",
-        description: "Mele fresche e croccanti delle migliori varietà, ricche di vitamine e minerali"
+      "fresh-mangoes-kit": {
+        name: "Mango Kit",
+        description: "Mango Kit di alta qualità, dal sapore dolce e ricco di succo"
+      },
+      "fresh-oranges-navel": {
+        name: "Arancia Navel",
+        description: "Arancia navel egiziana fresca, ricca di vitamina C e fibre naturali"
+      },
+      "fresh-lemons": {
+        name: "Limoni Freschi",
+        description: "Limoni freschi acidi, ideali per succhi e condimento di piatti"
+      },
+      "fresh-pomegranate": {
+        name: "Melagrana Fresca",
+        description: "Melagrana rossa fresca, ricca di antiossidanti e nutrienti benefici"
       },
       "fresh-grapes": {
         name: "Uva Fresca",
@@ -781,15 +1124,47 @@ export const dataproductTranslations = {
       },
       "fresh-strawberries": {
         name: "Fragole Fresche",
-        description: "Fragole fresche e dolci, ricche di vitamina C e antiossidanti"
+        description: "Fragole fresche e dolci, ricche di vitamina C e antiossidants"
       },
-      "fresh-mangoes": {
-        name: "Manghi Freschi",
-        description: "Manghi egiziani freschi delle varietà più fini, ricchi di vitamine e dal meraviglioso sapore tropicale"
+      "fresh-watermelon": {
+        name: "Anguria Fresca",
+        description: "Anguria rossa dolce e rinfrescante, ideale per l'estate e dessert naturali"
       },
-      "fresh-bananas": {
-        name: "Banane Fresche",
-        description: "Banane fresche ricche di potassio e vitamine, perfette per atleti e bambini"
+      "fresh-oranges-valencia": {
+        name: "Arancia Valencia",
+        description: "Arancia Valencia egiziana di alta qualità, ricca di succo e vitamine"
+      },
+      "fresh-oranges-sweet": {
+        name: "Arancia Dolce",
+        description: "Arancia zuccherina dal sapore dolce, ideale per succhi e consumo diretto"
+      },
+      "fresh-oranges-baladi": {
+        name: "Arancia Baladi",
+        description: "Arancia Baladi egiziana autentica, nota per il suo sapore distintivo e benefici per la salute"
+      },
+      "fresh-bananas-local": {
+        name: "Banane Locali",
+        description: "Banane locali egiziane fresche e dolci, ricche di potassio e vitamine"
+      },
+      "fresh-bananas-tropical": {
+        name: "Banane Tropicali",
+        description: "Banane tropicali grandi, dal sapore dolce e ricche di nutrienti"
+      },
+      "fresh-melon-yellow": {
+        name: "Melone Giallo",
+        description: "Melone giallo dolce e rinfrescante, ricco di acqua e vitamine"
+      },
+      "fresh-melon-green": {
+        name: "Melone Verde",
+        description: "Melone verde fresco e delizioso, noto per il suo sapore dolce e rinfrescante"
+      },
+      "fresh-cherries-red": {
+        name: "Ciliegie Rosse",
+        description: "Ciliegie rosse fresche e dolci, ricche di antiossidanti"
+      },
+      "fresh-cherries-black": {
+        name: "Ciliegie Nere",
+        description: "Ciliegie nere ricche di antiossidanti, ideali per il consumo fresco e dessert"
       },
 
       // Legumes
@@ -798,76 +1173,100 @@ export const dataproductTranslations = {
         description: "Fagioli bianchi di alta qualità, ricchi di proteine e fibre, perfetti per pasti sani"
       },
       "red-lentils": {
-        name: "Lenticchie Rosse",
-        description: "Lenticchie rosse pelate di alta qualità, a cottura rapida e ricche di proteine vegetali"
+        name: "Lenticchie",
+        description: "Lenticchie rosse e gialle di alta qualità, a cottura rapida e ricche di proteine vegetali"
       },
       "chickpeas": {
         name: "Ceci",
-        description: "Ceci naturali di alta qualità, ricchi di proteine e fibre, perfetti per hummus e falafel"
+        description: "Ceci secchi di alta qualità, ricchi di proteine e fibre, perfetti per hummus e falafel"
       },
-      "black-beans": {
-        name: "Fagioli Neri",
-        description: "Fagioli neri ricchi di proteine e ferro, perfetti per piatti vegetariani e insalate"
+      "rice": {
+        name: "Riso Egiziano",
+        description: "Riso bianco egiziano di alta qualità, ideale per la cucina quotidiana e vari piatti"
       },
-      "green-peas": {
-        name: "Piselli Verdi",
-        description: "Piselli verdi freschi e surgelati, ricchi di vitamine e proteine vegetali"
-      },
-      "kidney-beans": {
-        name: "Fagioli Rossi",
-        description: "Fagioli rossi di alta qualità, ricchi di proteine e fibre alimentari"
+      "wheat": {
+        name: "Grano Egiziano",
+        description: "Grano egiziano di alta qualità, ricco di fibre e nutrienti essenziali"
       },
 
       // Herbs
-      "fresh-parsley": {
-        name: "Prezzemolo Fresco",
-        description: "Prezzemolo fresco aromatico, ricco di vitamine e minerali, perfetto per insalate e cucina"
-      },
       "fresh-mint": {
         name: "Menta Fresca",
-        description: "Menta fresca aromatica, perfetta per tè, bevande e piatti arabi"
+        description: "Menta fresca aromatica, ricca di vitamine e minerali, perfetta per tè, bevande e piatti arabi"
       },
-      "fresh-cilantro": {
-        name: "Coriandolo Fresco",
-        description: "Coriandolo fresco aromatico, aggiunge un sapore distintivo ai piatti mediorientali e asiatici"
+      "hibiscus": {
+        name: "Ibisco",
+        description: "Ibisco rosso naturale, ideale per preparare bevande sane e rinfrescanti"
       },
-      "fresh-dill": {
-        name: "Aneto Fresco",
-        description: "Aneto fresco aromatico, perfetto per insalate, pesce e piatti mediterranei"
-      },
-      "fresh-basil": {
-        name: "Basilico Fresco",
-        description: "Basilico fresco aromatico, perfetto per piatti italiani e mediterranei e salse"
+      "chamomile": {
+        name: "Camomilla",
+        description: "Camomilla essiccata naturale, nota per i suoi benefici calmanti e terapeutici"
       },
       "fresh-thyme": {
         name: "Timo Fresco",
-        description: "Timo fresco aromatico, ricco di antiossidanti, perfetto per cucinare e tè alle erbe"
+        description: "Timo fresco aromatica, ricco di antiossidanti, perfetto per cucinare e tè alle erbe"
       },
 
       // Dried Products
-      "dried-dates": {
-        name: "Datteri Secchi",
-        description: "Datteri egiziani secchi di alta qualità, ricchi di zuccheri naturali e minerali"
-      },
-      "dried-figs": {
-        name: "Fichi Secchi",
-        description: "Fichi secchi naturali, ricchi di fibre e minerali, perfetti come spuntino sano"
-      },
-      "dried-apricots": {
-        name: "Albicocche Secche",
-        description: "Albicocche secche naturali, ricche di beta-carotene e vitamine, dal sapore dolce"
-      },
       "sun-dried-tomatoes": {
         name: "Pomodori Secchi al Sole",
-        description: "Pomodori secchi naturalmente al sole, sapore concentrato e perfetti per cucinare"
+        description: "Pomodori secchi naturalmente al sole, sapore concentrato e perfetti per cucinare e salse"
       },
-      "dried-herbs-mix": {
-        name: "Miscela di Erbe Secche",
-        description: "Miscela diversificata di erbe secche, perfetta per condire piatti e aggiungere sapore"
+      "dried-mangoes": {
+        name: "Manghi Secchi",
+        description: "Manghi secchi dolci, che conservano il sapore naturale e le vitamine"
       },
       "dried-onions": {
         name: "Cipolle Essiccate",
-        description: "Cipolle essiccate di alta qualità, perfette per cucinare rapidamente e conservare il sapore a lungo"
+        description: "Cipolle essiccate macinate, perfette per cucinare rapidamente e conservare il sapore a lungo"
+      },
+      "dried-figs": {
+        name: "Fichi Secchi",
+        description: "Fichi secchi naturali dal sapore dolce, ricchi di fibre e minerali, perfetti come spuntino sano"
+      },
+      "dried-strawberries": {
+        name: "Fragole Secche",
+        description: "Fragole secche che conservano il sapore naturale, ideali per spuntini e dessert"
+      },
+      "dried-apricots": {
+        name: "Albicocche Secche",
+        description: "Albicocche secche ricche di vitamine, dal sapore dolce e benefiche per la salute"
+      },
+      "dried-dates": {
+        name: "Datteri Secchi",
+        description: "Datteri secchi di alta qualità, ricchi di zuccheri naturali e minerali"
+      },
+      "raisins": {
+        name: "Uvetta",
+        description: "Uvetta naturale dolce, ricca di energia e nutrienti"
+      },
+      "dried-bananas": {
+        name: "Banane Secche",
+        description: "Banane secche croccanti e deliziose, ideali per spuntini"
+      },
+      "dried-pineapple": {
+        name: "Ananas Secco",
+        description: "Ananas secco dal sapore tropicale, dolce e rinfrescante"
+      },
+      "dried-kiwi": {
+        name: "Kiwi Secco",
+        description: "Kiwi secco ricco di vitamina C, ideale per spuntini sani"
+      },
+      "dried-coconut": {
+        name: "Cocco Secco",
+        description: "Cocco secco naturale, ricco di sapore e benefici per la salute"
+      },
+      "dried-peaches": {
+        name: "Pesche Secche",
+        description: "Pesche secche tenere e deliziose, ricche di vitamine e fibre"
+      },
+      "dried-pears": {
+        name: "Pere Secche",
+        description: "Pere secche dal sapore dolce, ideali per spuntini"
+      },
+      "dried-apples": {
+        name: "Mele Secche",
+        description: "Mele secche croccanti e sane, ricche di fibre e vitamine"
       },
 
       // Oils & Seeds
@@ -875,25 +1274,17 @@ export const dataproductTranslations = {
         name: "Olio d'Oliva",
         description: "Olio d'oliva extra vergine, estratto dalle migliori varietà di olive, ricco di antiossidanti"
       },
-      "sunflower-oil": {
-        name: "Olio di Girasole",
-        description: "Olio di girasole raffinato di alta qualità, perfetto per cucinare e friggere"
-      },
-      "sesame-seeds": {
-        name: "Semi di Sesamo",
-        description: "Semi di sesamo naturali, ricchi di calcio e proteine, perfetti per tahini e dolci"
-      },
-      "pumpkin-seeds": {
-        name: "Semi di Zucca",
-        description: "Semi di zucca tostati, ricchi di zinco e magnesio, spuntino sano"
-      },
-      "sunflower-seeds": {
-        name: "Semi di Girasole",
-        description: "Semi di girasole tostati, ricchi di vitamina E e grassi sani"
+      "peppermint-oil": {
+        name: "Olio di Menta Piperita",
+        description: "Olio di menta piperita naturale, noto per i suoi benefici terapeutici e aromatici"
       },
       "flax-seeds": {
         name: "Semi di Lino",
         description: "Semi di lino naturali, ricchi di omega-3 e fibre, benefici per la salute generale"
+      },
+      "black-cumin": {
+        name: "Cumino Nero",
+        description: "Cumino nero naturale, noto per i suoi benefici per la salute e terapeutici"
       },
 
       // Frozen Products
@@ -915,7 +1306,7 @@ export const dataproductTranslations = {
       },
       "frozen-mixed-vegetables": {
         name: "Verdure Surgelate Miste",
-        description: "Miscela di verdure surgelate di alta qualità, perfette per zuppe e contorni"
+        description: "Miscele di verdure surgelate per saltati in padella o zuppe, ricche di nutrienti"
       },
       "frozen-carrots": {
         name: "Carote Surgelate",
@@ -935,7 +1326,7 @@ export const dataproductTranslations = {
       },
       "frozen-banana": {
         name: "Banana Surgelata",
-        description: "Banana surgelata fresca, ideale per frullati, frappè e uso in pasticceria"
+        description: "Banana surgelata fresca, ideale per frullati, frullati e uso in pasticceria"
       },
       "frozen-pineapple": {
         name: "Ananas Surgelato",
@@ -943,7 +1334,7 @@ export const dataproductTranslations = {
       },
       "frozen-fruit-mix": {
         name: "Miscela di Frutta Surgelata",
-        description: "Miscela diversificata di frutta surgelata, ideale per frullati, insalate e dessert"
+        description: "Miscele di frutta surgelata (come mirtilli e fragole), ideali per frullati, insalate e dessert"
       },
       "frozen-peaches": {
         name: "Pesche Surgelate",
@@ -979,39 +1370,67 @@ export const dataproductTranslations = {
       tryDifferentSearch: "Versuchen Sie andere Suchbegriffe",
 
       // Vegetables
-      "fresh-tomatoes": {
-        name: "Frische Tomaten",
-        description: "Hochwertige frische Tomaten von unseren privaten Bauernhöfen, reich an Vitaminen und essentiellen Mineralien"
-      },
       "fresh-onions": {
-        name: "Frische Zwiebeln",
-        description: "Frische Zwiebeln der feinsten Sorten, angebaut auf den besten ägyptischen landwirtschaftlichen Flächen"
+        name: "Rote Zwiebeln",
+        description: "Hochwertige frische rote Zwiebeln von unseren privaten Bauernhöfen, reich an Vitaminen und essentiellen Mineralien"
+      },
+      "fresh-onions-white": {
+        name: "Weiße Zwiebeln",
+        description: "Frische weiße Zwiebeln für den Export der feinsten Sorten, angebaut auf den besten ägyptischen landwirtschaftlichen Flächen"
+      },
+      "fresh-onions-golden": {
+        name: "Goldene Zwiebeln",
+        description: "Unterscheidende frische goldene Zwiebeln, perfekt für den Einsatz beim Kochen und in verschiedenen Gerichten"
       },
       "fresh-potatoes": {
         name: "Frische Kartoffeln",
         description: "Hochwertige frische Kartoffeln, perfekt zum Kochen und Braten, von unseren spezialisierten Bauernhöfen"
       },
-      "fresh-carrots": {
-        name: "Frische Karotten",
-        description: "Frische Karotten reich an Beta-Carotin und Vitaminen, angebaut mit neuesten landwirtschaftlichen Techniken"
+      "fresh-tomatoes": {
+        name: "Frische Tomaten",
+        description: "Hochwertige frische Tomaten von unseren privaten Bauernhöfen, reich an Vitaminen und essentiellen Mineralien"
       },
-      "fresh-peppers": {
-        name: "Frische Paprika",
-        description: "Frische bunte Paprika verschiedener Sorten, reich an Vitamin C und Antioxidantien"
+      "fresh-garlic": {
+        name: "Frischer Knoblauch",
+        description: "Hochwertiger frischer Knoblauch, reich an Antioxidantien und gesundheitsfördernden Verbindungen"
       },
       "fresh-cucumbers": {
         name: "Frische Gurken",
         description: "Frische und knusprige Gurken, perfekt für Salate und natürliche Säfte"
       },
+      "fresh-courgette": {
+        name: "Frische Zucchini",
+        description: "Frische grüne Zucchini, reich an Ballaststoffen und Vitaminen, ideal zum Grillen und Kochen"
+      },
+      "fresh-peppers": {
+        name: "Bunte Paprika",
+        description: "Frische bunte Paprika verschiedener Sorten, reich an Vitamin C und Antioxidantien"
+      },
+      "fresh-eggplant": {
+        name: "Römische Aubergine",
+        description: "Frische römische Aubergine, ideal für die Zubereitung in verschiedenen Gerichten und zum Grillen"
+      },
 
       // Fruits
-      "fresh-oranges": {
-        name: "Frische Orangen",
-        description: "Hochwertige frische ägyptische Orangen, reich an Vitamin C und natürlichen Ballaststoffen"
+      "fresh-mangoes-butter": {
+        name: "Buttrige Mango",
+        description: "Frische originale ägyptische buttrige Mango, reich an Vitaminen und wunderbarem tropischen Geschmack"
       },
-      "fresh-apples": {
-        name: "Frische Äpfel",
-        description: "Frische und knusprige Äpfel der besten Sorten, reich an Vitaminen und Mineralien"
+      "fresh-mangoes-kit": {
+        name: "Kit Mango",
+        description: "Hochwertige Kit Mango, süß im Geschmack und reich an Saft"
+      },
+      "fresh-oranges-navel": {
+        name: "Navel Orange",
+        description: "Frische ägyptische Navel Orange, reich an Vitamin C und natürlichen Ballaststoffen"
+      },
+      "fresh-lemons": {
+        name: "Frische Zitronen",
+        description: "Frische saure Zitronen, ideal für Säfte und zum Würzen von Gerichten"
+      },
+      "fresh-pomegranate": {
+        name: "Frischer Granatapfel",
+        description: "Frischer roter Granatapfel, reich an Antioxidantien und nützlichen Nährstoffen"
       },
       "fresh-grapes": {
         name: "Frische Trauben",
@@ -1021,13 +1440,45 @@ export const dataproductTranslations = {
         name: "Frische Erdbeeren",
         description: "Frische süße Erdbeeren, reich an Vitamin C und Antioxidantien"
       },
-      "fresh-mangoes": {
-        name: "Frische Mangos",
-        description: "Frische ägyptische Mangos der feinsten Sorten, reich an Vitaminen und wunderbarem tropischen Geschmack"
+      "fresh-watermelon": {
+        name: "Frische Wassermelone",
+        description: "Süße und erfrischende rote Wassermelone, ideal für den Sommer und natürliche Desserts"
       },
-      "fresh-bananas": {
-        name: "Frische Bananen",
-        description: "Frische Bananen reich an Kalium und Vitaminen, perfekt für Sportler und Kinder"
+      "fresh-oranges-valencia": {
+        name: "Valencia Orange",
+        description: "Hochwertige ägyptische Valencia Orange, reich an Saft und Vitaminen"
+      },
+      "fresh-oranges-sweet": {
+        name: "Süße Orange",
+        description: "Zuckerorange mit süßem Geschmack, ideal für Säfte und direkten Verzehr"
+      },
+      "fresh-oranges-baladi": {
+        name: "Baladi Orange",
+        description: "Authentische ägyptische Baladi Orange, bekannt für ihren unverwechselbaren Geschmack und gesundheitliche Vorteile"
+      },
+      "fresh-bananas-local": {
+        name: "Lokale Bananen",
+        description: "Frische und süße ägyptische lokale Bananen, reich an Kalium und Vitaminen"
+      },
+      "fresh-bananas-tropical": {
+        name: "Tropische Bananen",
+        description: "Große tropische Bananen, süß im Geschmack und reich an Nährstoffen"
+      },
+      "fresh-melon-yellow": {
+        name: "Gelbe Melone",
+        description: "Süße und erfrischende gelbe Melone, reich an Wasser und Vitaminen"
+      },
+      "fresh-melon-green": {
+        name: "Grüne Melone",
+        description: "Frische und köstliche grüne Melone, bekannt für ihren süßen und erfrischenden Geschmack"
+      },
+      "fresh-cherries-red": {
+        name: "Rote Kirschen",
+        description: "Frische süße rote Kirschen, reich an Antioxidantien"
+      },
+      "fresh-cherries-black": {
+        name: "Schwarze Kirschen",
+        description: "Schwarze Kirschen reich an Antioxidantien, ideal für frischen Verzehr und Desserts"
       },
 
       // Legumes
@@ -1036,46 +1487,34 @@ export const dataproductTranslations = {
         description: "Hochwertige weiße Bohnen, reich an Protein und Ballaststoffen, perfekt für gesunde Mahlzeiten"
       },
       "red-lentils": {
-        name: "Rote Linsen",
-        description: "Hochwertige geschälte rote Linsen, schnell kochend und reich an pflanzlichem Protein"
+        name: "Linsen",
+        description: "Hochwertige rote und gelbe Linsen, schnell kochend und reich an pflanzlichem Protein"
       },
       "chickpeas": {
         name: "Kichererbsen",
-        description: "Natürliche hochwertige Kichererbsen, reich an Protein und Ballaststoffen, perfekt für Hummus und Falafel"
+        description: "Hochwertige trockene Kichererbsen, reich an Protein und Ballaststoffen, perfekt für Hummus und Falafel"
       },
-      "black-beans": {
-        name: "Schwarze Bohnen",
-        description: "Schwarze Bohnen reich an Protein und Eisen, perfekt für vegetarische Gerichte und Salate"
+      "rice": {
+        name: "Ägyptischer Reis",
+        description: "Hochwertiger weißer ägyptischer Reis, ideal für den täglichen Gebrauch und verschiedene Gerichte"
       },
-      "green-peas": {
-        name: "Grüne Erbsen",
-        description: "Frische und gefrorene grüne Erbsen, reich an Vitaminen und pflanzlichem Protein"
-      },
-      "kidney-beans": {
-        name: "Kidneybohnen",
-        description: "Hochwertige Kidneybohnen, reich an Protein und Ballaststoffen"
+      "wheat": {
+        name: "Ägyptischer Weizen",
+        description: "Hochwertiger ägyptischer Weizen, reich an Ballaststoffen und essentiellen Nährstoffen"
       },
 
       // Herbs
-      "fresh-parsley": {
-        name: "Frische Petersilie",
-        description: "Frische aromatische Petersilie, reich an Vitaminen und Mineralien, perfekt für Salate und zum Kochen"
-      },
       "fresh-mint": {
         name: "Frische Minze",
-        description: "Frische aromatische Minze, perfekt für Tee, Getränke und arabische Gerichte"
+        description: "Frische aromatische Minze, reich an Vitaminen und Mineralien, perfekt für Tee, Getränke und arabische Gerichte"
       },
-      "fresh-cilantro": {
-        name: "Frischer Koriander",
-        description: "Frischer aromatischer Koriander, verleiht nahöstlichen und asiatischen Gerichten einen besonderen Geschmack"
+      "hibiscus": {
+        name: "Hibiskus",
+        description: "Natürlicher roter Hibiskus, ideal für die Zubereitung gesunder und erfrischender Getränke"
       },
-      "fresh-dill": {
-        name: "Frischer Dill",
-        description: "Frischer aromatischer Dill, perfekt für Salate, Fisch und mediterrane Gerichte"
-      },
-      "fresh-basil": {
-        name: "Frisches Basilikum",
-        description: "Frisches aromatisches Basilikum, perfekt für italienische und mediterrane Gerichte und Saucen"
+      "chamomile": {
+        name: "Kamille",
+        description: "Natürliche getrocknete Kamille, bekannt für ihre beruhigenden und therapeutischen Vorteile"
       },
       "fresh-thyme": {
         name: "Frischer Thymian",
@@ -1083,29 +1522,65 @@ export const dataproductTranslations = {
       },
 
       // Dried Products
-      "dried-dates": {
-        name: "Getrocknete Datteln",
-        description: "Hochwertige getrocknete ägyptische Datteln, reich an natürlichen Zuckern und Mineralien"
-      },
-      "dried-figs": {
-        name: "Getrocknete Feigen",
-        description: "Natürliche getrocknete Feigen, reich an Ballaststoffen und Mineralien, perfekt als gesunder Snack"
-      },
-      "dried-apricots": {
-        name: "Getrocknete Aprikosen",
-        description: "Natürliche getrocknete Aprikosen, reich an Beta-Carotin und Vitaminen, süß im Geschmack"
-      },
       "sun-dried-tomatoes": {
         name: "Sonnengetrocknete Tomaten",
-        description: "Natürlich sonnengetrocknete Tomaten, konzentrierter Geschmack und perfekt zum Kochen"
+        description: "Natürlich sonnengetrocknete Tomaten, konzentrierter Geschmack und perfekt zum Kochen und für Saucen"
       },
-      "dried-herbs-mix": {
-        name: "Getrocknete Kräutermischung",
-        description: "Vielfältige Mischung getrockneter Kräuter, perfekt zum Würzen von Gerichten und Geschmacksverstärkung"
+      "dried-mangoes": {
+        name: "Getrocknete Mangos",
+        description: "Süße getrocknete Mangos, die den natürlichen Geschmack und die Vitamine bewahren"
       },
       "dried-onions": {
         name: "Getrocknete Zwiebeln",
-        description: "Hochwertige getrocknete Zwiebeln, perfekt für schnelles Kochen und langen Geschmackserhalt"
+        description: "Getrocknete gemahlene Zwiebeln, perfekt für schnelles Kochen und langen Geschmackserhalt"
+      },
+      "dried-figs": {
+        name: "Getrocknete Feigen",
+        description: "Natürliche getrocknete Feigen mit süßem Geschmack, reich an Ballaststoffen und Mineralien, perfekt als gesunder Snack"
+      },
+      "dried-strawberries": {
+        name: "Getrocknete Erdbeeren",
+        description: "Getrocknete Erdbeeren, die den natürlichen Geschmack bewahren, ideal für Snacks und Desserts"
+      },
+      "dried-apricots": {
+        name: "Getrocknete Aprikosen",
+        description: "Getrocknete Aprikosen reich an Vitaminen, süß im Geschmack und gesundheitsfördernd"
+      },
+      "dried-dates": {
+        name: "Getrocknete Datteln",
+        description: "Hochwertige getrocknete Datteln, reich an natürlichen Zuckern und Mineralien"
+      },
+      "raisins": {
+        name: "Rosinen",
+        description: "Natürliche süße Rosinen, reich an Energie und Nährstoffen"
+      },
+      "dried-bananas": {
+        name: "Getrocknete Bananen",
+        description: "Knusprige und leckere getrocknete Bananen, ideal für Snacks"
+      },
+      "dried-pineapple": {
+        name: "Getrocknete Ananas",
+        description: "Getrocknete Ananas mit tropischem Geschmack, süß und erfrischend"
+      },
+      "dried-kiwi": {
+        name: "Getrocknete Kiwis",
+        description: "Getrocknete Kiwis reich an Vitamin C, ideal für gesunde Snacks"
+      },
+      "dried-coconut": {
+        name: "Getrocknete Kokosnuss",
+        description: "Natürliche getrocknete Kokosnuss, reich an Geschmack und gesundheitlichen Vorteilen"
+      },
+      "dried-peaches": {
+        name: "Getrocknete Pfirsiche",
+        description: "Zarte und leckere getrocknete Pfirsiche, reich an Vitaminen und Ballaststoffen"
+      },
+      "dried-pears": {
+        name: "Getrocknete Birnen",
+        description: "Getrocknete Birnen mit süßem Geschmack, ideal für Snacks"
+      },
+      "dried-apples": {
+        name: "Getrocknete Äpfel",
+        description: "Knusprige und gesunde getrocknete Äpfel, reich an Ballaststoffen und Vitaminen"
       },
 
       // Oils & Seeds
@@ -1113,25 +1588,17 @@ export const dataproductTranslations = {
         name: "Olivenöl",
         description: "Natives Olivenöl extra, aus den feinsten Olivensorten gewonnen, reich an Antioxidantien"
       },
-      "sunflower-oil": {
-        name: "Sonnenblumenöl",
-        description: "Hochwertiges raffiniertes Sonnenblumenöl, perfekt zum Kochen und Braten"
-      },
-      "sesame-seeds": {
-        name: "Sesamsamen",
-        description: "Natürliche Sesamsamen, reich an Kalzium und Protein, perfekt für Tahini und Süßigkeiten"
-      },
-      "pumpkin-seeds": {
-        name: "Kürbiskerne",
-        description: "Geröstete Kürbiskerne, reich an Zink und Magnesium, gesunder Snack"
-      },
-      "sunflower-seeds": {
-        name: "Sonnenblumenkerne",
-        description: "Geröstete Sonnenblumenkerne, reich an Vitamin E und gesunden Fetten"
+      "peppermint-oil": {
+        name: "Pfefferminzöl",
+        description: "Natürliches Pfefferminzöl, bekannt für seine therapeutischen und aromatischen Vorteile"
       },
       "flax-seeds": {
         name: "Leinsamen",
         description: "Natürliche Leinsamen, reich an Omega-3 und Ballaststoffen, vorteilhaft für die allgemeine Gesundheit"
+      },
+      "black-cumin": {
+        name: "Schwarzer Kümmel",
+        description: "Natürlicher schwarzer Kümmel, bekannt für seine gesundheitlichen und therapeutischen Vorteile"
       },
 
       // Frozen Products
@@ -1153,7 +1620,7 @@ export const dataproductTranslations = {
       },
       "frozen-mixed-vegetables": {
         name: "Gefrorenes Gemüsemischung",
-        description: "Mischung aus hochwertigem Tiefkühlgemüse, perfekt für Suppen und Beilagen"
+        description: "Tiefkühlgemüsemischungen für Pfannengerichte oder Suppen, reich an Nährstoffen"
       },
       "frozen-carrots": {
         name: "Tiefkühlkarotten",
@@ -1181,7 +1648,7 @@ export const dataproductTranslations = {
       },
       "frozen-fruit-mix": {
         name: "Tiefkühlfruchtmischung",
-        description: "Vielfältige Mischung tiefgekühlter Früchte, ideal für Smoothies, Salate und Desserts"
+        description: "Tiefkühlfruchtmischungen (wie Blaubeeren und Erdbeeren), ideal für Smoothies, Salate und Desserts"
       },
       "frozen-peaches": {
         name: "Tiefkühlpfirsiche",
@@ -1189,480 +1656,634 @@ export const dataproductTranslations = {
       }
     }
   },
-  es: {
-    products: {
-      // General Terms
-      title: "Nuestros Productos Agrícolas",
-      subtitle: "Descubre una amplia gama de productos agrícolas frescos y orgánicos",
-      allProducts: "Todos los Productos",
-      vegetables: "Verduras Frescas",
-      fruits: "Frutas Frescas",
-      legumes: "Legumbres",
-      herbs: "Hierbas Aromáticas",
-      dried: "Productos Secos",
-      oils: "Aceites & Semillas",
-      frozen: "Productos Congelados",
-      featured: "Destacado",
-      inStock: "Disponible",
-      outOfStock: "Agotado",
-      searchPlaceholder: "Buscar un producto...",
-      sortByName: "Ordenar por Nombre",
-      sortByRating: "Ordenar por Calificación",
-      sortByFeatured: "Ordenar por Destacado",
-      featuredOnly: "Solo Destacados",
-      categories: "Categorías",
-      viewDetails: "Ver Detalles",
-      productCount: "producto",
-      noProductsFound: "No se encontraron productos",
-      tryDifferentSearch: "Intente utilizar diferentes términos de búsqueda",
+es: {
+  products: {
+    // General Terms
+    title: "Nuestros Productos Agrícolas",
+    subtitle: "Descubre una amplia gama de productos agrícolas frescos y orgánicos",
+    allProducts: "Todos los Productos",
+    vegetables: "Verduras Frescas",
+    fruits: "Frutas Frescas",
+    legumes: "Legumbres",
+    herbs: "Hierbas Aromáticas",
+    dried: "Productos Secos",
+    oils: "Aceites & Semillas",
+    frozen: "Productos Congelados",
+    featured: "Destacado",
+    inStock: "Disponible",
+    outOfStock: "Agotado",
+    searchPlaceholder: "Buscar un producto...",
+    sortByName: "Ordenar por Nombre",
+    sortByRating: "Ordenar por Calificación",
+    sortByFeatured: "Ordenar por Destacado",
+    featuredOnly: "Solo Destacados",
+    categories: "Categorías",
+    viewDetails: "Ver Detalles",
+    productCount: "producto",
+    noProductsFound: "No se encontraron productos",
+    tryDifferentSearch: "Intente utilizar diferentes términos de búsqueda",
+    onDemand: "Bajo pedido",
 
-      // Vegetables
-      "fresh-tomatoes": {
-        name: "Tomates Frescos",
-        description: "Tomates frescos de alta calidad de nuestras fincas privadas, ricos en vitaminas y minerales esenciales"
-      },
-      "fresh-onions": {
-        name: "Cebollas Frescas",
-        description: "Cebollas frescas de las variedades más finas, cultivadas en las mejores tierras agrícolas egipcias"
-      },
-      "fresh-potatoes": {
-        name: "Papas Frescas",
-        description: "Papas frescas de alta calidad, perfectas para cocinar y freír, de nuestras fincas especializadas"
-      },
-      "fresh-carrots": {
-        name: "Zanahorias Frescas",
-        description: "Zanahorias frescas ricas en beta-caroteno y vitaminas, cultivadas con las últimas técnicas agrícolas"
-      },
-      "fresh-peppers": {
-        name: "Pimientos Frescos",
-        description: "Pimientos frescos coloridos de diferentes variedades, ricos en vitamina C y antioxidantes"
-      },
-      "fresh-cucumbers": {
-        name: "Pepinos Frescos",
-        description: "Pepinos frescos y crujientes, perfectos para ensaladas y jugos naturales"
-      },
+    // Vegetables
+    "fresh-onions": {
+      name: "Cebollas Rojas",
+      description: "Cebollas rojas frescas de alta calidad de nuestras granjas privadas, ricas en vitaminas y minerales esenciales"
+    },
+    "fresh-onions-white": {
+      name: "Cebollas Blancas",
+      description: "Cebollas blancas frescas para exportación de las variedades más finas, cultivadas en las mejores tierras agrícolas egipcias"
+    },
+    "fresh-onions-golden": {
+      name: "Cebollas Doradas",
+      description: "Cebollas doradas frescas distintivas, perfectas para usar en cocina y diversos platos"
+    },
+    "fresh-potatoes": {
+      name: "Papas Frescas",
+      description: "Papas frescas de alta calidad, perfectas para cocinar y freír, de nuestras granjas especializadas"
+    },
+    "fresh-tomatoes": {
+      name: "Tomates Frescos",
+      description: "Tomates frescos de alta calidad de nuestras granjas privadas, ricos en vitaminas y minerales esenciales"
+    },
+    "fresh-garlic": {
+      name: "Ajo Fresco",
+      description: "Ajo fresco de alta calidad, rico en antioxidantes y compuestos beneficiosos para la salud"
+    },
+    "fresh-cucumbers": {
+      name: "Pepinos Frescos",
+      description: "Pepinos frescos y crujientes, perfectos para ensaladas y jugos naturales"
+    },
+    "fresh-courgette": {
+      name: "Calabacín Fresco",
+      description: "Calabacín verde fresco, rico en fibra y vitaminas, ideal para asar y cocinar"
+    },
+    "fresh-peppers": {
+      name: "Pimientos de Colores",
+      description: "Pimientos coloridos frescos de diferentes variedades, ricos en vitamina C y antioxidantes"
+    },
+    "fresh-eggplant": {
+      name: "Berenjena Romana",
+      description: "Berenjena romana fresca, ideal para preparar diversos platos y asar"
+    },
 
-      // Fruits
-      "fresh-oranges": {
-        name: "Naranjas Frescas",
-        description: "Naranjas egipcias frescas de alta calidad, ricas en vitamina C y fibra natural"
-      },
-      "fresh-apples": {
-        name: "Manzanas Frescas",
-        description: "Manzanas frescas y crujientes de las mejores variedades, ricas en vitaminas y minerales"
-      },
-      "fresh-grapes": {
-        name: "Uvas Frescas",
-        description: "Uvas frescas y dulces, ricas en antioxidantes y vitaminas esenciales"
-      },
-      "fresh-strawberries": {
-        name: "Fresas Frescas",
-        description: "Fresas frescas y dulces, ricas en vitamina C y antioxidantes"
-      },
-      "fresh-mangoes": {
-        name: "Mangos Frescos",
-        description: "Mangos egipcios frescos de las variedades más finas, ricos en vitaminas y de maravilloso sabor tropical"
-      },
-      "fresh-bananas": {
-        name: "Plátanos Frescos",
-        description: "Plátanos frescos ricos en potasio y vitaminas, perfectos para deportistas y niños"
-      },
+    // Fruits
+    "fresh-mangoes-butter": {
+      name: "Mango Mantequilla",
+      description: "Mango mantequilla egipcio original fresco, rico en vitaminas y con maravilloso sabor tropical"
+    },
+    "fresh-mangoes-kit": {
+      name: "Mango Kit",
+      description: "Mango Kit de alta calidad, de sabor dulce y rico en jugo"
+    },
+    "fresh-oranges-navel": {
+      name: "Naranja Navel",
+      description: "Naranja navel egipcia fresca, rica en vitamina C y fibra natural"
+    },
+    "fresh-lemons": {
+      name: "Limones Frescos",
+      description: "Limones frescos ácidos, ideales para jugos y sazonar platos"
+    },
+    "fresh-pomegranate": {
+      name: "Granada Fresca",
+      description: "Granada roja fresca, rica en antioxidantes y nutrientes beneficiosos"
+    },
+    "fresh-grapes": {
+      name: "Uvas Frescas",
+      description: "Uvas frescas y dulces, ricas en antioxidantes y vitaminas esenciales"
+    },
+    "fresh-strawberries": {
+      name: "Fresas Frescas",
+      description: "Fresas frescas y dulces, ricas en vitamina C y antioxidantes"
+    },
+    "fresh-watermelon": {
+      name: "Sandía Fresca",
+      description: "Sandía roja dulce y refrescante, ideal para el verano y postres naturales"
+    },
+    "fresh-oranges-valencia": {
+      name: "Naranja Valencia",
+      description: "Naranja Valencia egipcia de alta calidad, rica en jugo y vitaminas"
+    },
+    "fresh-oranges-sweet": {
+      name: "Naranja Dulce",
+      description: "Naranja azucarada de sabor dulce, ideal para jugos y consumo directo"
+    },
+    "fresh-oranges-baladi": {
+      name: "Naranja Baladi",
+      description: "Naranja Baladi egipcia auténtica, conocida por su sabor distintivo y beneficios para la salud"
+    },
+    "fresh-bananas-local": {
+      name: "Plátanos Locales",
+      description: "Plátanos locales egipcios frescos y dulces, ricos en potasio y vitaminas"
+    },
+    "fresh-bananas-tropical": {
+      name: "Plátanos Tropicales",
+      description: "Plátanos tropicales grandes, de sabor dulce y ricos en nutrientes"
+    },
+    "fresh-melon-yellow": {
+      name: "Melón Amarillo",
+      description: "Melón amarillo dulce y refrescante, rico en agua y vitaminas"
+    },
+    "fresh-melon-green": {
+      name: "Melón Verde",
+      description: "Melón verde fresco y delicioso, conocido por su sabor dulce y refrescante"
+    },
+    "fresh-cherries-red": {
+      name: "Cerezas Rojas",
+      description: "Cerezas rojas frescas y dulces, ricas en antioxidantes"
+    },
+    "fresh-cherries-black": {
+      name: "Cerezas Negras",
+      description: "Cerezas negras ricas en antioxidantes, ideales para consumo fresco y postres"
+    },
 
-      // Legumes
-      "white-beans": {
-        name: "Frijoles Blancos",
-        description: "Frijoles blancos de alta calidad, ricos en proteínas y fibra, perfectos para comidas saludables"
-      },
-      "red-lentils": {
-        name: "Lentejas Rojas",
-        description: "Lentejas rojas peladas de alta calidad, de cocción rápida y ricas en proteína vegetal"
-      },
-      "chickpeas": {
-        name: "Garbanzos",
-        description: "Garbanzos naturales de alta calidad, ricos en proteínas y fibra, perfectos para hummus y falafel"
-      },
-      "black-beans": {
-        name: "Frijoles Negros",
-        description: "Frijoles negros ricos en proteínas y hierro, perfectos para platos vegetarianos y ensaladas"
-      },
-      "green-peas": {
-        name: "Guisantes Verdes",
-        description: "Guisantes verdes frescos y congelados, ricos en vitaminas y proteína vegetal"
-      },
-      "kidney-beans": {
-        name: "Frijoles Rojos",
-        description: "Frijoles rojos de alta calidad, ricos en proteínas y fibra dietética"
-      },
+    // Legumes
+    "white-beans": {
+      name: "Frijoles Blancos",
+      description: "Frijoles blancos de alta calidad, ricos en proteínas y fibra, perfectos para comidas saludables"
+    },
+    "red-lentils": {
+      name: "Lentejas",
+      description: "Lentejas rojas y amarillas de alta calidad, de cocción rápida y ricas en proteína vegetal"
+    },
+    "chickpeas": {
+      name: "Garbanzos",
+      description: "Garbanzos secos de alta calidad, ricos en proteínas y fibra, perfectos para hummus y falafel"
+    },
+    "rice": {
+      name: "Arroz Egipcio",
+      description: "Arroz blanco egipcio de alta calidad, ideal para cocina diaria y diversos platos"
+    },
+    "wheat": {
+      name: "Trigo Egipcio",
+      description: "Trigo egipcio de alta calidad, rico en fibra y nutrientes esenciales"
+    },
 
-      // Herbs
-      "fresh-parsley": {
-        name: "Perejil Fresco",
-        description: "Perejil fresco aromático, rico en vitaminas y minerales, perfecto para ensaladas y cocinar"
-      },
-      "fresh-mint": {
-        name: "Menta Fresca",
-        description: "Menta fresca aromática, perfecta para té, bebidas y platos árabes"
-      },
-      "fresh-cilantro": {
-        name: "Cilantro Fresco",
-        description: "Cilantro fresco aromático, añade un sabor distintivo a platos de Medio Oriente y Asia"
-      },
-      "fresh-dill": {
-        name: "Eneldo Fresco",
-        description: "Eneldo fresco aromático, perfecto para ensaladas, pescado y platos mediterráneos"
-      },
-      "fresh-basil": {
-        name: "Albahaca Fresca",
-        description: "Albahaca fresca aromática, perfecta para platos italianos y mediterráneos y salsas"
-      },
-      "fresh-thyme": {
-        name: "Tomillo Fresco",
-        description: "Tomillo fresco aromático, rico en antioxidantes, perfecto para cocinar y té de hierbas"
-      },
+    // Herbs
+    "fresh-mint": {
+      name: "Menta Fresca",
+      description: "Menta fresca aromática, rica en vitaminas y minerales, perfecta para té, bebidas y platos árabes"
+    },
+    "hibiscus": {
+      name: "Hibisco",
+      description: "Hibisco rojo natural, ideal para preparar bebidas saludables y refrescantes"
+    },
+    "chamomile": {
+      name: "Manzanilla",
+      description: "Manzanilla seca natural, conocida por sus beneficios calmantes y terapéuticos"
+    },
+    "fresh-thyme": {
+      name: "Tomillo Fresco",
+      description: "Tomillo fresco aromático, rico en antioxidantes, perfecto para cocinar y té de hierbas"
+    },
 
-      // Dried Products
-      "dried-dates": {
-        name: "Dátiles Secos",
-        description: "Dátiles egipcios secos de alta calidad, ricos en azúcares naturales y minerales"
-      },
-      "dried-figs": {
-        name: "Higos Secos",
-        description: "Higos secos naturales, ricos en fibra y minerales, perfectos como snack saludable"
-      },
-      "dried-apricots": {
-        name: "Albaricoques Secos",
-        description: "Albaricoques secos naturales, ricos en beta-caroteno y vitaminas, de sabor dulce"
-      },
-      "sun-dried-tomatoes": {
-        name: "Tomates Secados al Sol",
-        description: "Tomates secados naturalmente al sol, sabor concentrado y perfectos para cocinar"
-      },
-      "dried-herbs-mix": {
-        name: "Mezcla de Hierbas Secas",
-        description: "Mezcla diversa de hierbas secas, perfecta para sazonar platos y añadir sabor"
-      },
-      "dried-onions": {
-        name: "Cebollas Secas",
-        description: "Cebollas secas de alta calidad, perfectas para cocinar rápido y conservar el sabor por mucho tiempo"
-      },
+    // Dried Products
+    "sun-dried-tomatoes": {
+      name: "Tomates Secados al Sol",
+      description: "Tomates secados naturalmente al sol, sabor concentrado y perfectos para cocinar y salsas"
+    },
+    "dried-mangoes": {
+      name: "Mangos Secos",
+      description: "Mangos secos dulces, que conservan el sabor natural y las vitaminas"
+    },
+    "dried-onions": {
+      name: "Cebollas Secas",
+      description: "Cebollas secas molidas, perfectas para cocinar rápido y conservar el sabor por mucho tiempo"
+    },
+    "dried-figs": {
+      name: "Higos Secos",
+      description: "Higos secos naturales de sabor dulce, ricos en fibra y minerales, perfectos como snack saludable"
+    },
+    "dried-strawberries": {
+      name: "Fresas Secas",
+      description: "Fresas secas que conservan el sabor natural, ideales para snacks y postres"
+    },
+    "dried-apricots": {
+      name: "Albaricoques Secos",
+      description: "Albaricoques secos ricos en vitaminas, de sabor dulce y beneficiosos para la salud"
+    },
+    "dried-dates": {
+      name: "Dátiles Secos",
+      description: "Dátiles secos de alta calidad, ricos en azúcares naturales y minerales"
+    },
+    "raisins": {
+      name: "Uvas Pasas",
+      description: "Uvas pasas naturales dulces, ricas en energía y nutrientes"
+    },
+    "dried-bananas": {
+      name: "Plátanos Secos",
+      description: "Plátanos secos crujientes y deliciosos, ideales para snacks"
+    },
+    "dried-pineapple": {
+      name: "Piña Seca",
+      description: "Piña seca de sabor tropical, dulce y refrescante"
+    },
+    "dried-kiwi": {
+      name: "Kiwi Seco",
+      description: "Kiwi seco rico en vitamina C, ideal para snacks saludables"
+    },
+    "dried-coconut": {
+      name: "Coco Seco",
+      description: "Coco seco natural, rico en sabor y beneficios para la salud"
+    },
+    "dried-peaches": {
+      name: "Duraznos Secos",
+      description: "Duraznos secos tiernos y deliciosos, ricos en vitaminas y fibra"
+    },
+    "dried-pears": {
+      name: "Peras Secas",
+      description: "Peras secas de sabor dulce, ideales para snacks"
+    },
+    "dried-apples": {
+      name: "Manzanas Secas",
+      description: "Manzanas secas crujientes y saludables, ricas en fibra y vitaminas"
+    },
 
-      // Oils & Seeds
-      "olive-oil": {
-        name: "Aceite de Oliva",
-        description: "Aceite de oliva extra virgen, extraído de las mejores variedades de aceitunas, rico en antioxidantes"
-      },
-      "sunflower-oil": {
-        name: "Aceite de Girasol",
-        description: "Aceite de girasol refinado de alta calidad, perfecto para cocinar y freír"
-      },
-      "sesame-seeds": {
-        name: "Semillas de Sésamo",
-        description: "Semillas de sésamo naturales, ricas en calcio y proteínas, perfectas para tahini y dulces"
-      },
-      "pumpkin-seeds": {
-        name: "Semillas de Calabaza",
-        description: "Semillas de calabaza tostadas, ricas en zinc y magnesio, snack saludable"
-      },
-      "sunflower-seeds": {
-        name: "Semillas de Girasol",
-        description: "Semillas de girasol tostadas, ricas en vitamina E y grasas saludables"
-      },
-      "flax-seeds": {
-        name: "Semillas de Lino",
-        description: "Semillas de lino naturales, ricas en omega-3 y fibra, beneficiosas para la salud general"
-      },
+    // Oils & Seeds
+    "olive-oil": {
+      name: "Aceite de Oliva",
+      description: "Aceite de oliva extra virgen, extraído de las mejores variedades de aceitunas, rico en antioxidantes"
+    },
+    "peppermint-oil": {
+      name: "Aceite de Menta",
+      description: "Aceite de menta natural, conocido por sus beneficios terapéuticos y aromáticos"
+    },
+    "flax-seeds": {
+      name: "Semillas de Lino",
+      description: "Semillas de lino naturales, ricas en omega-3 y fibra, beneficiosas para la salud general"
+    },
+    "black-cumin": {
+      name: "Comino Negro",
+      description: "Comino negro natural, conocido por sus beneficios para la salud y terapéuticos"
+    },
 
-      // Frozen Products
-      "frozen-peas": {
-        name: "Guisantes Congelados",
-        description: "Guisantes verdes congelados frescos, que conservan todo su valor nutricional y frescura"
-      },
-      "frozen-corn": {
-        name: "Maíz Congelado",
-        description: "Maíz dulce congelado, ideal para usar en varios platos y ensaladas"
-      },
-      "frozen-spinach": {
-        name: "Espinacas Congeladas",
-        description: "Espinacas congeladas frescas, ricas en hierro y vitaminas, listas para usar"
-      },
-      "frozen-broccoli": {
-        name: "Brócoli Congelado",
-        description: "Brócoli congelado fresco, que conserva todos los nutrientes y sabor natural"
-      },
-      "frozen-mixed-vegetables": {
-        name: "Verduras Mixtas Congeladas",
-        description: "Mezcla de verduras congeladas de alta calidad, perfectas para sopas y guarniciones"
-      },
-      "frozen-carrots": {
-        name: "Zanahorias Congeladas",
-        description: "Zanahorias congeladas frescas, precortadas y listas para uso directo en cocina"
-      },
-      "frozen-cauliflower": {
-        name: "Coliflor Congelada",
-        description: "Coliflor congelada fresca, que conserva su valor nutricional y textura crujiente después de cocinar"
-      },
-      "frozen-berries": {
-        name: "Bayas Congeladas",
-        description: "Bayas congeladas frescas, ideales para batidos, postres y consumo directo después de congelar"
-      },
-      "frozen-mango": {
-        name: "Mango Congelado",
-        description: "Mango congelado fresco, de sabor dulce, perfecto para batidos, ensaladas y postres"
-      },
-      "frozen-banana": {
-        name: "Plátano Congelado",
-        description: "Plátano congelado fresco, ideal para batidos, batidos y uso en horneado"
-      },
-      "frozen-pineapple": {
-        name: "Piña Congelada",
-        description: "Piña congelada fresca, dulce y refrescante, conserva su distintivo sabor tropical"
-      },
-      "frozen-fruit-mix": {
-        name: "Mezcla de Frutas Congeladas",
-        description: "Mezcla diversa de frutas congeladas, ideal para batidos, ensaladas y postres"
-      },
-      "frozen-peaches": {
-        name: "Melocotones Congelados",
-        description: "Melocotones congelados frescos, de sabor dulce, ideales para batidos, postres y yogur"
-      }
-    }
-  },
-  zh: {
-    products: {
-      // General Terms
-      title: "我们的农产品",
-      subtitle: "发现各种新鲜有机的农产品",
-      allProducts: "所有产品",
-      vegetables: "新鲜蔬菜",
-      fruits: "新鲜水果",
-      legumes: "豆类",
-      herbs: "香草",
-      dried: "干制品",
-      oils: "油和种子",
-      frozen: "冷冻产品",
-      featured: "特色",
-      inStock: "有货",
-      outOfStock: "缺货",
-      searchPlaceholder: "搜索产品...",
-      sortByName: "按名称排序",
-      sortByRating: "按评分排序",
-      sortByFeatured: "按特色排序",
-      featuredOnly: "仅特色",
-      categories: "分类",
-      viewDetails: "查看详情",
-      productCount: "产品",
-      noProductsFound: "未找到产品",
-      tryDifferentSearch: "尝试使用不同的搜索词",
-
-      // Vegetables
-      "fresh-tomatoes": {
-        name: "新鲜番茄",
-        description: "来自我们私人农场的高品质新鲜番茄，富含维生素和必需矿物质"
-      },
-      "fresh-onions": {
-        name: "新鲜洋葱",
-        description: "最优质的新鲜洋葱，种植在埃及最好的农田中"
-      },
-      "fresh-potatoes": {
-        name: "新鲜土豆",
-        description: "高品质新鲜土豆，非常适合烹饪和油炸，来自我们的专业农场"
-      },
-      "fresh-carrots": {
-        name: "新鲜胡萝卜",
-        description: "富含β-胡萝卜素和维生素的新鲜胡萝卜，采用最新农业技术种植"
-      },
-      "fresh-peppers": {
-        name: "新鲜辣椒",
-        description: "各种颜色的新鲜辣椒，富含维生素C和抗氧化剂"
-      },
-      "fresh-cucumbers": {
-        name: "新鲜黄瓜",
-        description: "新鲜脆嫩的黄瓜，非常适合沙拉和天然果汁"
-      },
-
-      // Fruits
-      "fresh-oranges": {
-        name: "新鲜橙子",
-        description: "高品质的埃及新鲜橙子，富含维生素C和天然纤维"
-      },
-      "fresh-apples": {
-        name: "新鲜苹果",
-        description: "来自最佳品种的新鲜脆甜苹果，富含维生素和矿物质"
-      },
-      "fresh-grapes": {
-        name: "新鲜葡萄",
-        description: "新鲜甜美的葡萄，富含抗氧化剂和必需维生素"
-      },
-      "fresh-strawberries": {
-        name: "新鲜草莓",
-        description: "新鲜甜美的草莓，富含维生素C和抗氧化剂"
-      },
-      "fresh-mangoes": {
-        name: "新鲜芒果",
-        description: "埃及最优质的新鲜芒果，富含维生素，具有美妙的热带风味"
-      },
-      "fresh-bananas": {
-        name: "新鲜香蕉",
-        description: "富含钾和维生素的新鲜香蕉，非常适合运动员和儿童"
-      },
-
-      // Legumes
-      "white-beans": {
-        name: "白豆",
-        description: "高品质白豆，富含蛋白质和纤维，非常适合健康餐食"
-      },
-      "red-lentils": {
-        name: "红扁豆",
-        description: "高品质去皮红扁豆，快速烹饪，富含植物蛋白"
-      },
-      "chickpeas": {
-        name: "鹰嘴豆",
-        description: "天然高品质鹰嘴豆，富含蛋白质和纤维，非常适合制作鹰嘴豆泥和法拉费"
-      },
-      "black-beans": {
-        name: "黑豆",
-        description: "富含蛋白质和铁的黑豆，非常适合素食菜肴和沙拉"
-      },
-      "green-peas": {
-        name: "青豆",
-        description: "新鲜和冷冻的青豆，富含维生素和植物蛋白"
-      },
-      "kidney-beans": {
-        name: "红腰豆",
-        description: "高品质红腰豆，富含蛋白质和膳食纤维"
-      },
-
-      // Herbs
-      "fresh-parsley": {
-        name: "新鲜欧芹",
-        description: "新鲜芳香的欧芹，富含维生素和矿物质，非常适合沙拉和烹饪"
-      },
-      "fresh-mint": {
-        name: "新鲜薄荷",
-        description: "新鲜芳香的薄荷，非常适合茶、饮料和阿拉伯菜肴"
-      },
-      "fresh-cilantro": {
-        name: "新鲜香菜",
-        description: "新鲜芳香的香菜，为中东和亚洲菜肴增添独特风味"
-      },
-      "fresh-dill": {
-        name: "新鲜莳萝",
-        description: "新鲜芳香的莳萝，非常适合沙拉、鱼类和地中海菜肴"
-      },
-      "fresh-basil": {
-        name: "新鲜罗勒",
-        description: "新鲜芳香的罗勒，非常适合意大利和地中海菜肴及酱料"
-      },
-      "fresh-thyme": {
-        name: "新鲜百里香",
-        description: "新鲜芳香的百里香，富含抗氧化剂，非常适合烹饪和草药茶"
-      },
-
-      // Dried Products
-      "dried-dates": {
-        name: "干枣",
-        description: "高品质埃及干枣，富含天然糖分和矿物质"
-      },
-      "dried-figs": {
-        name: "无花果干",
-        description: "天然无花果干，富含纤维和矿物质，是完美的健康零食"
-      },
-      "dried-apricots": {
-        name: "杏干",
-        description: "天然杏干，富含β-胡萝卜素和维生素，味道甜美"
-      },
-      "sun-dried-tomatoes": {
-        name: "晒干番茄",
-        description: "天然晒干的番茄，风味浓郁，非常适合烹饪"
-      },
-      "dried-herbs-mix": {
-        name: "混合干香草",
-        description: "多样化的干香草混合物，非常适合调味菜肴和增添风味"
-      },
-      "dried-onions": {
-        name: "干洋葱",
-        description: "高品质干洋葱，非常适合快速烹饪和长时间保存风味"
-      },
-
-      // Oils & Seeds
-      "olive-oil": {
-        name: "橄榄油",
-        description: "特级初榨橄榄油，从最优质的橄榄中提取，富含抗氧化剂"
-      },
-      "sunflower-oil": {
-        name: "葵花籽油",
-        description: "高品质精炼葵花籽油，非常适合烹饪和油炸"
-      },
-      "sesame-seeds": {
-        name: "芝麻",
-        description: "天然芝麻，富含钙和蛋白质，非常适合制作芝麻酱和甜点"
-      },
-      "pumpkin-seeds": {
-        name: "南瓜籽",
-        description: "烤南瓜籽，富含锌和镁，是健康的零食"
-      },
-      "sunflower-seeds": {
-        name: "葵花籽",
-        description: "烤葵花籽，富含维生素E和健康脂肪"
-      },
-      "flax-seeds": {
-        name: "亚麻籽",
-        description: "天然亚麻籽，富含omega-3和纤维，有益于整体健康"
-      },
-
-      // Frozen Products
-      "frozen-peas": {
-        name: "冷冻青豆",
-        description: "新鲜冷冻青豆，保留全部营养价值和新鲜度"
-      },
-      "frozen-corn": {
-        name: "冷冻玉米",
-        description: "甜冷冻玉米，非常适合用于各种菜肴和沙拉"
-      },
-      "frozen-spinach": {
-        name: "冷冻菠菜",
-        description: "新鲜冷冻菠菜，富含铁和维生素，可直接使用"
-      },
-      "frozen-broccoli": {
-        name: "冷冻西兰花",
-        description: "新鲜冷冻西兰花，保留所有营养素和天然风味"
-      },
-      "frozen-mixed-vegetables": {
-        name: "混合冷冻蔬菜",
-        description: "高品质混合冷冻蔬菜，非常适合汤和配菜"
-      },
-      "frozen-carrots": {
-        name: "冷冻胡萝卜",
-        description: "新鲜冷冻胡萝卜，预先切好，可直接用于烹饪"
-      },
-      "frozen-cauliflower": {
-        name: "冷冻花椰菜",
-        description: "新鲜冷冻花椰菜，烹饪后保持其营养价值和脆嫩质地"
-      },
-      "frozen-berries": {
-        name: "冷冻浆果",
-        description: "新鲜冷冻浆果，非常适合冰沙、甜点和解冻后直接食用"
-      },
-      "frozen-mango": {
-        name: "冷冻芒果",
-        description: "新鲜冷冻芒果，味道甜美，非常适合冰沙、沙拉和甜点"
-      },
-      "frozen-banana": {
-        name: "冷冻香蕉",
-        description: "新鲜冷冻香蕉，非常适合冰沙、奶昔和烘焙"
-      },
-      "frozen-pineapple": {
-        name: "冷冻菠萝",
-        description: "新鲜冷冻菠萝，甜美清爽，保留其独特的热带风味"
-      },
-      "frozen-fruit-mix": {
-        name: "混合冷冻水果",
-        description: "多样化的混合冷冻水果，非常适合冰沙、沙拉和甜点"
-      },
-      "frozen-peaches": {
-        name: "冷冻桃子",
-        description: "新鲜冷冻桃子，味道甜美，非常适合冰沙、甜点和酸奶"
-      }
+    // Frozen Products
+    "frozen-peas": {
+      name: "Guisantes Congelados",
+      description: "Guisantes verdes congelados frescos, que conservan todo su valor nutricional y frescura"
+    },
+    "frozen-corn": {
+      name: "Maíz Congelado",
+      description: "Maíz dulce congelado, ideal para usar en diversos platos y ensaladas"
+    },
+    "frozen-spinach": {
+      name: "Espinacas Congeladas",
+      description: "Espinacas congeladas frescas, ricas en hierro y vitaminas, listas para usar"
+    },
+    "frozen-broccoli": {
+      name: "Brócoli Congelado",
+      description: "Brócoli congelado fresco, que conserva todos los nutrientes y sabor natural"
+    },
+    "frozen-mixed-vegetables": {
+      name: "Mezcla de Verduras Congeladas",
+      description: "Mezclas de verduras congeladas para saltear o sopa, ricas en nutrientes"
+    },
+    "frozen-carrots": {
+      name: "Zanahorias Congeladas",
+      description: "Zanahorias congeladas frescas, precortadas y listas para uso directo en cocina"
+    },
+    "frozen-cauliflower": {
+      name: "Coliflor Congelada",
+      description: "Coliflor congelada fresca, que conserva su valor nutricional y textura crujiente después de cocinar"
+    },
+    "frozen-berries": {
+      name: "Bayas Congeladas",
+      description: "Bayas congeladas frescas, ideales para batidos, postres y consumo directo después de congelar"
+    },
+    "frozen-mango": {
+      name: "Mango Congelado",
+      description: "Mango congelado fresco, de sabor dulce, perfecto para batidos, ensaladas y postres"
+    },
+    "frozen-banana": {
+      name: "Plátano Congelado",
+      description: "Plátano congelado fresco, ideal para batidos, batidos y uso en horneado"
+    },
+    "frozen-pineapple": {
+      name: "Piña Congelada",
+      description: "Piña congelada fresca, dulce y refrescante, conserva su distintivo sabor tropical"
+    },
+    "frozen-fruit-mix": {
+      name: "Mezcla de Frutas Congeladas",
+      description: "Mezclas de frutas congeladas (como arándanos y fresas), ideales para batidos, ensaladas y postres"
+    },
+    "frozen-peaches": {
+      name: "Duraznos Congelados",
+      description: "Duraznos congelados frescos, de sabor dulce, ideales para batidos, postres y yogur"
     }
   }
+},
+zh: {
+  products: {
+    // General Terms
+    title: "我们的农产品",
+    subtitle: "发现各种新鲜有机的农产品",
+    allProducts: "所有产品",
+    vegetables: "新鲜蔬菜",
+    fruits: "新鲜水果",
+    legumes: "豆类",
+    herbs: "香草",
+    dried: "干制品",
+    oils: "油和种子",
+    frozen: "冷冻产品",
+    featured: "特色",
+    inStock: "有货",
+    outOfStock: "缺货",
+    searchPlaceholder: "搜索产品...",
+    sortByName: "按名称排序",
+    sortByRating: "按评分排序",
+    sortByFeatured: "按特色排序",
+    featuredOnly: "仅特色",
+    categories: "分类",
+    viewDetails: "查看详情",
+    productCount: "产品",
+    noProductsFound: "未找到产品",
+    tryDifferentSearch: "尝试使用不同的搜索词",
+    onDemand: "按需",
+
+    // Vegetables
+    "fresh-onions": {
+      name: "红洋葱",
+      description: "来自我们私人农场的高品质新鲜红洋葱，富含维生素和必需矿物质"
+    },
+    "fresh-onions-white": {
+      name: "白洋葱",
+      description: "最优质的新鲜白洋葱，种植在埃及最好的农田中，用于出口"
+    },
+    "fresh-onions-golden": {
+      name: "金洋葱",
+      description: "独特的新鲜金洋葱，非常适合烹饪和各种菜肴"
+    },
+    "fresh-potatoes": {
+      name: "新鲜土豆",
+      description: "高品质新鲜土豆，非常适合烹饪和油炸，来自我们的专业农场"
+    },
+    "fresh-tomatoes": {
+      name: "新鲜番茄",
+      description: "来自我们私人农场的高品质新鲜番茄，富含维生素和必需矿物质"
+    },
+    "fresh-garlic": {
+      name: "新鲜大蒜",
+      description: "高品质新鲜大蒜，富含抗氧化剂和有益健康的化合物"
+    },
+    "fresh-cucumbers": {
+      name: "新鲜黄瓜",
+      description: "新鲜脆嫩的黄瓜，非常适合沙拉和天然果汁"
+    },
+    "fresh-courgette": {
+      name: "新鲜西葫芦",
+      description: "新鲜绿西葫芦，富含纤维和维生素，非常适合烧烤和烹饪"
+    },
+    "fresh-peppers": {
+      name: "彩色甜椒",
+      description: "各种颜色的新鲜甜椒，富含维生素C和抗氧化剂"
+    },
+    "fresh-eggplant": {
+      name: "罗马茄子",
+      description: "新鲜罗马茄子，非常适合制作各种菜肴和烧烤"
+    },
+
+    // Fruits
+    "fresh-mangoes-butter": {
+      name: "黄油芒果",
+      description: "新鲜的埃及原产黄油芒果，富含维生素，具有美妙的热带风味"
+    },
+    "fresh-mangoes-kit": {
+      name: "凯特芒果",
+      description: "高品质凯特芒果，味道甜美，汁液丰富"
+    },
+    "fresh-oranges-navel": {
+      name: "脐橙",
+      description: "新鲜的埃及脐橙，富含维生素C和天然纤维"
+    },
+    "fresh-lemons": {
+      name: "新鲜柠檬",
+      description: "新鲜酸柠檬，非常适合果汁和调味菜肴"
+    },
+    "fresh-pomegranate": {
+      name: "新鲜石榴",
+      description: "新鲜红石榴，富含抗氧化剂和有益营养素"
+    },
+    "fresh-grapes": {
+      name: "新鲜葡萄",
+      description: "新鲜甜葡萄，富含抗氧化剂和必需维生素"
+    },
+    "fresh-strawberries": {
+      name: "新鲜草莓",
+      description: "新鲜甜草莓，富含维生素C和抗氧化剂"
+    },
+    "fresh-watermelon": {
+      name: "新鲜西瓜",
+      description: "甜美清爽的红西瓜，非常适合夏季和天然甜点"
+    },
+    "fresh-oranges-valencia": {
+      name: "瓦伦西亚橙",
+      description: "高品质埃及瓦伦西亚橙，汁液丰富，富含维生素"
+    },
+    "fresh-oranges-sweet": {
+      name: "甜橙",
+      description: "味道甜美的糖橙，非常适合果汁和直接食用"
+    },
+    "fresh-oranges-baladi": {
+      name: "巴拉迪橙",
+      description: "正宗的埃及巴拉迪橙，以其独特风味和健康益处闻名"
+    },
+    "fresh-bananas-local": {
+      name: "本地香蕉",
+      description: "新鲜甜美的埃及本地香蕉，富含钾和维生素"
+    },
+    "fresh-bananas-tropical": {
+      name: "热带香蕉",
+      description: "大型热带香蕉，味道甜美，营养丰富"
+    },
+    "fresh-melon-yellow": {
+      name: "黄甜瓜",
+      description: "甜美清爽的黄甜瓜，富含水分和维生素"
+    },
+    "fresh-melon-green": {
+      name: "绿甜瓜",
+      description: "新鲜美味的绿甜瓜，以其甜美清爽的味道闻名"
+    },
+    "fresh-cherries-red": {
+      name: "红樱桃",
+      description: "新鲜甜美的红樱桃，富含抗氧化剂"
+    },
+    "fresh-cherries-black": {
+      name: "黑樱桃",
+      description: "富含抗氧化剂的黑樱桃，非常适合新鲜食用和甜点"
+    },
+
+    // Legumes
+    "white-beans": {
+      name: "白豆",
+      description: "高品质白豆，富含蛋白质和纤维，非常适合健康餐食"
+    },
+    "red-lentils": {
+      name: "扁豆",
+      description: "高品质红扁豆和黄扁豆，快速烹饪，富含植物蛋白"
+    },
+    "chickpeas": {
+      name: "鹰嘴豆",
+      description: "高品质干鹰嘴豆，富含蛋白质和纤维，非常适合制作鹰嘴豆泥和法拉费"
+    },
+    "rice": {
+      name: "埃及大米",
+      description: "高品质埃及白米，非常适合日常烹饪和各种菜肴"
+    },
+    "wheat": {
+      name: "埃及小麦",
+      description: "高品质埃及小麦，富含纤维和必需营养素"
+    },
+
+    // Herbs
+    "fresh-mint": {
+      name: "新鲜薄荷",
+      description: "新鲜芳香薄荷，富含维生素和矿物质，非常适合茶、饮料和阿拉伯菜肴"
+    },
+    "hibiscus": {
+      name: "木槿",
+      description: "天然红木槿，非常适合制作健康清爽的饮料"
+    },
+    "chamomile": {
+      name: "洋甘菊",
+      description: "天然干洋甘菊，以其镇静和治疗功效闻名"
+    },
+    "fresh-thyme": {
+      name: "新鲜百里香",
+      description: "新鲜芳香百里香，富含抗氧化剂，非常适合烹饪和草药茶"
+    },
+
+    // Dried Products
+    "sun-dried-tomatoes": {
+      name: "晒干番茄",
+      description: "天然晒干的番茄，风味浓郁，非常适合烹饪和酱料"
+    },
+    "dried-mangoes": {
+      name: "芒果干",
+      description: "甜美芒果干，保留天然风味和维生素"
+    },
+    "dried-onions": {
+      name: "干洋葱",
+      description: "干洋葱粉，非常适合快速烹饪和长时间保存风味"
+    },
+    "dried-figs": {
+      name: "无花果干",
+      description: "天然无花果干，味道甜美，富含纤维和矿物质，是完美的健康零食"
+    },
+    "dried-strawberries": {
+      name: "草莓干",
+      description: "保留天然风味的草莓干，非常适合零食和甜点"
+    },
+    "dried-apricots": {
+      name: "杏干",
+      description: "富含维生素的杏干，味道甜美，有益健康"
+    },
+    "dried-dates": {
+      name: "枣干",
+      description: "高品质枣干，富含天然糖分和矿物质"
+    },
+    "raisins": {
+      name: "葡萄干",
+      description: "天然甜葡萄干，富含能量和营养素"
+    },
+    "dried-bananas": {
+      name: "香蕉干",
+      description: "酥脆美味的香蕉干，非常适合零食"
+    },
+    "dried-pineapple": {
+      name: "菠萝干",
+      description: "热带风味的菠萝干，甜美清爽"
+    },
+    "dried-kiwi": {
+      name: "猕猴桃干",
+      description: "富含维生素C的猕猴桃干，非常适合健康零食"
+    },
+    "dried-coconut": {
+      name: "椰子干",
+      description: "天然椰子干，风味丰富，健康益处多"
+    },
+    "dried-peaches": {
+      name: "桃子干",
+      description: "柔软美味的桃子干，富含维生素和纤维"
+    },
+    "dried-pears": {
+      name: "梨干",
+      description: "味道甜美的梨干，非常适合零食"
+    },
+    "dried-apples": {
+      name: "苹果干",
+      description: "酥脆健康的苹果干，富含纤维和维生素"
+    },
+
+    // Oils & Seeds
+    "olive-oil": {
+      name: "橄榄油",
+      description: "特级初榨橄榄油，从最优质的橄榄中提取，富含抗氧化剂"
+    },
+    "peppermint-oil": {
+      name: "薄荷油",
+      description: "天然薄荷油，以其治疗和芳香功效闻名"
+    },
+    "flax-seeds": {
+      name: "亚麻籽",
+      description: "天然亚麻籽，富含omega-3和纤维，有益于整体健康"
+    },
+    "black-cumin": {
+      name: "黑籽",
+      description: "天然黑籽，以其健康和治疗功效闻名"
+    },
+
+    // Frozen Products
+    "frozen-peas": {
+      name: "冷冻青豆",
+      description: "新鲜冷冻青豆，保留全部营养价值和新鲜度"
+    },
+    "frozen-corn": {
+      name: "冷冻玉米",
+      description: "甜冷冻玉米，非常适合用于各种菜肴和沙拉"
+    },
+    "frozen-spinach": {
+      name: "冷冻菠菜",
+      description: "新鲜冷冻菠菜，富含铁和维生素，可直接使用"
+    },
+    "frozen-broccoli": {
+      name: "冷冻西兰花",
+      description: "新鲜冷冻西兰花，保留所有营养素和天然风味"
+    },
+    "frozen-mixed-vegetables": {
+      name: "混合冷冻蔬菜",
+      description: "用于炒菜或汤的混合冷冻蔬菜，营养丰富"
+    },
+    "frozen-carrots": {
+      name: "冷冻胡萝卜",
+      description: "新鲜冷冻胡萝卜，预先切好，可直接用于烹饪"
+    },
+    "frozen-cauliflower": {
+      name: "冷冻花椰菜",
+      description: "新鲜冷冻花椰菜，烹饪后保持其营养价值和脆嫩质地"
+    },
+    "frozen-berries": {
+      name: "冷冻浆果",
+      description: "新鲜冷冻浆果，非常适合冰沙、甜点和解冻后直接食用"
+    },
+    "frozen-mango": {
+      name: "冷冻芒果",
+      description: "新鲜冷冻芒果，味道甜美，非常适合冰沙、沙拉和甜点"
+    },
+    "frozen-banana": {
+      name: "冷冻香蕉",
+      description: "新鲜冷冻香蕉，非常适合冰沙、奶昔和烘焙"
+    },
+    "frozen-pineapple": {
+      name: "冷冻菠萝",
+      description: "新鲜冷冻菠萝，甜美清爽，保留其独特的热带风味"
+    },
+    "frozen-fruit-mix": {
+      name: "混合冷冻水果",
+      description: "混合冷冻水果（如蓝莓和草莓），非常适合冰沙、沙拉和甜点"
+    },
+    "frozen-peaches": {
+      name: "冷冻桃子",
+      description: "新鲜冷冻桃子，味道甜美，非常适合冰沙、甜点和酸奶"
+    }
+  }
+}
 };

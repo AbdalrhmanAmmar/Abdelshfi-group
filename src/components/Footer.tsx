@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-3 text-gray-300 dark:text-gray-400 hover:text-white dark:hover:text-gray-200 transition-colors">
                   <Phone className="w-5 h-5 text-green-400" />
-                  <span className="text-sm">+20 123 456 7890</span>
+                  <span className="text-sm">+201010095991</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-300 dark:text-gray-400 hover:text-white dark:hover:text-gray-200 transition-colors">
                   <Mail className="w-5 h-5 text-green-400" />

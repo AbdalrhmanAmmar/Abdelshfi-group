@@ -5,6 +5,7 @@ import { aboutTranslations } from './about';
 import { servicesTranslations } from './services';
 import { productsTranslations } from './products';
 import { dataproductTranslations } from './dataproduct';
+import { whatsappTranslations } from './whatsapp';
 
 export const translations = {
   ar: {
@@ -14,7 +15,8 @@ export const translations = {
     about: aboutTranslations.ar,
     services: servicesTranslations.ar,
     products: productsTranslations.ar,
-    dataproduct: dataproductTranslations.ar
+    dataproduct: dataproductTranslations.ar,
+    whatsapp: whatsappTranslations.ar
   },
   en: {
     home: homeTranslations.en,
@@ -23,7 +25,9 @@ export const translations = {
     about: aboutTranslations.en,
     services: servicesTranslations.en,
     products: productsTranslations.en,
-    dataproduct: dataproductTranslations.en
+    dataproduct: dataproductTranslations.en,
+        whatsapp: whatsappTranslations.en
+
   },
   fr: {
     home: homeTranslations.fr,
@@ -32,7 +36,8 @@ export const translations = {
     about: aboutTranslations.fr,
     services: servicesTranslations.fr,
     products: productsTranslations.fr,
-    dataproduct: dataproductTranslations.fr
+    dataproduct: dataproductTranslations.fr,
+    whatsapp: whatsappTranslations.fr
   },
   es: {
     home: homeTranslations.es,
@@ -40,7 +45,8 @@ export const translations = {
     footer: footerTranslations.es,
     about: aboutTranslations.es,
     services: servicesTranslations.es,
-    products: productsTranslations.es
+    products: productsTranslations.es,
+    whatsapp: whatsappTranslations.es
   },
   de: {
     home: homeTranslations.de,
@@ -48,7 +54,8 @@ export const translations = {
     footer: footerTranslations.de,
     about: aboutTranslations.de,
     services: servicesTranslations.de,
-    products: productsTranslations.de
+    products: productsTranslations.de,
+    whatsapp: whatsappTranslations.de
   },
   it: {
     home: homeTranslations.it,
@@ -56,7 +63,8 @@ export const translations = {
     footer: footerTranslations.it,
     about: aboutTranslations.it,
     services: servicesTranslations.it,
-    products: productsTranslations.it
+    products: productsTranslations.it,
+    whatsapp: whatsappTranslations.it
   },
   // إضافة اللغة الصينية
   zh: {
@@ -65,7 +73,8 @@ export const translations = {
     footer: footerTranslations.zh,
     about: aboutTranslations.zh,
     services: servicesTranslations.zh,
-    products: productsTranslations.zh
+    products: productsTranslations.zh,
+    whatsapp: whatsappTranslations.zh
   }
 };
 
