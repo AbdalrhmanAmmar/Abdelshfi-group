@@ -4,12 +4,25 @@ const products: Product[] = [
   { id: 'fresh-onions-white', name: 'بصل أبيض', category: 'vegetables', image: '/Images/vegetables/bsl-abyd.jpg', description: 'بصل أبيض طازج للتصدير', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
   { id: 'fresh-onions-golden', name: 'بصل ذهبي', category: 'vegetables', image: '/Images/vegetables/bsl-gold.jpg', description: 'بصل ذهبي مميز', rating: 4.9, price: 'حسب الطلب', inStock: true, featured: true },
   { id: 'fresh-potatoes', name: 'بطاطس', category: 'vegetables', image: '/Images/vegetables/potato.jpg', description: 'بطاطس طازجة عالية الجودة', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
-  { id: 'fresh-tomatoes', name: 'طماطم', category: 'vegetables', image: '/Images/vegetables/tomato.jpg', description: 'طماطم طازجة حمراء', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'fresh-tomatoes', name: ' طماطم مستديره', category: 'vegetables', image: '/Images/vegetables/tomato.jpg', description: 'طماطم مستديره', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'roma-tomatoes', name: ' طماطم روما', category: 'vegetables', image: '/Images/vegetables/roma-tomato.png', description: 'طماطم روما من PEI Trade – ثمرة سميكة وبذور قليلة وشكل مثالي', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'krez-tomato', name: 'طماطم كريز', category: 'vegetables', image: '/Images/vegetables/krez-tomato.png', description: 'طماطم كرزية من PEI Trade – صغيرة الحجم وحلوة المذاق وذات قشرة متينة', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
   { id: 'fresh-garlic', name: 'ثوم', category: 'vegetables', image: '/Images/vegetables/Garlic.jpg', description: 'ثوم طازج عالي الجودة', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
   { id: 'fresh-cucumbers', name: 'خيار', category: 'vegetables', image: '/Images/vegetables/fresh-cucumbers.jpeg', description: 'خيار طازج أخضر', rating: 4.5, price: 'حسب الطلب', inStock: true, featured: false },
-  { id: 'fresh-courgette', name: 'كوسة', category: 'vegetables', image: '/Images/vegetables/Courgette.jpg', description: 'كوسة طازجة خضراء', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-courgette', name: 'كوسة', category: 'vegetables', image: '/Images/vegetables/Courgette.jpg', description: 'كوسه خضراء ', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'fresh-dark-courgette', name: ' كوسه داكنه', category: 'vegetables', image: '/Images/vegetables/dark-courgette.png', description: 'الكوسه الخضراء الداكنه', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
   { id: 'fresh-peppers', name: 'فلفل ألوان', category: 'vegetables', image: '/Images/vegetables/fresh-peppers.jpg', description: 'فلفل ملون طازج', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
   { id: 'fresh-eggplant', name: 'باذنجان رومي', category: 'vegetables', image: '/Images/vegetables/Eggplant.jpg', description: 'باذنجان رومي طازج', rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'patata', name: 'البطاطا', category: 'vegetables', image: '/Images/vegetables/patata.jpg', description: 'البطاطا الحلوة هي خضراوات جذرية نشوية وحلوة المذاق', rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'limon', name: 'الليمون', category: 'vegetables', image: '/Images/vegetables/limon.jpg', description: "الليمون هو ثمرة شجرة حمضية دائمة الخضرة من جنس الحمضيات", rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'sweet-patata', name: 'بطاطا حلوه', category: 'vegetables', image: '/Images/vegetables/sweet-patata.jpg', description: "البطاطا الحلوة توفير الكميات المطلوبة من أعلى مستويات الجودة بالمواصفات الأوروبية", rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'patata-her', name: 'بطاطا هيرنانديز الحلوة', category: 'vegetables', image: '/Images/vegetables/patata-her.png', description: "بطاطا هيرنانديز الحلوة من PEI Trade – قوام متماسك ولب برتقالي غني وأحجام دقيقة", rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'patata-jor', name: 'بطاطا جورجيا جيت الحلوة', category: 'vegetables', image: '/Images/vegetables/patata-jor.png', description: "بطاطا جورجيا جيت الحلوة من PEI Trade – قوام ناعم ونكهة غنية وحصاد وافر", rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'patata-carlo', name: 'بطاطا كارولينا روبي الحلوة', category: 'vegetables', image: '/Images/vegetables/patata-carlo.png', description: "بطاطا كارولينا روبي من PEI Trade – قشرة حمراء عميقة ولب برتقالي كثيف وبنية قوية", rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'patata-carlo', name: 'بطاطا كوفينجتون الحلوة', category: 'vegetables', image: '/Images/vegetables/patata-cof.png', description: "بطاطا كوفينجتون الحلوة من PEI Trade – حجم موحد، قشرة ناعمة، ومذاق طبيعي حلو", rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'patata-joil', name: 'بطاطا جويل الحلوة', category: 'vegetables', image: '/Images/vegetables/patata-joil.png', description: "بطاطا جويل الحلوة من PEI Trade – نسيج رطب ولب برتقالي زاهي وتجانس ممتاز", rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'patata-eva', name: 'بطاطا إيفانجلين الحلوة', category: 'vegetables', image: '/Images/vegetables/patata-eva.png', description: "بطاطا إيفانجلين الحلوة من PEI Trade – مذاق حلو طبيعي ولب برتقالي غني وقشرة ناعمة", rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
+  { id: 'patata-bio', name: 'بطاطا بيوريجارد الحلوة', category: 'vegetables', image: '/Images/vegetables/patata-bio.png', description: "بطاطا بيوريجارد الحلوة من PEI Trade – بطاطا موحدة الحجم وحلوة المذاق وغنية بالعناصر الغذائية", rating: 4.4, price: 'حسب الطلب', inStock: true, featured: false },
 
   // الفواكه الطازجة
   { id: 'fresh-mangoes-butter', name: 'مانجو زبدية', category: 'fruits', image: '/Images/fruits/mango.jpg', description: 'مانجو زبدية مصرية أصلية', rating: 4.9, price: 'حسب الطلب', inStock: true, featured: true },
@@ -29,6 +42,9 @@ const products: Product[] = [
   { id: 'fresh-melon-green', name: 'شمام أخضر', category: 'fruits', image: '/Images/fruits/Honeydew-Melon.jpg', description: 'شمام أخضر طازج ولذيذ', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
   { id: 'fresh-cherries-red', name: 'كرز أحمر', category: 'fruits', image: '/Images/fruits/Red-Cherry.jpg', description: 'كرز أحمر طازج حلو المذاق', rating: 4.9, price: 'حسب الطلب', inStock: true, featured: true },
   { id: 'fresh-cherries-black', name: 'كرز أسود', category: 'fruits', image: '/Images/fruits/Black-Cherry.jpg', description: 'كرز أسود غني بمضادات الأكسدة', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'limon-ad', name: 'ليمون اضاليا', category: 'fruits', image: '/Images/fruits/limon-ad.jpeg', description: 'عالى الإنتاج ويثمر على مدار العام لكن المحصول الرئيسى فى الربيع', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'tamr-brhy', name: 'تمر برحي', category: 'fruits', image: '/Images/fruits/tamr-brhy.jpg', description: 'التمر البرحي يحظى بشعبية كبيرة بسبب جودته ونكهته اللذيذة', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'Custard apple', name: 'فاكهه القشطه', category: 'fruits', image: '/Images/fruits/Custard-apple.jpg', description: 'التمر البرحي يحظى بشعبية كبيرة بسبب جودته ونكهته اللذيذة', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
 
   // البقوليات
   { id: 'white-beans', name: 'فاصوليا بيضاء', category: 'legumes', image: '/Images/Legumes/White-Beans.jpg', description: 'فاصوليا بيضاء عالية الجودة', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
@@ -65,6 +81,8 @@ const products: Product[] = [
   { id: 'peppermint-oil', name: 'زيت نعناع', category: 'oils', image: '/Images/Oils/Peppermint-Oil.webp', description: 'زيت نعناع طبيعي', rating: 4.7, price: 'حسب الطلب', inStock: true, featured: false },
   { id: 'flax-seeds', name: 'بذور الكتان', category: 'oils', image: '/Images/Oils/Flaxseed-Oil.jpg', description: 'بذور كتان طبيعية', rating: 4.6, price: 'حسب الطلب', inStock: true, featured: false },
   { id: 'black-cumin', name: 'حبة البركة', category: 'oils', image: '/Images/Oils/Black-Cumin.webp', description: 'حبة البركة الطبيعية', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'white-rice', name: 'ارز ابيض عريض ورفيع', category: 'oils', image: '/Images/Oils/white-rice.jpeg', description: 'الارز المصري البند الجمركي: 10063010 المنشأ', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
+  { id: 'white-sesame', name: 'سمسم ابيض 99.9%', category: 'oils', image: '/Images/Oils/white-sesame.jpg', description: '', rating: 4.8, price: 'حسب الطلب', inStock: true, featured: true },
 
   // المجمدات
   { id: 'frozen-peas', name: 'البازلاء الخضراء', category: 'frozen', image: '/Images/Frozen/green-peans-frozen.jpg', description: 'بازلاء خضراء مجمدة طازجة', rating: 4.5, price: 'حسب الطلب', inStock: true, featured: false },
